@@ -1,0 +1,47 @@
+# # RecurringExpense
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**id** | **string** | The hashed id of the recurring expense | [optional]
+**user_id** | **string** | The hashed id of the user who created the recurring expense | [optional]
+**assigned_user_id** | **string** | The hashed id of the user assigned to this recurring expense | [optional]
+**company_id** | **string** | The hashed id of the company | [optional]
+**client_id** | **string** | The hashed id of the client | [optional]
+**invoice_id** | **string** | The hashed id of the invoice | [optional]
+**bank_id** | **string** | The id of the bank associated with this recurring expense | [optional]
+**invoice_currency_id** | **string** | The currency id of the invoice associated with this recurring expense | [optional]
+**expense_currency_id** | **string** | The currency id of the expense associated with this recurring expense | [optional]
+**invoice_category_id** | **string** | The category id of the invoice | [optional]
+**payment_type_id** | **string** | The payment type id | [optional]
+**private_notes** | **string** | The recurring expense private notes | [optional]
+**public_notes** | **string** | The recurring expense public notes | [optional]
+**transaction_reference** | **string** | The recurring expense transaction reference | [optional]
+**transcation_id** | **string** | The transaction id of the recurring expense | [optional]
+**custom_value1** | **string** | Custom value field | [optional]
+**custom_value2** | **string** | Custom value field | [optional]
+**custom_value3** | **string** | Custom value field | [optional]
+**custom_value4** | **string** | Custom value field | [optional]
+**tax_name1** | **string** | The tax name | [optional]
+**tax_name2** | **string** | The tax name | [optional]
+**tax_rate1** | **float** | The tax rate | [optional]
+**tax_rate2** | **float** | The tax rate | [optional]
+**tax_name3** | **string** | The tax name | [optional]
+**tax_rate3** | **float** | The tax rate | [optional]
+**amount** | **float** | The total amount of the recurring expense | [optional]
+**frequency_id** | **float** | The frequency this recurring expense fires | [optional]
+**remaining_cycles** | **float** | The number of remaining cycles for this recurring expense | [optional]
+**foreign_amount** | **float** | The foreign currency amount of the recurring expense | [optional]
+**exchange_rate** | **float** | The exchange rate for the expernse | [optional]
+**date** | **string** | The date of the expense | [optional]
+**payment_date** | **string** | The date the expense was paid | [optional]
+**should_be_invoiced** | **bool** | Boolean flag determining if the expense should be invoiced | [optional]
+**is_deleted** | **bool** | Boolean flag determining if the recurring expense is deleted | [optional]
+**last_sent_date** | **\DateTime** | The Date it was sent last | [optional]
+**next_send_date** | **\DateTime** | The next send date | [optional]
+**invoice_documents** | **bool** | Boolean flag determining if the documents associated with this expense should be passed onto the invoice if it is converted to an invoice | [optional]
+**updated_at** | **float** | Timestamp | [optional]
+**archived_at** | **float** | Timestamp | [optional]
+
+[[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)
