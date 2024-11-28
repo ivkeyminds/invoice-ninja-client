@@ -227,8 +227,8 @@ class ClientsApi
                         $content = (string) $response->getBody();
                         if ('\IvkeyMinds\InvoiceNinjaClient\Model\Client' !== 'string') {
                             try {
-                                $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
-                            } catch (\JsonException $exception) {
+                                $content = json_decode($content, false, 512);
+                            } catch (\Exception $exception) {
                                 throw new ApiException(
                                     sprintf(
                                         'Error JSON decoding server response (%s)',
@@ -254,8 +254,8 @@ class ClientsApi
                         $content = (string) $response->getBody();
                         if ('\IvkeyMinds\InvoiceNinjaClient\Model\ValidationError' !== 'string') {
                             try {
-                                $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
-                            } catch (\JsonException $exception) {
+                                $content = json_decode($content, false, 512);
+                            } catch (\Exception $exception) {
                                 throw new ApiException(
                                     sprintf(
                                         'Error JSON decoding server response (%s)',
@@ -281,8 +281,8 @@ class ClientsApi
                         $content = (string) $response->getBody();
                         if ('\IvkeyMinds\InvoiceNinjaClient\Model\Error' !== 'string') {
                             try {
-                                $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
-                            } catch (\JsonException $exception) {
+                                $content = json_decode($content, false, 512);
+                            } catch (\Exception $exception) {
                                 throw new ApiException(
                                     sprintf(
                                         'Error JSON decoding server response (%s)',
@@ -323,8 +323,8 @@ class ClientsApi
                 $content = (string) $response->getBody();
                 if ($returnType !== 'string') {
                     try {
-                        $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
-                    } catch (\JsonException $exception) {
+                        $content = json_decode($content, false, 512);
+                    } catch (\Exception $exception) {
                         throw new ApiException(
                             sprintf(
                                 'Error JSON decoding server response (%s)',
@@ -651,8 +651,8 @@ class ClientsApi
                         $content = (string) $response->getBody();
                         if ('\IvkeyMinds\InvoiceNinjaClient\Model\Client' !== 'string') {
                             try {
-                                $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
-                            } catch (\JsonException $exception) {
+                                $content = json_decode($content, false, 512);
+                            } catch (\Exception $exception) {
                                 throw new ApiException(
                                     sprintf(
                                         'Error JSON decoding server response (%s)',
@@ -678,8 +678,8 @@ class ClientsApi
                         $content = (string) $response->getBody();
                         if ('\IvkeyMinds\InvoiceNinjaClient\Model\ValidationError' !== 'string') {
                             try {
-                                $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
-                            } catch (\JsonException $exception) {
+                                $content = json_decode($content, false, 512);
+                            } catch (\Exception $exception) {
                                 throw new ApiException(
                                     sprintf(
                                         'Error JSON decoding server response (%s)',
@@ -705,8 +705,8 @@ class ClientsApi
                         $content = (string) $response->getBody();
                         if ('\IvkeyMinds\InvoiceNinjaClient\Model\Error' !== 'string') {
                             try {
-                                $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
-                            } catch (\JsonException $exception) {
+                                $content = json_decode($content, false, 512);
+                            } catch (\Exception $exception) {
                                 throw new ApiException(
                                     sprintf(
                                         'Error JSON decoding server response (%s)',
@@ -747,8 +747,8 @@ class ClientsApi
                 $content = (string) $response->getBody();
                 if ($returnType !== 'string') {
                     try {
-                        $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
-                    } catch (\JsonException $exception) {
+                        $content = json_decode($content, false, 512);
+                    } catch (\Exception $exception) {
                         throw new ApiException(
                             sprintf(
                                 'Error JSON decoding server response (%s)',
@@ -1355,8 +1355,8 @@ class ClientsApi
                         $content = (string) $response->getBody();
                         if ('\IvkeyMinds\InvoiceNinjaClient\Model\Client' !== 'string') {
                             try {
-                                $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
-                            } catch (\JsonException $exception) {
+                                $content = json_decode($content, false, 512);
+                            } catch (\Exception $exception) {
                                 throw new ApiException(
                                     sprintf(
                                         'Error JSON decoding server response (%s)',
@@ -1382,8 +1382,8 @@ class ClientsApi
                         $content = (string) $response->getBody();
                         if ('\IvkeyMinds\InvoiceNinjaClient\Model\ValidationError' !== 'string') {
                             try {
-                                $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
-                            } catch (\JsonException $exception) {
+                                $content = json_decode($content, false, 512);
+                            } catch (\Exception $exception) {
                                 throw new ApiException(
                                     sprintf(
                                         'Error JSON decoding server response (%s)',
@@ -1409,8 +1409,8 @@ class ClientsApi
                         $content = (string) $response->getBody();
                         if ('\IvkeyMinds\InvoiceNinjaClient\Model\Error' !== 'string') {
                             try {
-                                $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
-                            } catch (\JsonException $exception) {
+                                $content = json_decode($content, false, 512);
+                            } catch (\Exception $exception) {
                                 throw new ApiException(
                                     sprintf(
                                         'Error JSON decoding server response (%s)',
@@ -1451,8 +1451,8 @@ class ClientsApi
                 $content = (string) $response->getBody();
                 if ($returnType !== 'string') {
                     try {
-                        $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
-                    } catch (\JsonException $exception) {
+                        $content = json_decode($content, false, 512);
+                    } catch (\Exception $exception) {
                         throw new ApiException(
                             sprintf(
                                 'Error JSON decoding server response (%s)',
@@ -1780,8 +1780,8 @@ class ClientsApi
                         $content = (string) $response->getBody();
                         if ('\IvkeyMinds\InvoiceNinjaClient\Model\Client' !== 'string') {
                             try {
-                                $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
-                            } catch (\JsonException $exception) {
+                                $content = json_decode($content, false, 512);
+                            } catch (\Exception $exception) {
                                 throw new ApiException(
                                     sprintf(
                                         'Error JSON decoding server response (%s)',
@@ -1794,7 +1794,16 @@ class ClientsApi
                             }
                         }
                     }
-
+                    if(!empty($content->data) && is_array($content->data)) {
+                        $content->data = array_map(function($data) {
+                            return ObjectSerializer::deserialize($data, '\IvkeyMinds\InvoiceNinjaClient\Model\Client', []);
+                        }, $content->data);
+                        return [
+                            $content,
+                            $response->getStatusCode(),
+                            $response->getHeaders()
+                        ];
+                    }
                     return [
                         ObjectSerializer::deserialize($content, '\IvkeyMinds\InvoiceNinjaClient\Model\Client', []),
                         $response->getStatusCode(),
@@ -1807,8 +1816,8 @@ class ClientsApi
                         $content = (string) $response->getBody();
                         if ('\IvkeyMinds\InvoiceNinjaClient\Model\ValidationError' !== 'string') {
                             try {
-                                $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
-                            } catch (\JsonException $exception) {
+                                $content = json_decode($content, false, 512);
+                            } catch (\Exception $exception) {
                                 throw new ApiException(
                                     sprintf(
                                         'Error JSON decoding server response (%s)',
@@ -1834,8 +1843,8 @@ class ClientsApi
                         $content = (string) $response->getBody();
                         if ('\IvkeyMinds\InvoiceNinjaClient\Model\Error' !== 'string') {
                             try {
-                                $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
-                            } catch (\JsonException $exception) {
+                                $content = json_decode($content, false, 512);
+                            } catch (\Exception $exception) {
                                 throw new ApiException(
                                     sprintf(
                                         'Error JSON decoding server response (%s)',
@@ -1876,8 +1885,8 @@ class ClientsApi
                 $content = (string) $response->getBody();
                 if ($returnType !== 'string') {
                     try {
-                        $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
-                    } catch (\JsonException $exception) {
+                        $content = json_decode($content, false, 512);
+                    } catch (\Exception $exception) {
                         throw new ApiException(
                             sprintf(
                                 'Error JSON decoding server response (%s)',
@@ -2198,8 +2207,8 @@ class ClientsApi
                         $content = (string) $response->getBody();
                         if ('\IvkeyMinds\InvoiceNinjaClient\Model\Client' !== 'string') {
                             try {
-                                $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
-                            } catch (\JsonException $exception) {
+                                $content = json_decode($content, false, 512);
+                            } catch (\Exception $exception) {
                                 throw new ApiException(
                                     sprintf(
                                         'Error JSON decoding server response (%s)',
@@ -2225,8 +2234,8 @@ class ClientsApi
                         $content = (string) $response->getBody();
                         if ('\IvkeyMinds\InvoiceNinjaClient\Model\ValidationError' !== 'string') {
                             try {
-                                $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
-                            } catch (\JsonException $exception) {
+                                $content = json_decode($content, false, 512);
+                            } catch (\Exception $exception) {
                                 throw new ApiException(
                                     sprintf(
                                         'Error JSON decoding server response (%s)',
@@ -2252,8 +2261,8 @@ class ClientsApi
                         $content = (string) $response->getBody();
                         if ('\IvkeyMinds\InvoiceNinjaClient\Model\Error' !== 'string') {
                             try {
-                                $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
-                            } catch (\JsonException $exception) {
+                                $content = json_decode($content, false, 512);
+                            } catch (\Exception $exception) {
                                 throw new ApiException(
                                     sprintf(
                                         'Error JSON decoding server response (%s)',
@@ -2294,8 +2303,8 @@ class ClientsApi
                 $content = (string) $response->getBody();
                 if ($returnType !== 'string') {
                     try {
-                        $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
-                    } catch (\JsonException $exception) {
+                        $content = json_decode($content, false, 512);
+                    } catch (\Exception $exception) {
                         throw new ApiException(
                             sprintf(
                                 'Error JSON decoding server response (%s)',
@@ -3185,8 +3194,8 @@ class ClientsApi
                         $content = (string) $response->getBody();
                         if ('\IvkeyMinds\InvoiceNinjaClient\Model\Client' !== 'string') {
                             try {
-                                $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
-                            } catch (\JsonException $exception) {
+                                $content = json_decode($content, false, 512);
+                            } catch (\Exception $exception) {
                                 throw new ApiException(
                                     sprintf(
                                         'Error JSON decoding server response (%s)',
@@ -3212,8 +3221,8 @@ class ClientsApi
                         $content = (string) $response->getBody();
                         if ('\IvkeyMinds\InvoiceNinjaClient\Model\ValidationError' !== 'string') {
                             try {
-                                $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
-                            } catch (\JsonException $exception) {
+                                $content = json_decode($content, false, 512);
+                            } catch (\Exception $exception) {
                                 throw new ApiException(
                                     sprintf(
                                         'Error JSON decoding server response (%s)',
@@ -3239,8 +3248,8 @@ class ClientsApi
                         $content = (string) $response->getBody();
                         if ('\IvkeyMinds\InvoiceNinjaClient\Model\Error' !== 'string') {
                             try {
-                                $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
-                            } catch (\JsonException $exception) {
+                                $content = json_decode($content, false, 512);
+                            } catch (\Exception $exception) {
                                 throw new ApiException(
                                     sprintf(
                                         'Error JSON decoding server response (%s)',
@@ -3281,8 +3290,8 @@ class ClientsApi
                 $content = (string) $response->getBody();
                 if ($returnType !== 'string') {
                     try {
-                        $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
-                    } catch (\JsonException $exception) {
+                        $content = json_decode($content, false, 512);
+                    } catch (\Exception $exception) {
                         throw new ApiException(
                             sprintf(
                                 'Error JSON decoding server response (%s)',
@@ -3608,8 +3617,8 @@ class ClientsApi
                         $content = (string) $response->getBody();
                         if ('\IvkeyMinds\InvoiceNinjaClient\Model\Client' !== 'string') {
                             try {
-                                $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
-                            } catch (\JsonException $exception) {
+                                $content = json_decode($content, false, 512);
+                            } catch (\Exception $exception) {
                                 throw new ApiException(
                                     sprintf(
                                         'Error JSON decoding server response (%s)',
@@ -3635,8 +3644,8 @@ class ClientsApi
                         $content = (string) $response->getBody();
                         if ('\IvkeyMinds\InvoiceNinjaClient\Model\ValidationError' !== 'string') {
                             try {
-                                $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
-                            } catch (\JsonException $exception) {
+                                $content = json_decode($content, false, 512);
+                            } catch (\Exception $exception) {
                                 throw new ApiException(
                                     sprintf(
                                         'Error JSON decoding server response (%s)',
@@ -3662,8 +3671,8 @@ class ClientsApi
                         $content = (string) $response->getBody();
                         if ('\IvkeyMinds\InvoiceNinjaClient\Model\Error' !== 'string') {
                             try {
-                                $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
-                            } catch (\JsonException $exception) {
+                                $content = json_decode($content, false, 512);
+                            } catch (\Exception $exception) {
                                 throw new ApiException(
                                     sprintf(
                                         'Error JSON decoding server response (%s)',
@@ -3704,8 +3713,8 @@ class ClientsApi
                 $content = (string) $response->getBody();
                 if ($returnType !== 'string') {
                     try {
-                        $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
-                    } catch (\JsonException $exception) {
+                        $content = json_decode($content, false, 512);
+                    } catch (\Exception $exception) {
                         throw new ApiException(
                             sprintf(
                                 'Error JSON decoding server response (%s)',
@@ -4015,8 +4024,8 @@ class ClientsApi
                         $content = (string) $response->getBody();
                         if ('\IvkeyMinds\InvoiceNinjaClient\Model\Client' !== 'string') {
                             try {
-                                $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
-                            } catch (\JsonException $exception) {
+                                $content = json_decode($content, false, 512);
+                            } catch (\Exception $exception) {
                                 throw new ApiException(
                                     sprintf(
                                         'Error JSON decoding server response (%s)',
@@ -4042,8 +4051,8 @@ class ClientsApi
                         $content = (string) $response->getBody();
                         if ('\IvkeyMinds\InvoiceNinjaClient\Model\ValidationError' !== 'string') {
                             try {
-                                $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
-                            } catch (\JsonException $exception) {
+                                $content = json_decode($content, false, 512);
+                            } catch (\Exception $exception) {
                                 throw new ApiException(
                                     sprintf(
                                         'Error JSON decoding server response (%s)',
@@ -4069,8 +4078,8 @@ class ClientsApi
                         $content = (string) $response->getBody();
                         if ('\IvkeyMinds\InvoiceNinjaClient\Model\Error' !== 'string') {
                             try {
-                                $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
-                            } catch (\JsonException $exception) {
+                                $content = json_decode($content, false, 512);
+                            } catch (\Exception $exception) {
                                 throw new ApiException(
                                     sprintf(
                                         'Error JSON decoding server response (%s)',
@@ -4111,8 +4120,8 @@ class ClientsApi
                 $content = (string) $response->getBody();
                 if ($returnType !== 'string') {
                     try {
-                        $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
-                    } catch (\JsonException $exception) {
+                        $content = json_decode($content, false, 512);
+                    } catch (\Exception $exception) {
                         throw new ApiException(
                             sprintf(
                                 'Error JSON decoding server response (%s)',
@@ -4440,8 +4449,8 @@ class ClientsApi
                         $content = (string) $response->getBody();
                         if ('\IvkeyMinds\InvoiceNinjaClient\Model\Client' !== 'string') {
                             try {
-                                $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
-                            } catch (\JsonException $exception) {
+                                $content = json_decode($content, false, 512);
+                            } catch (\Exception $exception) {
                                 throw new ApiException(
                                     sprintf(
                                         'Error JSON decoding server response (%s)',
@@ -4467,8 +4476,8 @@ class ClientsApi
                         $content = (string) $response->getBody();
                         if ('\IvkeyMinds\InvoiceNinjaClient\Model\ValidationError' !== 'string') {
                             try {
-                                $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
-                            } catch (\JsonException $exception) {
+                                $content = json_decode($content, false, 512);
+                            } catch (\Exception $exception) {
                                 throw new ApiException(
                                     sprintf(
                                         'Error JSON decoding server response (%s)',
@@ -4494,8 +4503,8 @@ class ClientsApi
                         $content = (string) $response->getBody();
                         if ('\IvkeyMinds\InvoiceNinjaClient\Model\Error' !== 'string') {
                             try {
-                                $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
-                            } catch (\JsonException $exception) {
+                                $content = json_decode($content, false, 512);
+                            } catch (\Exception $exception) {
                                 throw new ApiException(
                                     sprintf(
                                         'Error JSON decoding server response (%s)',
@@ -4536,8 +4545,8 @@ class ClientsApi
                 $content = (string) $response->getBody();
                 if ($returnType !== 'string') {
                     try {
-                        $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
-                    } catch (\JsonException $exception) {
+                        $content = json_decode($content, false, 512);
+                    } catch (\Exception $exception) {
                         throw new ApiException(
                             sprintf(
                                 'Error JSON decoding server response (%s)',

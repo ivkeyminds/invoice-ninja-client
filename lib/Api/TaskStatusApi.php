@@ -212,8 +212,8 @@ class TaskStatusApi
                         $content = (string) $response->getBody();
                         if ('\IvkeyMinds\InvoiceNinjaClient\Model\TaskStatus' !== 'string') {
                             try {
-                                $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
-                            } catch (\JsonException $exception) {
+                                $content = json_decode($content, false, 512);
+                            } catch (\Exception $exception) {
                                 throw new ApiException(
                                     sprintf(
                                         'Error JSON decoding server response (%s)',
@@ -239,8 +239,8 @@ class TaskStatusApi
                         $content = (string) $response->getBody();
                         if ('\IvkeyMinds\InvoiceNinjaClient\Model\ValidationError' !== 'string') {
                             try {
-                                $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
-                            } catch (\JsonException $exception) {
+                                $content = json_decode($content, false, 512);
+                            } catch (\Exception $exception) {
                                 throw new ApiException(
                                     sprintf(
                                         'Error JSON decoding server response (%s)',
@@ -266,8 +266,8 @@ class TaskStatusApi
                         $content = (string) $response->getBody();
                         if ('\IvkeyMinds\InvoiceNinjaClient\Model\Error' !== 'string') {
                             try {
-                                $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
-                            } catch (\JsonException $exception) {
+                                $content = json_decode($content, false, 512);
+                            } catch (\Exception $exception) {
                                 throw new ApiException(
                                     sprintf(
                                         'Error JSON decoding server response (%s)',
@@ -308,8 +308,8 @@ class TaskStatusApi
                 $content = (string) $response->getBody();
                 if ($returnType !== 'string') {
                     try {
-                        $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
-                    } catch (\JsonException $exception) {
+                        $content = json_decode($content, false, 512);
+                    } catch (\Exception $exception) {
                         throw new ApiException(
                             sprintf(
                                 'Error JSON decoding server response (%s)',
@@ -636,8 +636,8 @@ class TaskStatusApi
                         $content = (string) $response->getBody();
                         if ('\IvkeyMinds\InvoiceNinjaClient\Model\TaskStatus' !== 'string') {
                             try {
-                                $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
-                            } catch (\JsonException $exception) {
+                                $content = json_decode($content, false, 512);
+                            } catch (\Exception $exception) {
                                 throw new ApiException(
                                     sprintf(
                                         'Error JSON decoding server response (%s)',
@@ -663,8 +663,8 @@ class TaskStatusApi
                         $content = (string) $response->getBody();
                         if ('\IvkeyMinds\InvoiceNinjaClient\Model\ValidationError' !== 'string') {
                             try {
-                                $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
-                            } catch (\JsonException $exception) {
+                                $content = json_decode($content, false, 512);
+                            } catch (\Exception $exception) {
                                 throw new ApiException(
                                     sprintf(
                                         'Error JSON decoding server response (%s)',
@@ -690,8 +690,8 @@ class TaskStatusApi
                         $content = (string) $response->getBody();
                         if ('\IvkeyMinds\InvoiceNinjaClient\Model\Error' !== 'string') {
                             try {
-                                $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
-                            } catch (\JsonException $exception) {
+                                $content = json_decode($content, false, 512);
+                            } catch (\Exception $exception) {
                                 throw new ApiException(
                                     sprintf(
                                         'Error JSON decoding server response (%s)',
@@ -732,8 +732,8 @@ class TaskStatusApi
                 $content = (string) $response->getBody();
                 if ($returnType !== 'string') {
                     try {
-                        $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
-                    } catch (\JsonException $exception) {
+                        $content = json_decode($content, false, 512);
+                    } catch (\Exception $exception) {
                         throw new ApiException(
                             sprintf(
                                 'Error JSON decoding server response (%s)',
@@ -1061,8 +1061,8 @@ class TaskStatusApi
                         $content = (string) $response->getBody();
                         if ('\IvkeyMinds\InvoiceNinjaClient\Model\TaskStatus' !== 'string') {
                             try {
-                                $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
-                            } catch (\JsonException $exception) {
+                                $content = json_decode($content, false, 512);
+                            } catch (\Exception $exception) {
                                 throw new ApiException(
                                     sprintf(
                                         'Error JSON decoding server response (%s)',
@@ -1088,8 +1088,8 @@ class TaskStatusApi
                         $content = (string) $response->getBody();
                         if ('\IvkeyMinds\InvoiceNinjaClient\Model\ValidationError' !== 'string') {
                             try {
-                                $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
-                            } catch (\JsonException $exception) {
+                                $content = json_decode($content, false, 512);
+                            } catch (\Exception $exception) {
                                 throw new ApiException(
                                     sprintf(
                                         'Error JSON decoding server response (%s)',
@@ -1115,8 +1115,8 @@ class TaskStatusApi
                         $content = (string) $response->getBody();
                         if ('\IvkeyMinds\InvoiceNinjaClient\Model\Error' !== 'string') {
                             try {
-                                $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
-                            } catch (\JsonException $exception) {
+                                $content = json_decode($content, false, 512);
+                            } catch (\Exception $exception) {
                                 throw new ApiException(
                                     sprintf(
                                         'Error JSON decoding server response (%s)',
@@ -1157,8 +1157,8 @@ class TaskStatusApi
                 $content = (string) $response->getBody();
                 if ($returnType !== 'string') {
                     try {
-                        $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
-                    } catch (\JsonException $exception) {
+                        $content = json_decode($content, false, 512);
+                    } catch (\Exception $exception) {
                         throw new ApiException(
                             sprintf(
                                 'Error JSON decoding server response (%s)',
@@ -1479,8 +1479,8 @@ class TaskStatusApi
                         $content = (string) $response->getBody();
                         if ('\IvkeyMinds\InvoiceNinjaClient\Model\TaskStatus' !== 'string') {
                             try {
-                                $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
-                            } catch (\JsonException $exception) {
+                                $content = json_decode($content, false, 512);
+                            } catch (\Exception $exception) {
                                 throw new ApiException(
                                     sprintf(
                                         'Error JSON decoding server response (%s)',
@@ -1506,8 +1506,8 @@ class TaskStatusApi
                         $content = (string) $response->getBody();
                         if ('\IvkeyMinds\InvoiceNinjaClient\Model\ValidationError' !== 'string') {
                             try {
-                                $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
-                            } catch (\JsonException $exception) {
+                                $content = json_decode($content, false, 512);
+                            } catch (\Exception $exception) {
                                 throw new ApiException(
                                     sprintf(
                                         'Error JSON decoding server response (%s)',
@@ -1533,8 +1533,8 @@ class TaskStatusApi
                         $content = (string) $response->getBody();
                         if ('\IvkeyMinds\InvoiceNinjaClient\Model\Error' !== 'string') {
                             try {
-                                $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
-                            } catch (\JsonException $exception) {
+                                $content = json_decode($content, false, 512);
+                            } catch (\Exception $exception) {
                                 throw new ApiException(
                                     sprintf(
                                         'Error JSON decoding server response (%s)',
@@ -1575,8 +1575,8 @@ class TaskStatusApi
                 $content = (string) $response->getBody();
                 if ($returnType !== 'string') {
                     try {
-                        $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
-                    } catch (\JsonException $exception) {
+                        $content = json_decode($content, false, 512);
+                    } catch (\Exception $exception) {
                         throw new ApiException(
                             sprintf(
                                 'Error JSON decoding server response (%s)',
@@ -1886,8 +1886,8 @@ class TaskStatusApi
                         $content = (string) $response->getBody();
                         if ('\IvkeyMinds\InvoiceNinjaClient\Model\TaskStatus' !== 'string') {
                             try {
-                                $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
-                            } catch (\JsonException $exception) {
+                                $content = json_decode($content, false, 512);
+                            } catch (\Exception $exception) {
                                 throw new ApiException(
                                     sprintf(
                                         'Error JSON decoding server response (%s)',
@@ -1913,8 +1913,8 @@ class TaskStatusApi
                         $content = (string) $response->getBody();
                         if ('\IvkeyMinds\InvoiceNinjaClient\Model\ValidationError' !== 'string') {
                             try {
-                                $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
-                            } catch (\JsonException $exception) {
+                                $content = json_decode($content, false, 512);
+                            } catch (\Exception $exception) {
                                 throw new ApiException(
                                     sprintf(
                                         'Error JSON decoding server response (%s)',
@@ -1940,8 +1940,8 @@ class TaskStatusApi
                         $content = (string) $response->getBody();
                         if ('\IvkeyMinds\InvoiceNinjaClient\Model\Error' !== 'string') {
                             try {
-                                $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
-                            } catch (\JsonException $exception) {
+                                $content = json_decode($content, false, 512);
+                            } catch (\Exception $exception) {
                                 throw new ApiException(
                                     sprintf(
                                         'Error JSON decoding server response (%s)',
@@ -1982,8 +1982,8 @@ class TaskStatusApi
                 $content = (string) $response->getBody();
                 if ($returnType !== 'string') {
                     try {
-                        $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
-                    } catch (\JsonException $exception) {
+                        $content = json_decode($content, false, 512);
+                    } catch (\Exception $exception) {
                         throw new ApiException(
                             sprintf(
                                 'Error JSON decoding server response (%s)',
@@ -2311,8 +2311,8 @@ class TaskStatusApi
                         $content = (string) $response->getBody();
                         if ('\IvkeyMinds\InvoiceNinjaClient\Model\TaskStatus' !== 'string') {
                             try {
-                                $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
-                            } catch (\JsonException $exception) {
+                                $content = json_decode($content, false, 512);
+                            } catch (\Exception $exception) {
                                 throw new ApiException(
                                     sprintf(
                                         'Error JSON decoding server response (%s)',
@@ -2338,8 +2338,8 @@ class TaskStatusApi
                         $content = (string) $response->getBody();
                         if ('\IvkeyMinds\InvoiceNinjaClient\Model\ValidationError' !== 'string') {
                             try {
-                                $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
-                            } catch (\JsonException $exception) {
+                                $content = json_decode($content, false, 512);
+                            } catch (\Exception $exception) {
                                 throw new ApiException(
                                     sprintf(
                                         'Error JSON decoding server response (%s)',
@@ -2365,8 +2365,8 @@ class TaskStatusApi
                         $content = (string) $response->getBody();
                         if ('\IvkeyMinds\InvoiceNinjaClient\Model\Error' !== 'string') {
                             try {
-                                $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
-                            } catch (\JsonException $exception) {
+                                $content = json_decode($content, false, 512);
+                            } catch (\Exception $exception) {
                                 throw new ApiException(
                                     sprintf(
                                         'Error JSON decoding server response (%s)',
@@ -2407,8 +2407,8 @@ class TaskStatusApi
                 $content = (string) $response->getBody();
                 if ($returnType !== 'string') {
                     try {
-                        $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
-                    } catch (\JsonException $exception) {
+                        $content = json_decode($content, false, 512);
+                    } catch (\Exception $exception) {
                         throw new ApiException(
                             sprintf(
                                 'Error JSON decoding server response (%s)',
@@ -2735,8 +2735,8 @@ class TaskStatusApi
                         $content = (string) $response->getBody();
                         if ('\IvkeyMinds\InvoiceNinjaClient\Model\TaskStatus' !== 'string') {
                             try {
-                                $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
-                            } catch (\JsonException $exception) {
+                                $content = json_decode($content, false, 512);
+                            } catch (\Exception $exception) {
                                 throw new ApiException(
                                     sprintf(
                                         'Error JSON decoding server response (%s)',
@@ -2762,8 +2762,8 @@ class TaskStatusApi
                         $content = (string) $response->getBody();
                         if ('\IvkeyMinds\InvoiceNinjaClient\Model\ValidationError' !== 'string') {
                             try {
-                                $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
-                            } catch (\JsonException $exception) {
+                                $content = json_decode($content, false, 512);
+                            } catch (\Exception $exception) {
                                 throw new ApiException(
                                     sprintf(
                                         'Error JSON decoding server response (%s)',
@@ -2789,8 +2789,8 @@ class TaskStatusApi
                         $content = (string) $response->getBody();
                         if ('\IvkeyMinds\InvoiceNinjaClient\Model\Error' !== 'string') {
                             try {
-                                $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
-                            } catch (\JsonException $exception) {
+                                $content = json_decode($content, false, 512);
+                            } catch (\Exception $exception) {
                                 throw new ApiException(
                                     sprintf(
                                         'Error JSON decoding server response (%s)',
@@ -2831,8 +2831,8 @@ class TaskStatusApi
                 $content = (string) $response->getBody();
                 if ($returnType !== 'string') {
                     try {
-                        $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
-                    } catch (\JsonException $exception) {
+                        $content = json_decode($content, false, 512);
+                    } catch (\Exception $exception) {
                         throw new ApiException(
                             sprintf(
                                 'Error JSON decoding server response (%s)',
