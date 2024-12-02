@@ -415,9 +415,13 @@ class ObjectSerializer
             return null;
         }
         
-        if(!empty($data->data) && is_array($data->data)) {
-            foreach ($data->data as $key => $value) {
-                $data->data[$key] = self::deserialize($value, $class, $httpHeaders);
+        if(!empty($data->data)) {
+            if(is_array($data->data)) {
+                foreach ($data->data as $key => $value) {
+                    $data->data[$key] = self::deserialize($value, $class, $httpHeaders);
+                }
+            } else {
+                return self::deserialize($data->data, $class, $httpHeaders);
             }
             return $data;
         }
