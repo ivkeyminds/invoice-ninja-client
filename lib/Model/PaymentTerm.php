@@ -86,11 +86,11 @@ class PaymentTerm implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var boolean[]
       */
     protected static $openAPINullables = [
-        'num_days' => false,
-        'name' => false,
-        'created_at' => false,
-        'updated_at' => false,
-        'archived_at' => false
+        'num_days' => true,
+        'name' => true,
+        'created_at' => true,
+        'updated_at' => true,
+        'archived_at' => true
     ];
 
     /**
@@ -337,9 +337,7 @@ class PaymentTerm implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setNumDays($num_days)
     {
-        if (is_null($num_days)) {
-            throw new \InvalidArgumentException('non-nullable num_days cannot be null');
-        }
+        
         $this->container['num_days'] = $num_days;
 
         return $this;
@@ -364,9 +362,7 @@ class PaymentTerm implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setName($name)
     {
-        if (is_null($name)) {
-            throw new \InvalidArgumentException('non-nullable name cannot be null');
-        }
+        
         $this->container['name'] = $name;
 
         return $this;
@@ -391,9 +387,7 @@ class PaymentTerm implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setCreatedAt($created_at)
     {
-        if (is_null($created_at)) {
-            throw new \InvalidArgumentException('non-nullable created_at cannot be null');
-        }
+        
         $this->container['created_at'] = $created_at;
 
         return $this;
@@ -418,9 +412,7 @@ class PaymentTerm implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setUpdatedAt($updated_at)
     {
-        if (is_null($updated_at)) {
-            throw new \InvalidArgumentException('non-nullable updated_at cannot be null');
-        }
+        
         $this->container['updated_at'] = $updated_at;
 
         return $this;
@@ -445,9 +437,7 @@ class PaymentTerm implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setArchivedAt($archived_at)
     {
-        if (is_null($archived_at)) {
-            throw new \InvalidArgumentException('non-nullable archived_at cannot be null');
-        }
+        
         $this->container['archived_at'] = $archived_at;
 
         return $this;

@@ -174,55 +174,55 @@ class Invoice implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var boolean[]
       */
     protected static $openAPINullables = [
-        'id' => false,
-        'user_id' => false,
-        'assigned_user_id' => false,
-        'company_id' => false,
-        'client_id' => false,
-        'status_id' => false,
-        'number' => false,
-        'po_number' => false,
-        'terms' => false,
-        'public_notes' => false,
-        'private_notes' => false,
-        'footer' => false,
-        'custom_value1' => false,
-        'custom_value2' => false,
-        'custom_value3' => false,
-        'custom_value4' => false,
-        'tax_name1' => false,
-        'tax_name2' => false,
-        'tax_rate1' => false,
-        'tax_rate2' => false,
-        'tax_name3' => false,
-        'tax_rate3' => false,
-        'total_taxes' => false,
-        'line_items' => false,
-        'amount' => false,
-        'balance' => false,
-        'paid_to_date' => false,
-        'discount' => false,
-        'partial' => false,
-        'is_amount_discount' => false,
-        'is_deleted' => false,
-        'uses_inclusive_taxes' => false,
-        'date' => false,
-        'last_sent_date' => false,
-        'next_send_date' => false,
-        'partial_due_date' => false,
-        'due_date' => false,
-        'settings' => false,
-        'last_viewed' => false,
-        'updated_at' => false,
-        'archived_at' => false,
-        'custom_surcharge1' => false,
-        'custom_surcharge2' => false,
-        'custom_surcharge3' => false,
-        'custom_surcharge4' => false,
-        'custom_surcharge_tax1' => false,
-        'custom_surcharge_tax2' => false,
-        'custom_surcharge_tax3' => false,
-        'custom_surcharge_tax4' => false
+        'id' => true,
+        'user_id' => true,
+        'assigned_user_id' => true,
+        'company_id' => true,
+        'client_id' => true,
+        'status_id' => true,
+        'number' => true,
+        'po_number' => true,
+        'terms' => true,
+        'public_notes' => true,
+        'private_notes' => true,
+        'footer' => true,
+        'custom_value1' => true,
+        'custom_value2' => true,
+        'custom_value3' => true,
+        'custom_value4' => true,
+        'tax_name1' => true,
+        'tax_name2' => true,
+        'tax_rate1' => true,
+        'tax_rate2' => true,
+        'tax_name3' => true,
+        'tax_rate3' => true,
+        'total_taxes' => true,
+        'line_items' => true,
+        'amount' => true,
+        'balance' => true,
+        'paid_to_date' => true,
+        'discount' => true,
+        'partial' => true,
+        'is_amount_discount' => true,
+        'is_deleted' => true,
+        'uses_inclusive_taxes' => true,
+        'date' => true,
+        'last_sent_date' => true,
+        'next_send_date' => true,
+        'partial_due_date' => true,
+        'due_date' => true,
+        'settings' => true,
+        'last_viewed' => true,
+        'updated_at' => true,
+        'archived_at' => true,
+        'custom_surcharge1' => true,
+        'custom_surcharge2' => true,
+        'custom_surcharge3' => true,
+        'custom_surcharge4' => true,
+        'custom_surcharge_tax1' => true,
+        'custom_surcharge_tax2' => true,
+        'custom_surcharge_tax3' => true,
+        'custom_surcharge_tax4' => true
     ];
 
     /**
@@ -645,9 +645,7 @@ class Invoice implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setId($id)
     {
-        if (is_null($id)) {
-            throw new \InvalidArgumentException('non-nullable id cannot be null');
-        }
+        
         $this->container['id'] = $id;
 
         return $this;
@@ -672,9 +670,7 @@ class Invoice implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setUserId($user_id)
     {
-        if (is_null($user_id)) {
-            throw new \InvalidArgumentException('non-nullable user_id cannot be null');
-        }
+        
         $this->container['user_id'] = $user_id;
 
         return $this;
@@ -699,9 +695,7 @@ class Invoice implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setAssignedUserId($assigned_user_id)
     {
-        if (is_null($assigned_user_id)) {
-            throw new \InvalidArgumentException('non-nullable assigned_user_id cannot be null');
-        }
+        
         $this->container['assigned_user_id'] = $assigned_user_id;
 
         return $this;
@@ -726,9 +720,7 @@ class Invoice implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setCompanyId($company_id)
     {
-        if (is_null($company_id)) {
-            throw new \InvalidArgumentException('non-nullable company_id cannot be null');
-        }
+        
         $this->container['company_id'] = $company_id;
 
         return $this;
@@ -753,9 +745,7 @@ class Invoice implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setClientId($client_id)
     {
-        if (is_null($client_id)) {
-            throw new \InvalidArgumentException('non-nullable client_id cannot be null');
-        }
+        
         $this->container['client_id'] = $client_id;
 
         return $this;
@@ -780,9 +770,7 @@ class Invoice implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setStatusId($status_id)
     {
-        if (is_null($status_id)) {
-            throw new \InvalidArgumentException('non-nullable status_id cannot be null');
-        }
+        
         $this->container['status_id'] = $status_id;
 
         return $this;
@@ -807,9 +795,7 @@ class Invoice implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setNumber($number)
     {
-        if (is_null($number)) {
-            throw new \InvalidArgumentException('non-nullable number cannot be null');
-        }
+        
         $this->container['number'] = $number;
 
         return $this;
@@ -834,9 +820,7 @@ class Invoice implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setPoNumber($po_number)
     {
-        if (is_null($po_number)) {
-            throw new \InvalidArgumentException('non-nullable po_number cannot be null');
-        }
+        
         $this->container['po_number'] = $po_number;
 
         return $this;
@@ -861,9 +845,7 @@ class Invoice implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setTerms($terms)
     {
-        if (is_null($terms)) {
-            throw new \InvalidArgumentException('non-nullable terms cannot be null');
-        }
+        
         $this->container['terms'] = $terms;
 
         return $this;
@@ -888,9 +870,7 @@ class Invoice implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setPublicNotes($public_notes)
     {
-        if (is_null($public_notes)) {
-            throw new \InvalidArgumentException('non-nullable public_notes cannot be null');
-        }
+        
         $this->container['public_notes'] = $public_notes;
 
         return $this;
@@ -915,9 +895,7 @@ class Invoice implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setPrivateNotes($private_notes)
     {
-        if (is_null($private_notes)) {
-            throw new \InvalidArgumentException('non-nullable private_notes cannot be null');
-        }
+        
         $this->container['private_notes'] = $private_notes;
 
         return $this;
@@ -942,9 +920,7 @@ class Invoice implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setFooter($footer)
     {
-        if (is_null($footer)) {
-            throw new \InvalidArgumentException('non-nullable footer cannot be null');
-        }
+        
         $this->container['footer'] = $footer;
 
         return $this;
@@ -969,9 +945,7 @@ class Invoice implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setCustomValue1($custom_value1)
     {
-        if (is_null($custom_value1)) {
-            throw new \InvalidArgumentException('non-nullable custom_value1 cannot be null');
-        }
+        
         $this->container['custom_value1'] = $custom_value1;
 
         return $this;
@@ -996,9 +970,7 @@ class Invoice implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setCustomValue2($custom_value2)
     {
-        if (is_null($custom_value2)) {
-            throw new \InvalidArgumentException('non-nullable custom_value2 cannot be null');
-        }
+        
         $this->container['custom_value2'] = $custom_value2;
 
         return $this;
@@ -1023,9 +995,7 @@ class Invoice implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setCustomValue3($custom_value3)
     {
-        if (is_null($custom_value3)) {
-            throw new \InvalidArgumentException('non-nullable custom_value3 cannot be null');
-        }
+        
         $this->container['custom_value3'] = $custom_value3;
 
         return $this;
@@ -1050,9 +1020,7 @@ class Invoice implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setCustomValue4($custom_value4)
     {
-        if (is_null($custom_value4)) {
-            throw new \InvalidArgumentException('non-nullable custom_value4 cannot be null');
-        }
+        
         $this->container['custom_value4'] = $custom_value4;
 
         return $this;
@@ -1077,9 +1045,7 @@ class Invoice implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setTaxName1($tax_name1)
     {
-        if (is_null($tax_name1)) {
-            throw new \InvalidArgumentException('non-nullable tax_name1 cannot be null');
-        }
+        
         $this->container['tax_name1'] = $tax_name1;
 
         return $this;
@@ -1104,9 +1070,7 @@ class Invoice implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setTaxName2($tax_name2)
     {
-        if (is_null($tax_name2)) {
-            throw new \InvalidArgumentException('non-nullable tax_name2 cannot be null');
-        }
+        
         $this->container['tax_name2'] = $tax_name2;
 
         return $this;
@@ -1131,9 +1095,7 @@ class Invoice implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setTaxRate1($tax_rate1)
     {
-        if (is_null($tax_rate1)) {
-            throw new \InvalidArgumentException('non-nullable tax_rate1 cannot be null');
-        }
+        
         $this->container['tax_rate1'] = $tax_rate1;
 
         return $this;
@@ -1158,9 +1120,7 @@ class Invoice implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setTaxRate2($tax_rate2)
     {
-        if (is_null($tax_rate2)) {
-            throw new \InvalidArgumentException('non-nullable tax_rate2 cannot be null');
-        }
+        
         $this->container['tax_rate2'] = $tax_rate2;
 
         return $this;
@@ -1185,9 +1145,7 @@ class Invoice implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setTaxName3($tax_name3)
     {
-        if (is_null($tax_name3)) {
-            throw new \InvalidArgumentException('non-nullable tax_name3 cannot be null');
-        }
+        
         $this->container['tax_name3'] = $tax_name3;
 
         return $this;
@@ -1212,9 +1170,7 @@ class Invoice implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setTaxRate3($tax_rate3)
     {
-        if (is_null($tax_rate3)) {
-            throw new \InvalidArgumentException('non-nullable tax_rate3 cannot be null');
-        }
+        
         $this->container['tax_rate3'] = $tax_rate3;
 
         return $this;
@@ -1239,9 +1195,7 @@ class Invoice implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setTotalTaxes($total_taxes)
     {
-        if (is_null($total_taxes)) {
-            throw new \InvalidArgumentException('non-nullable total_taxes cannot be null');
-        }
+        
         $this->container['total_taxes'] = $total_taxes;
 
         return $this;
@@ -1266,9 +1220,7 @@ class Invoice implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setLineItems($line_items)
     {
-        if (is_null($line_items)) {
-            throw new \InvalidArgumentException('non-nullable line_items cannot be null');
-        }
+        
         $this->container['line_items'] = $line_items;
 
         return $this;
@@ -1293,9 +1245,7 @@ class Invoice implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setAmount($amount)
     {
-        if (is_null($amount)) {
-            throw new \InvalidArgumentException('non-nullable amount cannot be null');
-        }
+        
         $this->container['amount'] = $amount;
 
         return $this;
@@ -1320,9 +1270,7 @@ class Invoice implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setBalance($balance)
     {
-        if (is_null($balance)) {
-            throw new \InvalidArgumentException('non-nullable balance cannot be null');
-        }
+        
         $this->container['balance'] = $balance;
 
         return $this;
@@ -1347,9 +1295,7 @@ class Invoice implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setPaidToDate($paid_to_date)
     {
-        if (is_null($paid_to_date)) {
-            throw new \InvalidArgumentException('non-nullable paid_to_date cannot be null');
-        }
+        
         $this->container['paid_to_date'] = $paid_to_date;
 
         return $this;
@@ -1374,9 +1320,7 @@ class Invoice implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setDiscount($discount)
     {
-        if (is_null($discount)) {
-            throw new \InvalidArgumentException('non-nullable discount cannot be null');
-        }
+        
         $this->container['discount'] = $discount;
 
         return $this;
@@ -1401,9 +1345,7 @@ class Invoice implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setPartial($partial)
     {
-        if (is_null($partial)) {
-            throw new \InvalidArgumentException('non-nullable partial cannot be null');
-        }
+        
         $this->container['partial'] = $partial;
 
         return $this;
@@ -1428,9 +1370,7 @@ class Invoice implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setIsAmountDiscount($is_amount_discount)
     {
-        if (is_null($is_amount_discount)) {
-            throw new \InvalidArgumentException('non-nullable is_amount_discount cannot be null');
-        }
+        
         $this->container['is_amount_discount'] = $is_amount_discount;
 
         return $this;
@@ -1455,9 +1395,7 @@ class Invoice implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setIsDeleted($is_deleted)
     {
-        if (is_null($is_deleted)) {
-            throw new \InvalidArgumentException('non-nullable is_deleted cannot be null');
-        }
+        
         $this->container['is_deleted'] = $is_deleted;
 
         return $this;
@@ -1482,9 +1420,7 @@ class Invoice implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setUsesInclusiveTaxes($uses_inclusive_taxes)
     {
-        if (is_null($uses_inclusive_taxes)) {
-            throw new \InvalidArgumentException('non-nullable uses_inclusive_taxes cannot be null');
-        }
+        
         $this->container['uses_inclusive_taxes'] = $uses_inclusive_taxes;
 
         return $this;
@@ -1509,9 +1445,7 @@ class Invoice implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setDate($date)
     {
-        if (is_null($date)) {
-            throw new \InvalidArgumentException('non-nullable date cannot be null');
-        }
+        
         $this->container['date'] = $date;
 
         return $this;
@@ -1536,9 +1470,6 @@ class Invoice implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setLastSentDate($last_sent_date)
     {
-        if (is_null($last_sent_date)) {
-            throw new \InvalidArgumentException('non-nullable last_sent_date cannot be null');
-        }
         $this->container['last_sent_date'] = $last_sent_date;
 
         return $this;
@@ -1563,9 +1494,6 @@ class Invoice implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setNextSendDate($next_send_date)
     {
-        if (is_null($next_send_date)) {
-            throw new \InvalidArgumentException('non-nullable next_send_date cannot be null');
-        }
         $this->container['next_send_date'] = $next_send_date;
 
         return $this;
@@ -1590,9 +1518,7 @@ class Invoice implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setPartialDueDate($partial_due_date)
     {
-        if (is_null($partial_due_date)) {
-            throw new \InvalidArgumentException('non-nullable partial_due_date cannot be null');
-        }
+        
         $this->container['partial_due_date'] = $partial_due_date;
 
         return $this;
@@ -1617,9 +1543,7 @@ class Invoice implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setDueDate($due_date)
     {
-        if (is_null($due_date)) {
-            throw new \InvalidArgumentException('non-nullable due_date cannot be null');
-        }
+        
         $this->container['due_date'] = $due_date;
 
         return $this;
@@ -1644,9 +1568,7 @@ class Invoice implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setSettings($settings)
     {
-        if (is_null($settings)) {
-            throw new \InvalidArgumentException('non-nullable settings cannot be null');
-        }
+        
         $this->container['settings'] = $settings;
 
         return $this;
@@ -1671,9 +1593,7 @@ class Invoice implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setLastViewed($last_viewed)
     {
-        if (is_null($last_viewed)) {
-            throw new \InvalidArgumentException('non-nullable last_viewed cannot be null');
-        }
+        
         $this->container['last_viewed'] = $last_viewed;
 
         return $this;
@@ -1698,9 +1618,7 @@ class Invoice implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setUpdatedAt($updated_at)
     {
-        if (is_null($updated_at)) {
-            throw new \InvalidArgumentException('non-nullable updated_at cannot be null');
-        }
+        
         $this->container['updated_at'] = $updated_at;
 
         return $this;
@@ -1725,9 +1643,7 @@ class Invoice implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setArchivedAt($archived_at)
     {
-        if (is_null($archived_at)) {
-            throw new \InvalidArgumentException('non-nullable archived_at cannot be null');
-        }
+        
         $this->container['archived_at'] = $archived_at;
 
         return $this;
@@ -1752,9 +1668,7 @@ class Invoice implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setCustomSurcharge1($custom_surcharge1)
     {
-        if (is_null($custom_surcharge1)) {
-            throw new \InvalidArgumentException('non-nullable custom_surcharge1 cannot be null');
-        }
+        
         $this->container['custom_surcharge1'] = $custom_surcharge1;
 
         return $this;
@@ -1779,9 +1693,7 @@ class Invoice implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setCustomSurcharge2($custom_surcharge2)
     {
-        if (is_null($custom_surcharge2)) {
-            throw new \InvalidArgumentException('non-nullable custom_surcharge2 cannot be null');
-        }
+        
         $this->container['custom_surcharge2'] = $custom_surcharge2;
 
         return $this;
@@ -1806,9 +1718,7 @@ class Invoice implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setCustomSurcharge3($custom_surcharge3)
     {
-        if (is_null($custom_surcharge3)) {
-            throw new \InvalidArgumentException('non-nullable custom_surcharge3 cannot be null');
-        }
+        
         $this->container['custom_surcharge3'] = $custom_surcharge3;
 
         return $this;
@@ -1833,9 +1743,7 @@ class Invoice implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setCustomSurcharge4($custom_surcharge4)
     {
-        if (is_null($custom_surcharge4)) {
-            throw new \InvalidArgumentException('non-nullable custom_surcharge4 cannot be null');
-        }
+        
         $this->container['custom_surcharge4'] = $custom_surcharge4;
 
         return $this;
@@ -1860,9 +1768,7 @@ class Invoice implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setCustomSurchargeTax1($custom_surcharge_tax1)
     {
-        if (is_null($custom_surcharge_tax1)) {
-            throw new \InvalidArgumentException('non-nullable custom_surcharge_tax1 cannot be null');
-        }
+        
         $this->container['custom_surcharge_tax1'] = $custom_surcharge_tax1;
 
         return $this;
@@ -1887,9 +1793,7 @@ class Invoice implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setCustomSurchargeTax2($custom_surcharge_tax2)
     {
-        if (is_null($custom_surcharge_tax2)) {
-            throw new \InvalidArgumentException('non-nullable custom_surcharge_tax2 cannot be null');
-        }
+        
         $this->container['custom_surcharge_tax2'] = $custom_surcharge_tax2;
 
         return $this;
@@ -1914,9 +1818,7 @@ class Invoice implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setCustomSurchargeTax3($custom_surcharge_tax3)
     {
-        if (is_null($custom_surcharge_tax3)) {
-            throw new \InvalidArgumentException('non-nullable custom_surcharge_tax3 cannot be null');
-        }
+        
         $this->container['custom_surcharge_tax3'] = $custom_surcharge_tax3;
 
         return $this;
@@ -1941,9 +1843,7 @@ class Invoice implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setCustomSurchargeTax4($custom_surcharge_tax4)
     {
-        if (is_null($custom_surcharge_tax4)) {
-            throw new \InvalidArgumentException('non-nullable custom_surcharge_tax4 cannot be null');
-        }
+        
         $this->container['custom_surcharge_tax4'] = $custom_surcharge_tax4;
 
         return $this;

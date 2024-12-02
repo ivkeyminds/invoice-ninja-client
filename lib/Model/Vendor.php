@@ -138,37 +138,37 @@ class Vendor implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var boolean[]
       */
     protected static $openAPINullables = [
-        'id' => false,
-        'user_id' => false,
-        'assigned_user_id' => false,
-        'company_id' => false,
-        'client_id' => false,
-        'contacts' => false,
-        'name' => false,
-        'website' => false,
-        'private_notes' => false,
-        'industry_id' => false,
-        'size_id' => false,
-        'address1' => false,
-        'address2' => false,
-        'city' => false,
-        'state' => false,
-        'postal_code' => false,
-        'phone' => false,
-        'country_id' => false,
-        'currency_id' => false,
-        'custom_value1' => false,
-        'custom_value2' => false,
-        'custom_value3' => false,
-        'custom_value4' => false,
-        'vat_number' => false,
-        'id_number' => false,
-        'number' => false,
-        'is_deleted' => false,
-        'last_login' => false,
-        'created_at' => false,
-        'updated_at' => false,
-        'settings' => false
+        'id' => true,
+        'user_id' => true,
+        'assigned_user_id' => true,
+        'company_id' => true,
+        'client_id' => true,
+        'contacts' => true,
+        'name' => true,
+        'website' => true,
+        'private_notes' => true,
+        'industry_id' => true,
+        'size_id' => true,
+        'address1' => true,
+        'address2' => true,
+        'city' => true,
+        'state' => true,
+        'postal_code' => true,
+        'phone' => true,
+        'country_id' => true,
+        'currency_id' => true,
+        'custom_value1' => true,
+        'custom_value2' => true,
+        'custom_value3' => true,
+        'custom_value4' => true,
+        'vat_number' => true,
+        'id_number' => true,
+        'number' => true,
+        'is_deleted' => true,
+        'last_login' => true,
+        'created_at' => true,
+        'updated_at' => true,
+        'settings' => true
     ];
 
     /**
@@ -519,9 +519,7 @@ class Vendor implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setId($id)
     {
-        if (is_null($id)) {
-            throw new \InvalidArgumentException('non-nullable id cannot be null');
-        }
+        
         $this->container['id'] = $id;
 
         return $this;
@@ -546,9 +544,7 @@ class Vendor implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setUserId($user_id)
     {
-        if (is_null($user_id)) {
-            throw new \InvalidArgumentException('non-nullable user_id cannot be null');
-        }
+        
         $this->container['user_id'] = $user_id;
 
         return $this;
@@ -573,9 +569,7 @@ class Vendor implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setAssignedUserId($assigned_user_id)
     {
-        if (is_null($assigned_user_id)) {
-            throw new \InvalidArgumentException('non-nullable assigned_user_id cannot be null');
-        }
+        
         $this->container['assigned_user_id'] = $assigned_user_id;
 
         return $this;
@@ -600,9 +594,7 @@ class Vendor implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setCompanyId($company_id)
     {
-        if (is_null($company_id)) {
-            throw new \InvalidArgumentException('non-nullable company_id cannot be null');
-        }
+        
         $this->container['company_id'] = $company_id;
 
         return $this;
@@ -627,9 +619,7 @@ class Vendor implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setClientId($client_id)
     {
-        if (is_null($client_id)) {
-            throw new \InvalidArgumentException('non-nullable client_id cannot be null');
-        }
+        
         $this->container['client_id'] = $client_id;
 
         return $this;
@@ -654,9 +644,7 @@ class Vendor implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setContacts($contacts)
     {
-        if (is_null($contacts)) {
-            throw new \InvalidArgumentException('non-nullable contacts cannot be null');
-        }
+        
         $this->container['contacts'] = $contacts;
 
         return $this;
@@ -681,9 +669,7 @@ class Vendor implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setName($name)
     {
-        if (is_null($name)) {
-            throw new \InvalidArgumentException('non-nullable name cannot be null');
-        }
+        
         $this->container['name'] = $name;
 
         return $this;
@@ -708,9 +694,7 @@ class Vendor implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setWebsite($website)
     {
-        if (is_null($website)) {
-            throw new \InvalidArgumentException('non-nullable website cannot be null');
-        }
+        
         $this->container['website'] = $website;
 
         return $this;
@@ -735,9 +719,7 @@ class Vendor implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setPrivateNotes($private_notes)
     {
-        if (is_null($private_notes)) {
-            throw new \InvalidArgumentException('non-nullable private_notes cannot be null');
-        }
+        
         $this->container['private_notes'] = $private_notes;
 
         return $this;
@@ -762,9 +744,7 @@ class Vendor implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setIndustryId($industry_id)
     {
-        if (is_null($industry_id)) {
-            throw new \InvalidArgumentException('non-nullable industry_id cannot be null');
-        }
+        
         $this->container['industry_id'] = $industry_id;
 
         return $this;
@@ -789,9 +769,7 @@ class Vendor implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setSizeId($size_id)
     {
-        if (is_null($size_id)) {
-            throw new \InvalidArgumentException('non-nullable size_id cannot be null');
-        }
+        
         $this->container['size_id'] = $size_id;
 
         return $this;
@@ -816,9 +794,7 @@ class Vendor implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setAddress1($address1)
     {
-        if (is_null($address1)) {
-            throw new \InvalidArgumentException('non-nullable address1 cannot be null');
-        }
+        
         $this->container['address1'] = $address1;
 
         return $this;
@@ -843,9 +819,7 @@ class Vendor implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setAddress2($address2)
     {
-        if (is_null($address2)) {
-            throw new \InvalidArgumentException('non-nullable address2 cannot be null');
-        }
+        
         $this->container['address2'] = $address2;
 
         return $this;
@@ -870,9 +844,7 @@ class Vendor implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setCity($city)
     {
-        if (is_null($city)) {
-            throw new \InvalidArgumentException('non-nullable city cannot be null');
-        }
+        
         $this->container['city'] = $city;
 
         return $this;
@@ -897,9 +869,7 @@ class Vendor implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setState($state)
     {
-        if (is_null($state)) {
-            throw new \InvalidArgumentException('non-nullable state cannot be null');
-        }
+        
         $this->container['state'] = $state;
 
         return $this;
@@ -924,9 +894,7 @@ class Vendor implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setPostalCode($postal_code)
     {
-        if (is_null($postal_code)) {
-            throw new \InvalidArgumentException('non-nullable postal_code cannot be null');
-        }
+        
         $this->container['postal_code'] = $postal_code;
 
         return $this;
@@ -951,9 +919,7 @@ class Vendor implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setPhone($phone)
     {
-        if (is_null($phone)) {
-            throw new \InvalidArgumentException('non-nullable phone cannot be null');
-        }
+        
         $this->container['phone'] = $phone;
 
         return $this;
@@ -978,9 +944,7 @@ class Vendor implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setCountryId($country_id)
     {
-        if (is_null($country_id)) {
-            throw new \InvalidArgumentException('non-nullable country_id cannot be null');
-        }
+        
         $this->container['country_id'] = $country_id;
 
         return $this;
@@ -1005,9 +969,7 @@ class Vendor implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setCurrencyId($currency_id)
     {
-        if (is_null($currency_id)) {
-            throw new \InvalidArgumentException('non-nullable currency_id cannot be null');
-        }
+        
         $this->container['currency_id'] = $currency_id;
 
         return $this;
@@ -1032,9 +994,7 @@ class Vendor implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setCustomValue1($custom_value1)
     {
-        if (is_null($custom_value1)) {
-            throw new \InvalidArgumentException('non-nullable custom_value1 cannot be null');
-        }
+        
         $this->container['custom_value1'] = $custom_value1;
 
         return $this;
@@ -1059,9 +1019,7 @@ class Vendor implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setCustomValue2($custom_value2)
     {
-        if (is_null($custom_value2)) {
-            throw new \InvalidArgumentException('non-nullable custom_value2 cannot be null');
-        }
+        
         $this->container['custom_value2'] = $custom_value2;
 
         return $this;
@@ -1086,9 +1044,7 @@ class Vendor implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setCustomValue3($custom_value3)
     {
-        if (is_null($custom_value3)) {
-            throw new \InvalidArgumentException('non-nullable custom_value3 cannot be null');
-        }
+        
         $this->container['custom_value3'] = $custom_value3;
 
         return $this;
@@ -1113,9 +1069,7 @@ class Vendor implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setCustomValue4($custom_value4)
     {
-        if (is_null($custom_value4)) {
-            throw new \InvalidArgumentException('non-nullable custom_value4 cannot be null');
-        }
+        
         $this->container['custom_value4'] = $custom_value4;
 
         return $this;
@@ -1140,9 +1094,7 @@ class Vendor implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setVatNumber($vat_number)
     {
-        if (is_null($vat_number)) {
-            throw new \InvalidArgumentException('non-nullable vat_number cannot be null');
-        }
+        
         $this->container['vat_number'] = $vat_number;
 
         return $this;
@@ -1167,9 +1119,7 @@ class Vendor implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setIdNumber($id_number)
     {
-        if (is_null($id_number)) {
-            throw new \InvalidArgumentException('non-nullable id_number cannot be null');
-        }
+        
         $this->container['id_number'] = $id_number;
 
         return $this;
@@ -1194,9 +1144,7 @@ class Vendor implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setNumber($number)
     {
-        if (is_null($number)) {
-            throw new \InvalidArgumentException('non-nullable number cannot be null');
-        }
+        
         $this->container['number'] = $number;
 
         return $this;
@@ -1221,9 +1169,7 @@ class Vendor implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setIsDeleted($is_deleted)
     {
-        if (is_null($is_deleted)) {
-            throw new \InvalidArgumentException('non-nullable is_deleted cannot be null');
-        }
+        
         $this->container['is_deleted'] = $is_deleted;
 
         return $this;
@@ -1248,9 +1194,7 @@ class Vendor implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setLastLogin($last_login)
     {
-        if (is_null($last_login)) {
-            throw new \InvalidArgumentException('non-nullable last_login cannot be null');
-        }
+        
         $this->container['last_login'] = $last_login;
 
         return $this;
@@ -1275,9 +1219,7 @@ class Vendor implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setCreatedAt($created_at)
     {
-        if (is_null($created_at)) {
-            throw new \InvalidArgumentException('non-nullable created_at cannot be null');
-        }
+        
         $this->container['created_at'] = $created_at;
 
         return $this;
@@ -1302,9 +1244,7 @@ class Vendor implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setUpdatedAt($updated_at)
     {
-        if (is_null($updated_at)) {
-            throw new \InvalidArgumentException('non-nullable updated_at cannot be null');
-        }
+        
         $this->container['updated_at'] = $updated_at;
 
         return $this;
@@ -1329,9 +1269,7 @@ class Vendor implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setSettings($settings)
     {
-        if (is_null($settings)) {
-            throw new \InvalidArgumentException('non-nullable settings cannot be null');
-        }
+        
         $this->container['settings'] = $settings;
 
         return $this;

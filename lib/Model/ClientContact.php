@@ -128,32 +128,32 @@ class ClientContact implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var boolean[]
       */
     protected static $openAPINullables = [
-        'id' => false,
-        'user_id' => false,
-        'company_id' => false,
-        'client_id' => false,
-        'first_name' => false,
-        'last_name' => false,
-        'phone' => false,
-        'custom_value1' => false,
-        'custom_value2' => false,
-        'custom_value3' => false,
-        'custom_value4' => false,
-        'email' => false,
-        'accepted_terms_version' => false,
-        'password' => false,
-        'confirmation_code' => false,
-        'token' => false,
-        'is_primary' => false,
-        'confirmed' => false,
-        'is_locked' => false,
-        'send_email' => false,
-        'failed_logins' => false,
-        'email_verified_at' => false,
-        'last_login' => false,
-        'created_at' => false,
-        'updated_at' => false,
-        'deleted_at' => false
+        'id' => true,
+        'user_id' => true,
+        'company_id' => true,
+        'client_id' => true,
+        'first_name' => true,
+        'last_name' => true,
+        'phone' => true,
+        'custom_value1' => true,
+        'custom_value2' => true,
+        'custom_value3' => true,
+        'custom_value4' => true,
+        'email' => true,
+        'accepted_terms_version' => true,
+        'password' => true,
+        'confirmation_code' => true,
+        'token' => true,
+        'is_primary' => true,
+        'confirmed' => true,
+        'is_locked' => true,
+        'send_email' => true,
+        'failed_logins' => true,
+        'email_verified_at' => true,
+        'last_login' => true,
+        'created_at' => true,
+        'updated_at' => true,
+        'deleted_at' => true
     ];
 
     /**
@@ -484,9 +484,7 @@ class ClientContact implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setId($id)
     {
-        if (is_null($id)) {
-            throw new \InvalidArgumentException('non-nullable id cannot be null');
-        }
+        
         $this->container['id'] = $id;
 
         return $this;
@@ -511,9 +509,7 @@ class ClientContact implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setUserId($user_id)
     {
-        if (is_null($user_id)) {
-            throw new \InvalidArgumentException('non-nullable user_id cannot be null');
-        }
+        
         $this->container['user_id'] = $user_id;
 
         return $this;
@@ -538,9 +534,7 @@ class ClientContact implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setCompanyId($company_id)
     {
-        if (is_null($company_id)) {
-            throw new \InvalidArgumentException('non-nullable company_id cannot be null');
-        }
+        
         $this->container['company_id'] = $company_id;
 
         return $this;
@@ -565,9 +559,7 @@ class ClientContact implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setClientId($client_id)
     {
-        if (is_null($client_id)) {
-            throw new \InvalidArgumentException('non-nullable client_id cannot be null');
-        }
+        
         $this->container['client_id'] = $client_id;
 
         return $this;
@@ -592,9 +584,7 @@ class ClientContact implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setFirstName($first_name)
     {
-        if (is_null($first_name)) {
-            throw new \InvalidArgumentException('non-nullable first_name cannot be null');
-        }
+        
         $this->container['first_name'] = $first_name;
 
         return $this;
@@ -619,9 +609,7 @@ class ClientContact implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setLastName($last_name)
     {
-        if (is_null($last_name)) {
-            throw new \InvalidArgumentException('non-nullable last_name cannot be null');
-        }
+        
         $this->container['last_name'] = $last_name;
 
         return $this;
@@ -646,9 +634,7 @@ class ClientContact implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setPhone($phone)
     {
-        if (is_null($phone)) {
-            throw new \InvalidArgumentException('non-nullable phone cannot be null');
-        }
+        
         $this->container['phone'] = $phone;
 
         return $this;
@@ -673,9 +659,7 @@ class ClientContact implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setCustomValue1($custom_value1)
     {
-        if (is_null($custom_value1)) {
-            throw new \InvalidArgumentException('non-nullable custom_value1 cannot be null');
-        }
+        
         $this->container['custom_value1'] = $custom_value1;
 
         return $this;
@@ -700,9 +684,7 @@ class ClientContact implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setCustomValue2($custom_value2)
     {
-        if (is_null($custom_value2)) {
-            throw new \InvalidArgumentException('non-nullable custom_value2 cannot be null');
-        }
+        
         $this->container['custom_value2'] = $custom_value2;
 
         return $this;
@@ -727,9 +709,7 @@ class ClientContact implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setCustomValue3($custom_value3)
     {
-        if (is_null($custom_value3)) {
-            throw new \InvalidArgumentException('non-nullable custom_value3 cannot be null');
-        }
+        
         $this->container['custom_value3'] = $custom_value3;
 
         return $this;
@@ -754,9 +734,7 @@ class ClientContact implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setCustomValue4($custom_value4)
     {
-        if (is_null($custom_value4)) {
-            throw new \InvalidArgumentException('non-nullable custom_value4 cannot be null');
-        }
+        
         $this->container['custom_value4'] = $custom_value4;
 
         return $this;
@@ -781,9 +759,7 @@ class ClientContact implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setEmail($email)
     {
-        if (is_null($email)) {
-            throw new \InvalidArgumentException('non-nullable email cannot be null');
-        }
+        
         $this->container['email'] = $email;
 
         return $this;
@@ -808,9 +784,7 @@ class ClientContact implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setAcceptedTermsVersion($accepted_terms_version)
     {
-        if (is_null($accepted_terms_version)) {
-            throw new \InvalidArgumentException('non-nullable accepted_terms_version cannot be null');
-        }
+        
         $this->container['accepted_terms_version'] = $accepted_terms_version;
 
         return $this;
@@ -835,9 +809,7 @@ class ClientContact implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setPassword($password)
     {
-        if (is_null($password)) {
-            throw new \InvalidArgumentException('non-nullable password cannot be null');
-        }
+        
         $this->container['password'] = $password;
 
         return $this;
@@ -862,9 +834,7 @@ class ClientContact implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setConfirmationCode($confirmation_code)
     {
-        if (is_null($confirmation_code)) {
-            throw new \InvalidArgumentException('non-nullable confirmation_code cannot be null');
-        }
+        
         $this->container['confirmation_code'] = $confirmation_code;
 
         return $this;
@@ -889,9 +859,7 @@ class ClientContact implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setToken($token)
     {
-        if (is_null($token)) {
-            throw new \InvalidArgumentException('non-nullable token cannot be null');
-        }
+        
         $this->container['token'] = $token;
 
         return $this;
@@ -916,9 +884,7 @@ class ClientContact implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setIsPrimary($is_primary)
     {
-        if (is_null($is_primary)) {
-            throw new \InvalidArgumentException('non-nullable is_primary cannot be null');
-        }
+        
         $this->container['is_primary'] = $is_primary;
 
         return $this;
@@ -943,9 +909,7 @@ class ClientContact implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setConfirmed($confirmed)
     {
-        if (is_null($confirmed)) {
-            throw new \InvalidArgumentException('non-nullable confirmed cannot be null');
-        }
+        
         $this->container['confirmed'] = $confirmed;
 
         return $this;
@@ -970,9 +934,7 @@ class ClientContact implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setIsLocked($is_locked)
     {
-        if (is_null($is_locked)) {
-            throw new \InvalidArgumentException('non-nullable is_locked cannot be null');
-        }
+        
         $this->container['is_locked'] = $is_locked;
 
         return $this;
@@ -997,9 +959,7 @@ class ClientContact implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setSendEmail($send_email)
     {
-        if (is_null($send_email)) {
-            throw new \InvalidArgumentException('non-nullable send_email cannot be null');
-        }
+        
         $this->container['send_email'] = $send_email;
 
         return $this;
@@ -1024,9 +984,7 @@ class ClientContact implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setFailedLogins($failed_logins)
     {
-        if (is_null($failed_logins)) {
-            throw new \InvalidArgumentException('non-nullable failed_logins cannot be null');
-        }
+        
         $this->container['failed_logins'] = $failed_logins;
 
         return $this;
@@ -1051,9 +1009,7 @@ class ClientContact implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setEmailVerifiedAt($email_verified_at)
     {
-        if (is_null($email_verified_at)) {
-            throw new \InvalidArgumentException('non-nullable email_verified_at cannot be null');
-        }
+        
         $this->container['email_verified_at'] = $email_verified_at;
 
         return $this;
@@ -1078,9 +1034,7 @@ class ClientContact implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setLastLogin($last_login)
     {
-        if (is_null($last_login)) {
-            throw new \InvalidArgumentException('non-nullable last_login cannot be null');
-        }
+        
         $this->container['last_login'] = $last_login;
 
         return $this;
@@ -1105,9 +1059,7 @@ class ClientContact implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setCreatedAt($created_at)
     {
-        if (is_null($created_at)) {
-            throw new \InvalidArgumentException('non-nullable created_at cannot be null');
-        }
+        
         $this->container['created_at'] = $created_at;
 
         return $this;
@@ -1132,9 +1084,7 @@ class ClientContact implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setUpdatedAt($updated_at)
     {
-        if (is_null($updated_at)) {
-            throw new \InvalidArgumentException('non-nullable updated_at cannot be null');
-        }
+        
         $this->container['updated_at'] = $updated_at;
 
         return $this;
@@ -1159,9 +1109,7 @@ class ClientContact implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setDeletedAt($deleted_at)
     {
-        if (is_null($deleted_at)) {
-            throw new \InvalidArgumentException('non-nullable deleted_at cannot be null');
-        }
+        
         $this->container['deleted_at'] = $deleted_at;
 
         return $this;

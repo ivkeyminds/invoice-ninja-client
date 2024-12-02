@@ -84,10 +84,10 @@ class Webhook implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var boolean[]
       */
     protected static $openAPINullables = [
-        'id' => false,
-        'event_id' => false,
-        'target_url' => false,
-        'format' => false
+        'id' => true,
+        'event_id' => true,
+        'target_url' => true,
+        'format' => true
     ];
 
     /**
@@ -330,9 +330,7 @@ class Webhook implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setId($id)
     {
-        if (is_null($id)) {
-            throw new \InvalidArgumentException('non-nullable id cannot be null');
-        }
+        
         $this->container['id'] = $id;
 
         return $this;
@@ -357,9 +355,7 @@ class Webhook implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setEventId($event_id)
     {
-        if (is_null($event_id)) {
-            throw new \InvalidArgumentException('non-nullable event_id cannot be null');
-        }
+        
         $this->container['event_id'] = $event_id;
 
         return $this;
@@ -384,9 +380,7 @@ class Webhook implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setTargetUrl($target_url)
     {
-        if (is_null($target_url)) {
-            throw new \InvalidArgumentException('non-nullable target_url cannot be null');
-        }
+        
         $this->container['target_url'] = $target_url;
 
         return $this;
@@ -411,9 +405,7 @@ class Webhook implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setFormat($format)
     {
-        if (is_null($format)) {
-            throw new \InvalidArgumentException('non-nullable format cannot be null');
-        }
+        
         $this->container['format'] = $format;
 
         return $this;

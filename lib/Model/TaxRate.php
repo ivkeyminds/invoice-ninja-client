@@ -84,10 +84,10 @@ class TaxRate implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var boolean[]
       */
     protected static $openAPINullables = [
-        'id' => false,
-        'name' => false,
-        'rate' => false,
-        'is_deleted' => false
+        'id' => true,
+        'name' => true,
+        'rate' => true,
+        'is_deleted' => true
     ];
 
     /**
@@ -330,9 +330,7 @@ class TaxRate implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setId($id)
     {
-        if (is_null($id)) {
-            throw new \InvalidArgumentException('non-nullable id cannot be null');
-        }
+        
         $this->container['id'] = $id;
 
         return $this;
@@ -357,9 +355,7 @@ class TaxRate implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setName($name)
     {
-        if (is_null($name)) {
-            throw new \InvalidArgumentException('non-nullable name cannot be null');
-        }
+        
         $this->container['name'] = $name;
 
         return $this;
@@ -384,9 +380,7 @@ class TaxRate implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setRate($rate)
     {
-        if (is_null($rate)) {
-            throw new \InvalidArgumentException('non-nullable rate cannot be null');
-        }
+        
         $this->container['rate'] = $rate;
 
         return $this;
@@ -411,9 +405,7 @@ class TaxRate implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setIsDeleted($is_deleted)
     {
-        if (is_null($is_deleted)) {
-            throw new \InvalidArgumentException('non-nullable is_deleted cannot be null');
-        }
+        
         $this->container['is_deleted'] = $is_deleted;
 
         return $this;

@@ -122,29 +122,29 @@ class Company implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var boolean[]
       */
     protected static $openAPINullables = [
-        'id' => false,
-        'size_id' => false,
-        'industry_id' => false,
-        'slack_webhook_url' => false,
-        'google_analytics_key' => false,
-        'portal_mode' => false,
-        'subdomain' => false,
-        'portal_domain' => false,
-        'enabled_tax_rates' => false,
-        'fill_products' => false,
-        'convert_products' => false,
-        'update_products' => false,
-        'show_product_details' => false,
-        'custom_fields' => false,
-        'enable_product_cost' => false,
-        'enable_product_quantity' => false,
-        'default_quantity' => false,
-        'custom_surcharge_taxes1' => false,
-        'custom_surcharge_taxes2' => false,
-        'custom_surcharge_taxes3' => false,
-        'custom_surcharge_taxes4' => false,
-        'logo' => false,
-        'settings' => false
+        'id' => true,
+        'size_id' => true,
+        'industry_id' => true,
+        'slack_webhook_url' => true,
+        'google_analytics_key' => true,
+        'portal_mode' => true,
+        'subdomain' => true,
+        'portal_domain' => true,
+        'enabled_tax_rates' => true,
+        'fill_products' => true,
+        'convert_products' => true,
+        'update_products' => true,
+        'show_product_details' => true,
+        'custom_fields' => true,
+        'enable_product_cost' => true,
+        'enable_product_quantity' => true,
+        'default_quantity' => true,
+        'custom_surcharge_taxes1' => true,
+        'custom_surcharge_taxes2' => true,
+        'custom_surcharge_taxes3' => true,
+        'custom_surcharge_taxes4' => true,
+        'logo' => true,
+        'settings' => true
     ];
 
     /**
@@ -463,9 +463,7 @@ class Company implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setId($id)
     {
-        if (is_null($id)) {
-            throw new \InvalidArgumentException('non-nullable id cannot be null');
-        }
+        
         $this->container['id'] = $id;
 
         return $this;
@@ -490,9 +488,7 @@ class Company implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setSizeId($size_id)
     {
-        if (is_null($size_id)) {
-            throw new \InvalidArgumentException('non-nullable size_id cannot be null');
-        }
+        
         $this->container['size_id'] = $size_id;
 
         return $this;
@@ -517,9 +513,7 @@ class Company implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setIndustryId($industry_id)
     {
-        if (is_null($industry_id)) {
-            throw new \InvalidArgumentException('non-nullable industry_id cannot be null');
-        }
+        
         $this->container['industry_id'] = $industry_id;
 
         return $this;
@@ -544,9 +538,7 @@ class Company implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setSlackWebhookUrl($slack_webhook_url)
     {
-        if (is_null($slack_webhook_url)) {
-            throw new \InvalidArgumentException('non-nullable slack_webhook_url cannot be null');
-        }
+        
         $this->container['slack_webhook_url'] = $slack_webhook_url;
 
         return $this;
@@ -571,9 +563,7 @@ class Company implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setGoogleAnalyticsKey($google_analytics_key)
     {
-        if (is_null($google_analytics_key)) {
-            throw new \InvalidArgumentException('non-nullable google_analytics_key cannot be null');
-        }
+        
         $this->container['google_analytics_key'] = $google_analytics_key;
 
         return $this;
@@ -598,9 +588,7 @@ class Company implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setPortalMode($portal_mode)
     {
-        if (is_null($portal_mode)) {
-            throw new \InvalidArgumentException('non-nullable portal_mode cannot be null');
-        }
+        
         $this->container['portal_mode'] = $portal_mode;
 
         return $this;
@@ -625,9 +613,7 @@ class Company implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setSubdomain($subdomain)
     {
-        if (is_null($subdomain)) {
-            throw new \InvalidArgumentException('non-nullable subdomain cannot be null');
-        }
+        
         $this->container['subdomain'] = $subdomain;
 
         return $this;
@@ -652,9 +638,7 @@ class Company implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setPortalDomain($portal_domain)
     {
-        if (is_null($portal_domain)) {
-            throw new \InvalidArgumentException('non-nullable portal_domain cannot be null');
-        }
+        
         $this->container['portal_domain'] = $portal_domain;
 
         return $this;
@@ -679,9 +663,7 @@ class Company implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setEnabledTaxRates($enabled_tax_rates)
     {
-        if (is_null($enabled_tax_rates)) {
-            throw new \InvalidArgumentException('non-nullable enabled_tax_rates cannot be null');
-        }
+        
         $this->container['enabled_tax_rates'] = $enabled_tax_rates;
 
         return $this;
@@ -706,9 +688,7 @@ class Company implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setFillProducts($fill_products)
     {
-        if (is_null($fill_products)) {
-            throw new \InvalidArgumentException('non-nullable fill_products cannot be null');
-        }
+        
         $this->container['fill_products'] = $fill_products;
 
         return $this;
@@ -733,9 +713,7 @@ class Company implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setConvertProducts($convert_products)
     {
-        if (is_null($convert_products)) {
-            throw new \InvalidArgumentException('non-nullable convert_products cannot be null');
-        }
+        
         $this->container['convert_products'] = $convert_products;
 
         return $this;
@@ -760,9 +738,7 @@ class Company implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setUpdateProducts($update_products)
     {
-        if (is_null($update_products)) {
-            throw new \InvalidArgumentException('non-nullable update_products cannot be null');
-        }
+        
         $this->container['update_products'] = $update_products;
 
         return $this;
@@ -787,9 +763,7 @@ class Company implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setShowProductDetails($show_product_details)
     {
-        if (is_null($show_product_details)) {
-            throw new \InvalidArgumentException('non-nullable show_product_details cannot be null');
-        }
+        
         $this->container['show_product_details'] = $show_product_details;
 
         return $this;
@@ -814,9 +788,7 @@ class Company implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setCustomFields($custom_fields)
     {
-        if (is_null($custom_fields)) {
-            throw new \InvalidArgumentException('non-nullable custom_fields cannot be null');
-        }
+        
         $this->container['custom_fields'] = $custom_fields;
 
         return $this;
@@ -841,9 +813,7 @@ class Company implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setEnableProductCost($enable_product_cost)
     {
-        if (is_null($enable_product_cost)) {
-            throw new \InvalidArgumentException('non-nullable enable_product_cost cannot be null');
-        }
+        
         $this->container['enable_product_cost'] = $enable_product_cost;
 
         return $this;
@@ -868,9 +838,7 @@ class Company implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setEnableProductQuantity($enable_product_quantity)
     {
-        if (is_null($enable_product_quantity)) {
-            throw new \InvalidArgumentException('non-nullable enable_product_quantity cannot be null');
-        }
+        
         $this->container['enable_product_quantity'] = $enable_product_quantity;
 
         return $this;
@@ -895,9 +863,7 @@ class Company implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setDefaultQuantity($default_quantity)
     {
-        if (is_null($default_quantity)) {
-            throw new \InvalidArgumentException('non-nullable default_quantity cannot be null');
-        }
+        
         $this->container['default_quantity'] = $default_quantity;
 
         return $this;
@@ -922,9 +888,7 @@ class Company implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setCustomSurchargeTaxes1($custom_surcharge_taxes1)
     {
-        if (is_null($custom_surcharge_taxes1)) {
-            throw new \InvalidArgumentException('non-nullable custom_surcharge_taxes1 cannot be null');
-        }
+        
         $this->container['custom_surcharge_taxes1'] = $custom_surcharge_taxes1;
 
         return $this;
@@ -949,9 +913,7 @@ class Company implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setCustomSurchargeTaxes2($custom_surcharge_taxes2)
     {
-        if (is_null($custom_surcharge_taxes2)) {
-            throw new \InvalidArgumentException('non-nullable custom_surcharge_taxes2 cannot be null');
-        }
+        
         $this->container['custom_surcharge_taxes2'] = $custom_surcharge_taxes2;
 
         return $this;
@@ -976,9 +938,7 @@ class Company implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setCustomSurchargeTaxes3($custom_surcharge_taxes3)
     {
-        if (is_null($custom_surcharge_taxes3)) {
-            throw new \InvalidArgumentException('non-nullable custom_surcharge_taxes3 cannot be null');
-        }
+        
         $this->container['custom_surcharge_taxes3'] = $custom_surcharge_taxes3;
 
         return $this;
@@ -1003,9 +963,7 @@ class Company implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setCustomSurchargeTaxes4($custom_surcharge_taxes4)
     {
-        if (is_null($custom_surcharge_taxes4)) {
-            throw new \InvalidArgumentException('non-nullable custom_surcharge_taxes4 cannot be null');
-        }
+        
         $this->container['custom_surcharge_taxes4'] = $custom_surcharge_taxes4;
 
         return $this;
@@ -1030,9 +988,7 @@ class Company implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setLogo($logo)
     {
-        if (is_null($logo)) {
-            throw new \InvalidArgumentException('non-nullable logo cannot be null');
-        }
+        
         $this->container['logo'] = $logo;
 
         return $this;
@@ -1057,9 +1013,7 @@ class Company implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setSettings($settings)
     {
-        if (is_null($settings)) {
-            throw new \InvalidArgumentException('non-nullable settings cannot be null');
-        }
+        
         $this->container['settings'] = $settings;
 
         return $this;

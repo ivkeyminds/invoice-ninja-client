@@ -80,8 +80,8 @@ class Error implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var boolean[]
       */
     protected static $openAPINullables = [
-        'message' => false,
-        'code' => false
+        'message' => true,
+        'code' => true
     ];
 
     /**
@@ -316,9 +316,7 @@ class Error implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setMessage($message)
     {
-        if (is_null($message)) {
-            throw new \InvalidArgumentException('non-nullable message cannot be null');
-        }
+        
         $this->container['message'] = $message;
 
         return $this;
@@ -343,9 +341,7 @@ class Error implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setCode($code)
     {
-        if (is_null($code)) {
-            throw new \InvalidArgumentException('non-nullable code cannot be null');
-        }
+        
         $this->container['code'] = $code;
 
         return $this;

@@ -98,17 +98,17 @@ class CompanyUser implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var boolean[]
       */
     protected static $openAPINullables = [
-        'permissions' => false,
-        'settings' => false,
-        'is_owner' => false,
-        'is_admin' => false,
-        'is_locked' => false,
-        'updated_at' => false,
-        'deleted_at' => false,
-        'account' => false,
-        'company' => false,
-        'user' => false,
-        'token' => false
+        'permissions' => true,
+        'settings' => true,
+        'is_owner' => true,
+        'is_admin' => true,
+        'is_locked' => true,
+        'updated_at' => true,
+        'deleted_at' => true,
+        'account' => true,
+        'company' => true,
+        'user' => true,
+        'token' => true
     ];
 
     /**
@@ -379,9 +379,7 @@ class CompanyUser implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setPermissions($permissions)
     {
-        if (is_null($permissions)) {
-            throw new \InvalidArgumentException('non-nullable permissions cannot be null');
-        }
+        
         $this->container['permissions'] = $permissions;
 
         return $this;
@@ -406,9 +404,7 @@ class CompanyUser implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setSettings($settings)
     {
-        if (is_null($settings)) {
-            throw new \InvalidArgumentException('non-nullable settings cannot be null');
-        }
+        
         $this->container['settings'] = $settings;
 
         return $this;
@@ -433,9 +429,7 @@ class CompanyUser implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setIsOwner($is_owner)
     {
-        if (is_null($is_owner)) {
-            throw new \InvalidArgumentException('non-nullable is_owner cannot be null');
-        }
+        
         $this->container['is_owner'] = $is_owner;
 
         return $this;
@@ -460,9 +454,7 @@ class CompanyUser implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setIsAdmin($is_admin)
     {
-        if (is_null($is_admin)) {
-            throw new \InvalidArgumentException('non-nullable is_admin cannot be null');
-        }
+        
         $this->container['is_admin'] = $is_admin;
 
         return $this;
@@ -487,9 +479,7 @@ class CompanyUser implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setIsLocked($is_locked)
     {
-        if (is_null($is_locked)) {
-            throw new \InvalidArgumentException('non-nullable is_locked cannot be null');
-        }
+        
         $this->container['is_locked'] = $is_locked;
 
         return $this;
@@ -514,9 +504,7 @@ class CompanyUser implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setUpdatedAt($updated_at)
     {
-        if (is_null($updated_at)) {
-            throw new \InvalidArgumentException('non-nullable updated_at cannot be null');
-        }
+        
         $this->container['updated_at'] = $updated_at;
 
         return $this;
@@ -541,9 +529,7 @@ class CompanyUser implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setDeletedAt($deleted_at)
     {
-        if (is_null($deleted_at)) {
-            throw new \InvalidArgumentException('non-nullable deleted_at cannot be null');
-        }
+        
         $this->container['deleted_at'] = $deleted_at;
 
         return $this;
@@ -568,9 +554,7 @@ class CompanyUser implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setAccount($account)
     {
-        if (is_null($account)) {
-            throw new \InvalidArgumentException('non-nullable account cannot be null');
-        }
+        
         $this->container['account'] = $account;
 
         return $this;
@@ -595,9 +579,7 @@ class CompanyUser implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setCompany($company)
     {
-        if (is_null($company)) {
-            throw new \InvalidArgumentException('non-nullable company cannot be null');
-        }
+        
         $this->container['company'] = $company;
 
         return $this;
@@ -622,9 +604,7 @@ class CompanyUser implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setUser($user)
     {
-        if (is_null($user)) {
-            throw new \InvalidArgumentException('non-nullable user cannot be null');
-        }
+        
         $this->container['user'] = $user;
 
         return $this;
@@ -649,9 +629,7 @@ class CompanyUser implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setToken($token)
     {
-        if (is_null($token)) {
-            throw new \InvalidArgumentException('non-nullable token cannot be null');
-        }
+        
         $this->container['token'] = $token;
 
         return $this;

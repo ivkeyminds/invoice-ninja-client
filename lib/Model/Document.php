@@ -108,22 +108,22 @@ class Document implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var boolean[]
       */
     protected static $openAPINullables = [
-        'id' => false,
-        'user_id' => false,
-        'assigned_user_id' => false,
-        'project_id' => false,
-        'vendor_id' => false,
-        'name' => false,
-        'url' => false,
-        'preview' => false,
-        'type' => false,
-        'disk' => false,
-        'hash' => false,
-        'is_deleted' => false,
-        'is_default' => false,
-        'created_at' => false,
-        'updated_at' => false,
-        'deleted_at' => false
+        'id' => true,
+        'user_id' => true,
+        'assigned_user_id' => true,
+        'project_id' => true,
+        'vendor_id' => true,
+        'name' => true,
+        'url' => true,
+        'preview' => true,
+        'type' => true,
+        'disk' => true,
+        'hash' => true,
+        'is_deleted' => true,
+        'is_default' => true,
+        'created_at' => true,
+        'updated_at' => true,
+        'deleted_at' => true
     ];
 
     /**
@@ -414,9 +414,7 @@ class Document implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setId($id)
     {
-        if (is_null($id)) {
-            throw new \InvalidArgumentException('non-nullable id cannot be null');
-        }
+        
         $this->container['id'] = $id;
 
         return $this;
@@ -441,9 +439,7 @@ class Document implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setUserId($user_id)
     {
-        if (is_null($user_id)) {
-            throw new \InvalidArgumentException('non-nullable user_id cannot be null');
-        }
+        
         $this->container['user_id'] = $user_id;
 
         return $this;
@@ -468,9 +464,7 @@ class Document implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setAssignedUserId($assigned_user_id)
     {
-        if (is_null($assigned_user_id)) {
-            throw new \InvalidArgumentException('non-nullable assigned_user_id cannot be null');
-        }
+        
         $this->container['assigned_user_id'] = $assigned_user_id;
 
         return $this;
@@ -495,9 +489,7 @@ class Document implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setProjectId($project_id)
     {
-        if (is_null($project_id)) {
-            throw new \InvalidArgumentException('non-nullable project_id cannot be null');
-        }
+        
         $this->container['project_id'] = $project_id;
 
         return $this;
@@ -522,9 +514,7 @@ class Document implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setVendorId($vendor_id)
     {
-        if (is_null($vendor_id)) {
-            throw new \InvalidArgumentException('non-nullable vendor_id cannot be null');
-        }
+        
         $this->container['vendor_id'] = $vendor_id;
 
         return $this;
@@ -549,9 +539,7 @@ class Document implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setName($name)
     {
-        if (is_null($name)) {
-            throw new \InvalidArgumentException('non-nullable name cannot be null');
-        }
+        
         $this->container['name'] = $name;
 
         return $this;
@@ -576,9 +564,7 @@ class Document implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setUrl($url)
     {
-        if (is_null($url)) {
-            throw new \InvalidArgumentException('non-nullable url cannot be null');
-        }
+        
         $this->container['url'] = $url;
 
         return $this;
@@ -603,9 +589,7 @@ class Document implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setPreview($preview)
     {
-        if (is_null($preview)) {
-            throw new \InvalidArgumentException('non-nullable preview cannot be null');
-        }
+        
         $this->container['preview'] = $preview;
 
         return $this;
@@ -630,9 +614,7 @@ class Document implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setType($type)
     {
-        if (is_null($type)) {
-            throw new \InvalidArgumentException('non-nullable type cannot be null');
-        }
+        
         $this->container['type'] = $type;
 
         return $this;
@@ -657,9 +639,7 @@ class Document implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setDisk($disk)
     {
-        if (is_null($disk)) {
-            throw new \InvalidArgumentException('non-nullable disk cannot be null');
-        }
+        
         $this->container['disk'] = $disk;
 
         return $this;
@@ -684,9 +664,7 @@ class Document implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setHash($hash)
     {
-        if (is_null($hash)) {
-            throw new \InvalidArgumentException('non-nullable hash cannot be null');
-        }
+        
         $this->container['hash'] = $hash;
 
         return $this;
@@ -711,9 +689,7 @@ class Document implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setIsDeleted($is_deleted)
     {
-        if (is_null($is_deleted)) {
-            throw new \InvalidArgumentException('non-nullable is_deleted cannot be null');
-        }
+        
         $this->container['is_deleted'] = $is_deleted;
 
         return $this;
@@ -738,9 +714,7 @@ class Document implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setIsDefault($is_default)
     {
-        if (is_null($is_default)) {
-            throw new \InvalidArgumentException('non-nullable is_default cannot be null');
-        }
+        
         $this->container['is_default'] = $is_default;
 
         return $this;
@@ -765,9 +739,7 @@ class Document implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setCreatedAt($created_at)
     {
-        if (is_null($created_at)) {
-            throw new \InvalidArgumentException('non-nullable created_at cannot be null');
-        }
+        
         $this->container['created_at'] = $created_at;
 
         return $this;
@@ -792,9 +764,7 @@ class Document implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setUpdatedAt($updated_at)
     {
-        if (is_null($updated_at)) {
-            throw new \InvalidArgumentException('non-nullable updated_at cannot be null');
-        }
+        
         $this->container['updated_at'] = $updated_at;
 
         return $this;
@@ -819,9 +789,7 @@ class Document implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setDeletedAt($deleted_at)
     {
-        if (is_null($deleted_at)) {
-            throw new \InvalidArgumentException('non-nullable deleted_at cannot be null');
-        }
+        
         $this->container['deleted_at'] = $deleted_at;
 
         return $this;

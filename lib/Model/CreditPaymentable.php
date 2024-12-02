@@ -80,8 +80,8 @@ class CreditPaymentable implements ModelInterface, ArrayAccess, \JsonSerializabl
       * @var boolean[]
       */
     protected static $openAPINullables = [
-        'credit_id' => false,
-        'amount' => false
+        'credit_id' => true,
+        'amount' => true
     ];
 
     /**
@@ -316,9 +316,7 @@ class CreditPaymentable implements ModelInterface, ArrayAccess, \JsonSerializabl
      */
     public function setCreditId($credit_id)
     {
-        if (is_null($credit_id)) {
-            throw new \InvalidArgumentException('non-nullable credit_id cannot be null');
-        }
+        
         $this->container['credit_id'] = $credit_id;
 
         return $this;
@@ -343,9 +341,7 @@ class CreditPaymentable implements ModelInterface, ArrayAccess, \JsonSerializabl
      */
     public function setAmount($amount)
     {
-        if (is_null($amount)) {
-            throw new \InvalidArgumentException('non-nullable amount cannot be null');
-        }
+        
         $this->container['amount'] = $amount;
 
         return $this;

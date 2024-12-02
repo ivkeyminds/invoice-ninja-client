@@ -100,18 +100,18 @@ class FeesAndLimits implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var boolean[]
       */
     protected static $openAPINullables = [
-        'min_limit' => false,
-        'max_limit' => false,
-        'fee_amount' => false,
-        'fee_percent' => false,
-        'fee_tax_name1' => false,
-        'fee_tax_name2' => false,
-        'fee_tax_name3' => false,
-        'fee_tax_rate1' => false,
-        'fee_tax_rate2' => false,
-        'fee_tax_rate3' => false,
-        'fee_cap' => false,
-        'adjust_fee_percent' => false
+        'min_limit' => true,
+        'max_limit' => true,
+        'fee_amount' => true,
+        'fee_percent' => true,
+        'fee_tax_name1' => true,
+        'fee_tax_name2' => true,
+        'fee_tax_name3' => true,
+        'fee_tax_rate1' => true,
+        'fee_tax_rate2' => true,
+        'fee_tax_rate3' => true,
+        'fee_cap' => true,
+        'adjust_fee_percent' => true
     ];
 
     /**
@@ -386,9 +386,7 @@ class FeesAndLimits implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setMinLimit($min_limit)
     {
-        if (is_null($min_limit)) {
-            throw new \InvalidArgumentException('non-nullable min_limit cannot be null');
-        }
+        
         $this->container['min_limit'] = $min_limit;
 
         return $this;
@@ -413,9 +411,7 @@ class FeesAndLimits implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setMaxLimit($max_limit)
     {
-        if (is_null($max_limit)) {
-            throw new \InvalidArgumentException('non-nullable max_limit cannot be null');
-        }
+        
         $this->container['max_limit'] = $max_limit;
 
         return $this;
@@ -440,9 +436,7 @@ class FeesAndLimits implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setFeeAmount($fee_amount)
     {
-        if (is_null($fee_amount)) {
-            throw new \InvalidArgumentException('non-nullable fee_amount cannot be null');
-        }
+        
         $this->container['fee_amount'] = $fee_amount;
 
         return $this;
@@ -467,9 +461,7 @@ class FeesAndLimits implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setFeePercent($fee_percent)
     {
-        if (is_null($fee_percent)) {
-            throw new \InvalidArgumentException('non-nullable fee_percent cannot be null');
-        }
+        
         $this->container['fee_percent'] = $fee_percent;
 
         return $this;
@@ -494,9 +486,7 @@ class FeesAndLimits implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setFeeTaxName1($fee_tax_name1)
     {
-        if (is_null($fee_tax_name1)) {
-            throw new \InvalidArgumentException('non-nullable fee_tax_name1 cannot be null');
-        }
+        
         $this->container['fee_tax_name1'] = $fee_tax_name1;
 
         return $this;
@@ -521,9 +511,7 @@ class FeesAndLimits implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setFeeTaxName2($fee_tax_name2)
     {
-        if (is_null($fee_tax_name2)) {
-            throw new \InvalidArgumentException('non-nullable fee_tax_name2 cannot be null');
-        }
+        
         $this->container['fee_tax_name2'] = $fee_tax_name2;
 
         return $this;
@@ -548,9 +536,7 @@ class FeesAndLimits implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setFeeTaxName3($fee_tax_name3)
     {
-        if (is_null($fee_tax_name3)) {
-            throw new \InvalidArgumentException('non-nullable fee_tax_name3 cannot be null');
-        }
+        
         $this->container['fee_tax_name3'] = $fee_tax_name3;
 
         return $this;
@@ -575,9 +561,7 @@ class FeesAndLimits implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setFeeTaxRate1($fee_tax_rate1)
     {
-        if (is_null($fee_tax_rate1)) {
-            throw new \InvalidArgumentException('non-nullable fee_tax_rate1 cannot be null');
-        }
+        
         $this->container['fee_tax_rate1'] = $fee_tax_rate1;
 
         return $this;
@@ -602,9 +586,7 @@ class FeesAndLimits implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setFeeTaxRate2($fee_tax_rate2)
     {
-        if (is_null($fee_tax_rate2)) {
-            throw new \InvalidArgumentException('non-nullable fee_tax_rate2 cannot be null');
-        }
+        
         $this->container['fee_tax_rate2'] = $fee_tax_rate2;
 
         return $this;
@@ -629,9 +611,7 @@ class FeesAndLimits implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setFeeTaxRate3($fee_tax_rate3)
     {
-        if (is_null($fee_tax_rate3)) {
-            throw new \InvalidArgumentException('non-nullable fee_tax_rate3 cannot be null');
-        }
+        
         $this->container['fee_tax_rate3'] = $fee_tax_rate3;
 
         return $this;
@@ -656,9 +636,7 @@ class FeesAndLimits implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setFeeCap($fee_cap)
     {
-        if (is_null($fee_cap)) {
-            throw new \InvalidArgumentException('non-nullable fee_cap cannot be null');
-        }
+        
         $this->container['fee_cap'] = $fee_cap;
 
         return $this;
@@ -683,9 +661,7 @@ class FeesAndLimits implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setAdjustFeePercent($adjust_fee_percent)
     {
-        if (is_null($adjust_fee_percent)) {
-            throw new \InvalidArgumentException('non-nullable adjust_fee_percent cannot be null');
-        }
+        
         $this->container['adjust_fee_percent'] = $adjust_fee_percent;
 
         return $this;

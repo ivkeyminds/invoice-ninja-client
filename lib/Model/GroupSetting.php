@@ -86,11 +86,11 @@ class GroupSetting implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var boolean[]
       */
     protected static $openAPINullables = [
-        'id' => false,
-        'user_id' => false,
-        'company_id' => false,
-        'name' => false,
-        'settings' => false
+        'id' => true,
+        'user_id' => true,
+        'company_id' => true,
+        'name' => true,
+        'settings' => true
     ];
 
     /**
@@ -337,9 +337,7 @@ class GroupSetting implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setId($id)
     {
-        if (is_null($id)) {
-            throw new \InvalidArgumentException('non-nullable id cannot be null');
-        }
+        
         $this->container['id'] = $id;
 
         return $this;
@@ -364,9 +362,7 @@ class GroupSetting implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setUserId($user_id)
     {
-        if (is_null($user_id)) {
-            throw new \InvalidArgumentException('non-nullable user_id cannot be null');
-        }
+        
         $this->container['user_id'] = $user_id;
 
         return $this;
@@ -391,9 +387,7 @@ class GroupSetting implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setCompanyId($company_id)
     {
-        if (is_null($company_id)) {
-            throw new \InvalidArgumentException('non-nullable company_id cannot be null');
-        }
+        
         $this->container['company_id'] = $company_id;
 
         return $this;
@@ -418,9 +412,7 @@ class GroupSetting implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setName($name)
     {
-        if (is_null($name)) {
-            throw new \InvalidArgumentException('non-nullable name cannot be null');
-        }
+        
         $this->container['name'] = $name;
 
         return $this;
@@ -445,9 +437,7 @@ class GroupSetting implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setSettings($settings)
     {
-        if (is_null($settings)) {
-            throw new \InvalidArgumentException('non-nullable settings cannot be null');
-        }
+        
         $this->container['settings'] = $settings;
 
         return $this;

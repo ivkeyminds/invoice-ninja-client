@@ -86,11 +86,11 @@ class V1ClientStatementBody implements ModelInterface, ArrayAccess, \JsonSeriali
       * @var boolean[]
       */
     protected static $openAPINullables = [
-        'start_date' => false,
-        'end_date' => false,
-        'client_id' => false,
-        'show_payments_table' => false,
-        'show_aging_table' => false
+        'start_date' => true,
+        'end_date' => true,
+        'client_id' => true,
+        'show_payments_table' => true,
+        'show_aging_table' => true
     ];
 
     /**
@@ -337,9 +337,7 @@ class V1ClientStatementBody implements ModelInterface, ArrayAccess, \JsonSeriali
      */
     public function setStartDate($start_date)
     {
-        if (is_null($start_date)) {
-            throw new \InvalidArgumentException('non-nullable start_date cannot be null');
-        }
+        
         $this->container['start_date'] = $start_date;
 
         return $this;
@@ -364,9 +362,7 @@ class V1ClientStatementBody implements ModelInterface, ArrayAccess, \JsonSeriali
      */
     public function setEndDate($end_date)
     {
-        if (is_null($end_date)) {
-            throw new \InvalidArgumentException('non-nullable end_date cannot be null');
-        }
+        
         $this->container['end_date'] = $end_date;
 
         return $this;
@@ -391,9 +387,7 @@ class V1ClientStatementBody implements ModelInterface, ArrayAccess, \JsonSeriali
      */
     public function setClientId($client_id)
     {
-        if (is_null($client_id)) {
-            throw new \InvalidArgumentException('non-nullable client_id cannot be null');
-        }
+        
         $this->container['client_id'] = $client_id;
 
         return $this;
@@ -418,9 +412,7 @@ class V1ClientStatementBody implements ModelInterface, ArrayAccess, \JsonSeriali
      */
     public function setShowPaymentsTable($show_payments_table)
     {
-        if (is_null($show_payments_table)) {
-            throw new \InvalidArgumentException('non-nullable show_payments_table cannot be null');
-        }
+        
         $this->container['show_payments_table'] = $show_payments_table;
 
         return $this;
@@ -445,9 +437,7 @@ class V1ClientStatementBody implements ModelInterface, ArrayAccess, \JsonSeriali
      */
     public function setShowAgingTable($show_aging_table)
     {
-        if (is_null($show_aging_table)) {
-            throw new \InvalidArgumentException('non-nullable show_aging_table cannot be null');
-        }
+        
         $this->container['show_aging_table'] = $show_aging_table;
 
         return $this;

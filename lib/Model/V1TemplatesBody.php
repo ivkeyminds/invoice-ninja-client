@@ -80,8 +80,8 @@ class V1TemplatesBody implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var boolean[]
       */
     protected static $openAPINullables = [
-        'subject' => false,
-        'body' => false
+        'subject' => true,
+        'body' => true
     ];
 
     /**
@@ -316,9 +316,7 @@ class V1TemplatesBody implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setSubject($subject)
     {
-        if (is_null($subject)) {
-            throw new \InvalidArgumentException('non-nullable subject cannot be null');
-        }
+        
         $this->container['subject'] = $subject;
 
         return $this;
@@ -343,9 +341,7 @@ class V1TemplatesBody implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setBody($body)
     {
-        if (is_null($body)) {
-            throw new \InvalidArgumentException('non-nullable body cannot be null');
-        }
+        
         $this->container['body'] = $body;
 
         return $this;

@@ -102,19 +102,19 @@ class BankTransaction implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var boolean[]
       */
     protected static $openAPINullables = [
-        'id' => false,
-        'company_id' => false,
-        'user_id' => false,
-        'transaction_id' => false,
-        'amount' => false,
-        'currency_id' => false,
-        'account_type' => false,
-        'description' => false,
-        'category_id' => false,
-        'category_type' => false,
-        'base_type' => false,
-        'date' => false,
-        'bank_account_id' => false
+        'id' => true,
+        'company_id' => true,
+        'user_id' => true,
+        'transaction_id' => true,
+        'amount' => true,
+        'currency_id' => true,
+        'account_type' => true,
+        'description' => true,
+        'category_id' => true,
+        'category_type' => true,
+        'base_type' => true,
+        'date' => true,
+        'bank_account_id' => true
     ];
 
     /**
@@ -393,9 +393,7 @@ class BankTransaction implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setId($id)
     {
-        if (is_null($id)) {
-            throw new \InvalidArgumentException('non-nullable id cannot be null');
-        }
+        
         $this->container['id'] = $id;
 
         return $this;
@@ -420,9 +418,7 @@ class BankTransaction implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setCompanyId($company_id)
     {
-        if (is_null($company_id)) {
-            throw new \InvalidArgumentException('non-nullable company_id cannot be null');
-        }
+        
         $this->container['company_id'] = $company_id;
 
         return $this;
@@ -447,9 +443,7 @@ class BankTransaction implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setUserId($user_id)
     {
-        if (is_null($user_id)) {
-            throw new \InvalidArgumentException('non-nullable user_id cannot be null');
-        }
+        
         $this->container['user_id'] = $user_id;
 
         return $this;
@@ -474,9 +468,7 @@ class BankTransaction implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setTransactionId($transaction_id)
     {
-        if (is_null($transaction_id)) {
-            throw new \InvalidArgumentException('non-nullable transaction_id cannot be null');
-        }
+        
         $this->container['transaction_id'] = $transaction_id;
 
         return $this;
@@ -501,9 +493,7 @@ class BankTransaction implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setAmount($amount)
     {
-        if (is_null($amount)) {
-            throw new \InvalidArgumentException('non-nullable amount cannot be null');
-        }
+        
         $this->container['amount'] = $amount;
 
         return $this;
@@ -528,9 +518,7 @@ class BankTransaction implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setCurrencyId($currency_id)
     {
-        if (is_null($currency_id)) {
-            throw new \InvalidArgumentException('non-nullable currency_id cannot be null');
-        }
+        
         $this->container['currency_id'] = $currency_id;
 
         return $this;
@@ -555,9 +543,7 @@ class BankTransaction implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setAccountType($account_type)
     {
-        if (is_null($account_type)) {
-            throw new \InvalidArgumentException('non-nullable account_type cannot be null');
-        }
+        
         $this->container['account_type'] = $account_type;
 
         return $this;
@@ -582,9 +568,7 @@ class BankTransaction implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setDescription($description)
     {
-        if (is_null($description)) {
-            throw new \InvalidArgumentException('non-nullable description cannot be null');
-        }
+        
         $this->container['description'] = $description;
 
         return $this;
@@ -609,9 +593,7 @@ class BankTransaction implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setCategoryId($category_id)
     {
-        if (is_null($category_id)) {
-            throw new \InvalidArgumentException('non-nullable category_id cannot be null');
-        }
+        
         $this->container['category_id'] = $category_id;
 
         return $this;
@@ -636,9 +618,7 @@ class BankTransaction implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setCategoryType($category_type)
     {
-        if (is_null($category_type)) {
-            throw new \InvalidArgumentException('non-nullable category_type cannot be null');
-        }
+        
         $this->container['category_type'] = $category_type;
 
         return $this;
@@ -663,9 +643,7 @@ class BankTransaction implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setBaseType($base_type)
     {
-        if (is_null($base_type)) {
-            throw new \InvalidArgumentException('non-nullable base_type cannot be null');
-        }
+        
         $this->container['base_type'] = $base_type;
 
         return $this;
@@ -690,9 +668,7 @@ class BankTransaction implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setDate($date)
     {
-        if (is_null($date)) {
-            throw new \InvalidArgumentException('non-nullable date cannot be null');
-        }
+        
         $this->container['date'] = $date;
 
         return $this;
@@ -717,9 +693,7 @@ class BankTransaction implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setBankAccountId($bank_account_id)
     {
-        if (is_null($bank_account_id)) {
-            throw new \InvalidArgumentException('non-nullable bank_account_id cannot be null');
-        }
+        
         $this->container['bank_account_id'] = $bank_account_id;
 
         return $this;

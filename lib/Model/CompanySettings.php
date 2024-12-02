@@ -370,153 +370,153 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var boolean[]
       */
     protected static $openAPINullables = [
-        'timezone_id' => false,
-        'date_format_id' => false,
-        'military_time' => false,
-        'language_id' => false,
-        'show_currency_code' => false,
-        'currency_id' => false,
-        'payment_terms' => false,
-        'company_gateway_ids' => false,
-        'custom_value1' => false,
-        'custom_value2' => false,
-        'custom_value3' => false,
-        'custom_value4' => false,
-        'default_task_rate' => false,
-        'send_reminders' => false,
-        'enable_client_portal_tasks' => false,
-        'email_style' => false,
-        'reply_to_email' => false,
-        'bcc_email' => false,
-        'pdf_email_attachment' => false,
-        'ubl_email_attachment' => false,
-        'email_style_custom' => false,
-        'counter_number_applied' => false,
-        'quote_number_applied' => false,
-        'custom_message_dashboard' => false,
-        'custom_message_unpaid_invoice' => false,
-        'custom_message_paid_invoice' => false,
-        'custom_message_unapproved_quote' => false,
-        'lock_invoices' => false,
-        'auto_archive_invoice' => false,
-        'auto_archive_quote' => false,
-        'auto_convert_quote' => false,
-        'inclusive_taxes' => false,
-        'translations' => false,
-        'task_number_pattern' => false,
-        'task_number_counter' => false,
-        'reminder_send_time' => false,
-        'expense_number_pattern' => false,
-        'expense_number_counter' => false,
-        'vendor_number_pattern' => false,
-        'vendor_number_counter' => false,
-        'ticket_number_pattern' => false,
-        'ticket_number_counter' => false,
-        'payment_number_pattern' => false,
-        'payment_number_counter' => false,
-        'invoice_number_pattern' => false,
-        'invoice_number_counter' => false,
-        'quote_number_pattern' => false,
-        'quote_number_counter' => false,
-        'client_number_pattern' => false,
-        'client_number_counter' => false,
-        'credit_number_pattern' => false,
-        'credit_number_counter' => false,
-        'recurring_invoice_number_prefix' => false,
-        'reset_counter_frequency_id' => false,
-        'reset_counter_date' => false,
-        'counter_padding' => false,
-        'shared_invoice_quote_counter' => false,
-        'update_products' => false,
-        'convert_products' => false,
-        'fill_products' => false,
-        'invoice_terms' => false,
-        'quote_terms' => false,
-        'invoice_taxes' => false,
-        'invoice_design_id' => false,
-        'quote_design_id' => false,
-        'invoice_footer' => false,
-        'invoice_labels' => false,
-        'tax_rate1' => false,
-        'tax_name1' => false,
-        'tax_rate2' => false,
-        'tax_name2' => false,
-        'tax_rate3' => false,
-        'tax_name3' => false,
-        'payment_type_id' => false,
-        'custom_fields' => false,
-        'email_footer' => false,
-        'email_sending_method' => false,
-        'gmail_sending_user_id' => false,
-        'email_subject_invoice' => false,
-        'email_subject_quote' => false,
-        'email_subject_payment' => false,
-        'email_template_invoice' => false,
-        'email_template_quote' => false,
-        'email_template_payment' => false,
-        'email_subject_reminder1' => false,
-        'email_subject_reminder2' => false,
-        'email_subject_reminder3' => false,
-        'email_subject_reminder_endless' => false,
-        'email_template_reminder1' => false,
-        'email_template_reminder2' => false,
-        'email_template_reminder3' => false,
-        'email_template_reminder_endless' => false,
-        'enable_portal_password' => false,
-        'show_accept_invoice_terms' => false,
-        'show_accept_quote_terms' => false,
-        'require_invoice_signature' => false,
-        'require_quote_signature' => false,
-        'name' => false,
-        'company_logo' => false,
-        'website' => false,
-        'address1' => false,
-        'address2' => false,
-        'city' => false,
-        'state' => false,
-        'postal_code' => false,
-        'phone' => false,
-        'email' => false,
-        'country_id' => false,
-        'vat_number' => false,
-        'page_size' => false,
-        'font_size' => false,
-        'primary_font' => false,
-        'secondary_font' => false,
-        'hide_paid_to_date' => false,
-        'embed_documents' => false,
-        'all_pages_header' => false,
-        'all_pages_footer' => false,
-        'document_email_attachment' => false,
-        'enable_client_portal_password' => false,
-        'enable_email_markup' => false,
-        'enable_client_portal_dashboard' => false,
-        'enable_client_portal' => false,
-        'email_template_statement' => false,
-        'email_subject_statement' => false,
-        'signature_on_pdf' => false,
-        'quote_footer' => false,
-        'email_subject_custom1' => false,
-        'email_subject_custom2' => false,
-        'email_subject_custom3' => false,
-        'email_template_custom1' => false,
-        'email_template_custom2' => false,
-        'email_template_custom3' => false,
-        'enable_reminder1' => false,
-        'enable_reminder2' => false,
-        'enable_reminder3' => false,
-        'num_days_reminder1' => false,
-        'num_days_reminder2' => false,
-        'num_days_reminder3' => false,
-        'schedule_reminder1' => false,
-        'schedule_reminder2' => false,
-        'schedule_reminder3' => false,
-        'late_fee_amount1' => false,
-        'late_fee_amount2' => false,
-        'late_fee_amount3' => false,
-        'endless_reminder_frequency_id' => false,
-        'client_online_payment_notification' => false,
-        'client_manual_payment_notification' => false
+        'timezone_id' => true,
+        'date_format_id' => true,
+        'military_time' => true,
+        'language_id' => true,
+        'show_currency_code' => true,
+        'currency_id' => true,
+        'payment_terms' => true,
+        'company_gateway_ids' => true,
+        'custom_value1' => true,
+        'custom_value2' => true,
+        'custom_value3' => true,
+        'custom_value4' => true,
+        'default_task_rate' => true,
+        'send_reminders' => true,
+        'enable_client_portal_tasks' => true,
+        'email_style' => true,
+        'reply_to_email' => true,
+        'bcc_email' => true,
+        'pdf_email_attachment' => true,
+        'ubl_email_attachment' => true,
+        'email_style_custom' => true,
+        'counter_number_applied' => true,
+        'quote_number_applied' => true,
+        'custom_message_dashboard' => true,
+        'custom_message_unpaid_invoice' => true,
+        'custom_message_paid_invoice' => true,
+        'custom_message_unapproved_quote' => true,
+        'lock_invoices' => true,
+        'auto_archive_invoice' => true,
+        'auto_archive_quote' => true,
+        'auto_convert_quote' => true,
+        'inclusive_taxes' => true,
+        'translations' => true,
+        'task_number_pattern' => true,
+        'task_number_counter' => true,
+        'reminder_send_time' => true,
+        'expense_number_pattern' => true,
+        'expense_number_counter' => true,
+        'vendor_number_pattern' => true,
+        'vendor_number_counter' => true,
+        'ticket_number_pattern' => true,
+        'ticket_number_counter' => true,
+        'payment_number_pattern' => true,
+        'payment_number_counter' => true,
+        'invoice_number_pattern' => true,
+        'invoice_number_counter' => true,
+        'quote_number_pattern' => true,
+        'quote_number_counter' => true,
+        'client_number_pattern' => true,
+        'client_number_counter' => true,
+        'credit_number_pattern' => true,
+        'credit_number_counter' => true,
+        'recurring_invoice_number_prefix' => true,
+        'reset_counter_frequency_id' => true,
+        'reset_counter_date' => true,
+        'counter_padding' => true,
+        'shared_invoice_quote_counter' => true,
+        'update_products' => true,
+        'convert_products' => true,
+        'fill_products' => true,
+        'invoice_terms' => true,
+        'quote_terms' => true,
+        'invoice_taxes' => true,
+        'invoice_design_id' => true,
+        'quote_design_id' => true,
+        'invoice_footer' => true,
+        'invoice_labels' => true,
+        'tax_rate1' => true,
+        'tax_name1' => true,
+        'tax_rate2' => true,
+        'tax_name2' => true,
+        'tax_rate3' => true,
+        'tax_name3' => true,
+        'payment_type_id' => true,
+        'custom_fields' => true,
+        'email_footer' => true,
+        'email_sending_method' => true,
+        'gmail_sending_user_id' => true,
+        'email_subject_invoice' => true,
+        'email_subject_quote' => true,
+        'email_subject_payment' => true,
+        'email_template_invoice' => true,
+        'email_template_quote' => true,
+        'email_template_payment' => true,
+        'email_subject_reminder1' => true,
+        'email_subject_reminder2' => true,
+        'email_subject_reminder3' => true,
+        'email_subject_reminder_endless' => true,
+        'email_template_reminder1' => true,
+        'email_template_reminder2' => true,
+        'email_template_reminder3' => true,
+        'email_template_reminder_endless' => true,
+        'enable_portal_password' => true,
+        'show_accept_invoice_terms' => true,
+        'show_accept_quote_terms' => true,
+        'require_invoice_signature' => true,
+        'require_quote_signature' => true,
+        'name' => true,
+        'company_logo' => true,
+        'website' => true,
+        'address1' => true,
+        'address2' => true,
+        'city' => true,
+        'state' => true,
+        'postal_code' => true,
+        'phone' => true,
+        'email' => true,
+        'country_id' => true,
+        'vat_number' => true,
+        'page_size' => true,
+        'font_size' => true,
+        'primary_font' => true,
+        'secondary_font' => true,
+        'hide_paid_to_date' => true,
+        'embed_documents' => true,
+        'all_pages_header' => true,
+        'all_pages_footer' => true,
+        'document_email_attachment' => true,
+        'enable_client_portal_password' => true,
+        'enable_email_markup' => true,
+        'enable_client_portal_dashboard' => true,
+        'enable_client_portal' => true,
+        'email_template_statement' => true,
+        'email_subject_statement' => true,
+        'signature_on_pdf' => true,
+        'quote_footer' => true,
+        'email_subject_custom1' => true,
+        'email_subject_custom2' => true,
+        'email_subject_custom3' => true,
+        'email_template_custom1' => true,
+        'email_template_custom2' => true,
+        'email_template_custom3' => true,
+        'enable_reminder1' => true,
+        'enable_reminder2' => true,
+        'enable_reminder3' => true,
+        'num_days_reminder1' => true,
+        'num_days_reminder2' => true,
+        'num_days_reminder3' => true,
+        'schedule_reminder1' => true,
+        'schedule_reminder2' => true,
+        'schedule_reminder3' => true,
+        'late_fee_amount1' => true,
+        'late_fee_amount2' => true,
+        'late_fee_amount3' => true,
+        'endless_reminder_frequency_id' => true,
+        'client_online_payment_notification' => true,
+        'client_manual_payment_notification' => true
     ];
 
     /**
@@ -1331,9 +1331,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setTimezoneId($timezone_id)
     {
-        if (is_null($timezone_id)) {
-            throw new \InvalidArgumentException('non-nullable timezone_id cannot be null');
-        }
+        
         $this->container['timezone_id'] = $timezone_id;
 
         return $this;
@@ -1358,9 +1356,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setDateFormatId($date_format_id)
     {
-        if (is_null($date_format_id)) {
-            throw new \InvalidArgumentException('non-nullable date_format_id cannot be null');
-        }
+        
         $this->container['date_format_id'] = $date_format_id;
 
         return $this;
@@ -1385,9 +1381,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setMilitaryTime($military_time)
     {
-        if (is_null($military_time)) {
-            throw new \InvalidArgumentException('non-nullable military_time cannot be null');
-        }
+        
         $this->container['military_time'] = $military_time;
 
         return $this;
@@ -1412,9 +1406,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setLanguageId($language_id)
     {
-        if (is_null($language_id)) {
-            throw new \InvalidArgumentException('non-nullable language_id cannot be null');
-        }
+        
         $this->container['language_id'] = $language_id;
 
         return $this;
@@ -1439,9 +1431,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setShowCurrencyCode($show_currency_code)
     {
-        if (is_null($show_currency_code)) {
-            throw new \InvalidArgumentException('non-nullable show_currency_code cannot be null');
-        }
+        
         $this->container['show_currency_code'] = $show_currency_code;
 
         return $this;
@@ -1466,9 +1456,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setCurrencyId($currency_id)
     {
-        if (is_null($currency_id)) {
-            throw new \InvalidArgumentException('non-nullable currency_id cannot be null');
-        }
+        
         $this->container['currency_id'] = $currency_id;
 
         return $this;
@@ -1493,9 +1481,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setPaymentTerms($payment_terms)
     {
-        if (is_null($payment_terms)) {
-            throw new \InvalidArgumentException('non-nullable payment_terms cannot be null');
-        }
+        
         $this->container['payment_terms'] = $payment_terms;
 
         return $this;
@@ -1520,9 +1506,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setCompanyGatewayIds($company_gateway_ids)
     {
-        if (is_null($company_gateway_ids)) {
-            throw new \InvalidArgumentException('non-nullable company_gateway_ids cannot be null');
-        }
+        
         $this->container['company_gateway_ids'] = $company_gateway_ids;
 
         return $this;
@@ -1547,9 +1531,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setCustomValue1($custom_value1)
     {
-        if (is_null($custom_value1)) {
-            throw new \InvalidArgumentException('non-nullable custom_value1 cannot be null');
-        }
+        
         $this->container['custom_value1'] = $custom_value1;
 
         return $this;
@@ -1574,9 +1556,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setCustomValue2($custom_value2)
     {
-        if (is_null($custom_value2)) {
-            throw new \InvalidArgumentException('non-nullable custom_value2 cannot be null');
-        }
+        
         $this->container['custom_value2'] = $custom_value2;
 
         return $this;
@@ -1601,9 +1581,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setCustomValue3($custom_value3)
     {
-        if (is_null($custom_value3)) {
-            throw new \InvalidArgumentException('non-nullable custom_value3 cannot be null');
-        }
+        
         $this->container['custom_value3'] = $custom_value3;
 
         return $this;
@@ -1628,9 +1606,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setCustomValue4($custom_value4)
     {
-        if (is_null($custom_value4)) {
-            throw new \InvalidArgumentException('non-nullable custom_value4 cannot be null');
-        }
+        
         $this->container['custom_value4'] = $custom_value4;
 
         return $this;
@@ -1655,9 +1631,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setDefaultTaskRate($default_task_rate)
     {
-        if (is_null($default_task_rate)) {
-            throw new \InvalidArgumentException('non-nullable default_task_rate cannot be null');
-        }
+        
         $this->container['default_task_rate'] = $default_task_rate;
 
         return $this;
@@ -1682,9 +1656,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setSendReminders($send_reminders)
     {
-        if (is_null($send_reminders)) {
-            throw new \InvalidArgumentException('non-nullable send_reminders cannot be null');
-        }
+        
         $this->container['send_reminders'] = $send_reminders;
 
         return $this;
@@ -1709,9 +1681,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setEnableClientPortalTasks($enable_client_portal_tasks)
     {
-        if (is_null($enable_client_portal_tasks)) {
-            throw new \InvalidArgumentException('non-nullable enable_client_portal_tasks cannot be null');
-        }
+        
         $this->container['enable_client_portal_tasks'] = $enable_client_portal_tasks;
 
         return $this;
@@ -1736,9 +1706,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setEmailStyle($email_style)
     {
-        if (is_null($email_style)) {
-            throw new \InvalidArgumentException('non-nullable email_style cannot be null');
-        }
+        
         $this->container['email_style'] = $email_style;
 
         return $this;
@@ -1763,9 +1731,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setReplyToEmail($reply_to_email)
     {
-        if (is_null($reply_to_email)) {
-            throw new \InvalidArgumentException('non-nullable reply_to_email cannot be null');
-        }
+        
         $this->container['reply_to_email'] = $reply_to_email;
 
         return $this;
@@ -1790,9 +1756,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setBccEmail($bcc_email)
     {
-        if (is_null($bcc_email)) {
-            throw new \InvalidArgumentException('non-nullable bcc_email cannot be null');
-        }
+        
         $this->container['bcc_email'] = $bcc_email;
 
         return $this;
@@ -1817,9 +1781,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setPdfEmailAttachment($pdf_email_attachment)
     {
-        if (is_null($pdf_email_attachment)) {
-            throw new \InvalidArgumentException('non-nullable pdf_email_attachment cannot be null');
-        }
+        
         $this->container['pdf_email_attachment'] = $pdf_email_attachment;
 
         return $this;
@@ -1844,9 +1806,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setUblEmailAttachment($ubl_email_attachment)
     {
-        if (is_null($ubl_email_attachment)) {
-            throw new \InvalidArgumentException('non-nullable ubl_email_attachment cannot be null');
-        }
+        
         $this->container['ubl_email_attachment'] = $ubl_email_attachment;
 
         return $this;
@@ -1871,9 +1831,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setEmailStyleCustom($email_style_custom)
     {
-        if (is_null($email_style_custom)) {
-            throw new \InvalidArgumentException('non-nullable email_style_custom cannot be null');
-        }
+        
         $this->container['email_style_custom'] = $email_style_custom;
 
         return $this;
@@ -1898,9 +1856,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setCounterNumberApplied($counter_number_applied)
     {
-        if (is_null($counter_number_applied)) {
-            throw new \InvalidArgumentException('non-nullable counter_number_applied cannot be null');
-        }
+        
         $this->container['counter_number_applied'] = $counter_number_applied;
 
         return $this;
@@ -1925,9 +1881,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setQuoteNumberApplied($quote_number_applied)
     {
-        if (is_null($quote_number_applied)) {
-            throw new \InvalidArgumentException('non-nullable quote_number_applied cannot be null');
-        }
+        
         $this->container['quote_number_applied'] = $quote_number_applied;
 
         return $this;
@@ -1952,9 +1906,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setCustomMessageDashboard($custom_message_dashboard)
     {
-        if (is_null($custom_message_dashboard)) {
-            throw new \InvalidArgumentException('non-nullable custom_message_dashboard cannot be null');
-        }
+        
         $this->container['custom_message_dashboard'] = $custom_message_dashboard;
 
         return $this;
@@ -1979,9 +1931,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setCustomMessageUnpaidInvoice($custom_message_unpaid_invoice)
     {
-        if (is_null($custom_message_unpaid_invoice)) {
-            throw new \InvalidArgumentException('non-nullable custom_message_unpaid_invoice cannot be null');
-        }
+        
         $this->container['custom_message_unpaid_invoice'] = $custom_message_unpaid_invoice;
 
         return $this;
@@ -2006,9 +1956,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setCustomMessagePaidInvoice($custom_message_paid_invoice)
     {
-        if (is_null($custom_message_paid_invoice)) {
-            throw new \InvalidArgumentException('non-nullable custom_message_paid_invoice cannot be null');
-        }
+        
         $this->container['custom_message_paid_invoice'] = $custom_message_paid_invoice;
 
         return $this;
@@ -2033,9 +1981,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setCustomMessageUnapprovedQuote($custom_message_unapproved_quote)
     {
-        if (is_null($custom_message_unapproved_quote)) {
-            throw new \InvalidArgumentException('non-nullable custom_message_unapproved_quote cannot be null');
-        }
+        
         $this->container['custom_message_unapproved_quote'] = $custom_message_unapproved_quote;
 
         return $this;
@@ -2060,9 +2006,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setLockInvoices($lock_invoices)
     {
-        if (is_null($lock_invoices)) {
-            throw new \InvalidArgumentException('non-nullable lock_invoices cannot be null');
-        }
+        
         $this->container['lock_invoices'] = $lock_invoices;
 
         return $this;
@@ -2087,9 +2031,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setAutoArchiveInvoice($auto_archive_invoice)
     {
-        if (is_null($auto_archive_invoice)) {
-            throw new \InvalidArgumentException('non-nullable auto_archive_invoice cannot be null');
-        }
+        
         $this->container['auto_archive_invoice'] = $auto_archive_invoice;
 
         return $this;
@@ -2114,9 +2056,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setAutoArchiveQuote($auto_archive_quote)
     {
-        if (is_null($auto_archive_quote)) {
-            throw new \InvalidArgumentException('non-nullable auto_archive_quote cannot be null');
-        }
+        
         $this->container['auto_archive_quote'] = $auto_archive_quote;
 
         return $this;
@@ -2141,9 +2081,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setAutoConvertQuote($auto_convert_quote)
     {
-        if (is_null($auto_convert_quote)) {
-            throw new \InvalidArgumentException('non-nullable auto_convert_quote cannot be null');
-        }
+        
         $this->container['auto_convert_quote'] = $auto_convert_quote;
 
         return $this;
@@ -2168,9 +2106,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setInclusiveTaxes($inclusive_taxes)
     {
-        if (is_null($inclusive_taxes)) {
-            throw new \InvalidArgumentException('non-nullable inclusive_taxes cannot be null');
-        }
+        
         $this->container['inclusive_taxes'] = $inclusive_taxes;
 
         return $this;
@@ -2195,9 +2131,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setTranslations($translations)
     {
-        if (is_null($translations)) {
-            throw new \InvalidArgumentException('non-nullable translations cannot be null');
-        }
+        
         $this->container['translations'] = $translations;
 
         return $this;
@@ -2222,9 +2156,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setTaskNumberPattern($task_number_pattern)
     {
-        if (is_null($task_number_pattern)) {
-            throw new \InvalidArgumentException('non-nullable task_number_pattern cannot be null');
-        }
+        
         $this->container['task_number_pattern'] = $task_number_pattern;
 
         return $this;
@@ -2249,9 +2181,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setTaskNumberCounter($task_number_counter)
     {
-        if (is_null($task_number_counter)) {
-            throw new \InvalidArgumentException('non-nullable task_number_counter cannot be null');
-        }
+        
         $this->container['task_number_counter'] = $task_number_counter;
 
         return $this;
@@ -2276,9 +2206,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setReminderSendTime($reminder_send_time)
     {
-        if (is_null($reminder_send_time)) {
-            throw new \InvalidArgumentException('non-nullable reminder_send_time cannot be null');
-        }
+        
         $this->container['reminder_send_time'] = $reminder_send_time;
 
         return $this;
@@ -2303,9 +2231,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setExpenseNumberPattern($expense_number_pattern)
     {
-        if (is_null($expense_number_pattern)) {
-            throw new \InvalidArgumentException('non-nullable expense_number_pattern cannot be null');
-        }
+        
         $this->container['expense_number_pattern'] = $expense_number_pattern;
 
         return $this;
@@ -2330,9 +2256,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setExpenseNumberCounter($expense_number_counter)
     {
-        if (is_null($expense_number_counter)) {
-            throw new \InvalidArgumentException('non-nullable expense_number_counter cannot be null');
-        }
+        
         $this->container['expense_number_counter'] = $expense_number_counter;
 
         return $this;
@@ -2357,9 +2281,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setVendorNumberPattern($vendor_number_pattern)
     {
-        if (is_null($vendor_number_pattern)) {
-            throw new \InvalidArgumentException('non-nullable vendor_number_pattern cannot be null');
-        }
+        
         $this->container['vendor_number_pattern'] = $vendor_number_pattern;
 
         return $this;
@@ -2384,9 +2306,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setVendorNumberCounter($vendor_number_counter)
     {
-        if (is_null($vendor_number_counter)) {
-            throw new \InvalidArgumentException('non-nullable vendor_number_counter cannot be null');
-        }
+        
         $this->container['vendor_number_counter'] = $vendor_number_counter;
 
         return $this;
@@ -2411,9 +2331,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setTicketNumberPattern($ticket_number_pattern)
     {
-        if (is_null($ticket_number_pattern)) {
-            throw new \InvalidArgumentException('non-nullable ticket_number_pattern cannot be null');
-        }
+        
         $this->container['ticket_number_pattern'] = $ticket_number_pattern;
 
         return $this;
@@ -2438,9 +2356,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setTicketNumberCounter($ticket_number_counter)
     {
-        if (is_null($ticket_number_counter)) {
-            throw new \InvalidArgumentException('non-nullable ticket_number_counter cannot be null');
-        }
+        
         $this->container['ticket_number_counter'] = $ticket_number_counter;
 
         return $this;
@@ -2465,9 +2381,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setPaymentNumberPattern($payment_number_pattern)
     {
-        if (is_null($payment_number_pattern)) {
-            throw new \InvalidArgumentException('non-nullable payment_number_pattern cannot be null');
-        }
+        
         $this->container['payment_number_pattern'] = $payment_number_pattern;
 
         return $this;
@@ -2492,9 +2406,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setPaymentNumberCounter($payment_number_counter)
     {
-        if (is_null($payment_number_counter)) {
-            throw new \InvalidArgumentException('non-nullable payment_number_counter cannot be null');
-        }
+        
         $this->container['payment_number_counter'] = $payment_number_counter;
 
         return $this;
@@ -2519,9 +2431,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setInvoiceNumberPattern($invoice_number_pattern)
     {
-        if (is_null($invoice_number_pattern)) {
-            throw new \InvalidArgumentException('non-nullable invoice_number_pattern cannot be null');
-        }
+        
         $this->container['invoice_number_pattern'] = $invoice_number_pattern;
 
         return $this;
@@ -2546,9 +2456,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setInvoiceNumberCounter($invoice_number_counter)
     {
-        if (is_null($invoice_number_counter)) {
-            throw new \InvalidArgumentException('non-nullable invoice_number_counter cannot be null');
-        }
+        
         $this->container['invoice_number_counter'] = $invoice_number_counter;
 
         return $this;
@@ -2573,9 +2481,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setQuoteNumberPattern($quote_number_pattern)
     {
-        if (is_null($quote_number_pattern)) {
-            throw new \InvalidArgumentException('non-nullable quote_number_pattern cannot be null');
-        }
+        
         $this->container['quote_number_pattern'] = $quote_number_pattern;
 
         return $this;
@@ -2600,9 +2506,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setQuoteNumberCounter($quote_number_counter)
     {
-        if (is_null($quote_number_counter)) {
-            throw new \InvalidArgumentException('non-nullable quote_number_counter cannot be null');
-        }
+        
         $this->container['quote_number_counter'] = $quote_number_counter;
 
         return $this;
@@ -2627,9 +2531,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setClientNumberPattern($client_number_pattern)
     {
-        if (is_null($client_number_pattern)) {
-            throw new \InvalidArgumentException('non-nullable client_number_pattern cannot be null');
-        }
+        
         $this->container['client_number_pattern'] = $client_number_pattern;
 
         return $this;
@@ -2654,9 +2556,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setClientNumberCounter($client_number_counter)
     {
-        if (is_null($client_number_counter)) {
-            throw new \InvalidArgumentException('non-nullable client_number_counter cannot be null');
-        }
+        
         $this->container['client_number_counter'] = $client_number_counter;
 
         return $this;
@@ -2681,9 +2581,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setCreditNumberPattern($credit_number_pattern)
     {
-        if (is_null($credit_number_pattern)) {
-            throw new \InvalidArgumentException('non-nullable credit_number_pattern cannot be null');
-        }
+        
         $this->container['credit_number_pattern'] = $credit_number_pattern;
 
         return $this;
@@ -2708,9 +2606,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setCreditNumberCounter($credit_number_counter)
     {
-        if (is_null($credit_number_counter)) {
-            throw new \InvalidArgumentException('non-nullable credit_number_counter cannot be null');
-        }
+        
         $this->container['credit_number_counter'] = $credit_number_counter;
 
         return $this;
@@ -2735,9 +2631,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setRecurringInvoiceNumberPrefix($recurring_invoice_number_prefix)
     {
-        if (is_null($recurring_invoice_number_prefix)) {
-            throw new \InvalidArgumentException('non-nullable recurring_invoice_number_prefix cannot be null');
-        }
+        
         $this->container['recurring_invoice_number_prefix'] = $recurring_invoice_number_prefix;
 
         return $this;
@@ -2762,9 +2656,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setResetCounterFrequencyId($reset_counter_frequency_id)
     {
-        if (is_null($reset_counter_frequency_id)) {
-            throw new \InvalidArgumentException('non-nullable reset_counter_frequency_id cannot be null');
-        }
+        
         $this->container['reset_counter_frequency_id'] = $reset_counter_frequency_id;
 
         return $this;
@@ -2789,9 +2681,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setResetCounterDate($reset_counter_date)
     {
-        if (is_null($reset_counter_date)) {
-            throw new \InvalidArgumentException('non-nullable reset_counter_date cannot be null');
-        }
+        
         $this->container['reset_counter_date'] = $reset_counter_date;
 
         return $this;
@@ -2816,9 +2706,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setCounterPadding($counter_padding)
     {
-        if (is_null($counter_padding)) {
-            throw new \InvalidArgumentException('non-nullable counter_padding cannot be null');
-        }
+        
         $this->container['counter_padding'] = $counter_padding;
 
         return $this;
@@ -2843,9 +2731,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setSharedInvoiceQuoteCounter($shared_invoice_quote_counter)
     {
-        if (is_null($shared_invoice_quote_counter)) {
-            throw new \InvalidArgumentException('non-nullable shared_invoice_quote_counter cannot be null');
-        }
+        
         $this->container['shared_invoice_quote_counter'] = $shared_invoice_quote_counter;
 
         return $this;
@@ -2870,9 +2756,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setUpdateProducts($update_products)
     {
-        if (is_null($update_products)) {
-            throw new \InvalidArgumentException('non-nullable update_products cannot be null');
-        }
+        
         $this->container['update_products'] = $update_products;
 
         return $this;
@@ -2897,9 +2781,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setConvertProducts($convert_products)
     {
-        if (is_null($convert_products)) {
-            throw new \InvalidArgumentException('non-nullable convert_products cannot be null');
-        }
+        
         $this->container['convert_products'] = $convert_products;
 
         return $this;
@@ -2924,9 +2806,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setFillProducts($fill_products)
     {
-        if (is_null($fill_products)) {
-            throw new \InvalidArgumentException('non-nullable fill_products cannot be null');
-        }
+        
         $this->container['fill_products'] = $fill_products;
 
         return $this;
@@ -2951,9 +2831,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setInvoiceTerms($invoice_terms)
     {
-        if (is_null($invoice_terms)) {
-            throw new \InvalidArgumentException('non-nullable invoice_terms cannot be null');
-        }
+        
         $this->container['invoice_terms'] = $invoice_terms;
 
         return $this;
@@ -2978,9 +2856,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setQuoteTerms($quote_terms)
     {
-        if (is_null($quote_terms)) {
-            throw new \InvalidArgumentException('non-nullable quote_terms cannot be null');
-        }
+        
         $this->container['quote_terms'] = $quote_terms;
 
         return $this;
@@ -3005,9 +2881,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setInvoiceTaxes($invoice_taxes)
     {
-        if (is_null($invoice_taxes)) {
-            throw new \InvalidArgumentException('non-nullable invoice_taxes cannot be null');
-        }
+        
         $this->container['invoice_taxes'] = $invoice_taxes;
 
         return $this;
@@ -3032,9 +2906,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setInvoiceDesignId($invoice_design_id)
     {
-        if (is_null($invoice_design_id)) {
-            throw new \InvalidArgumentException('non-nullable invoice_design_id cannot be null');
-        }
+        
         $this->container['invoice_design_id'] = $invoice_design_id;
 
         return $this;
@@ -3059,9 +2931,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setQuoteDesignId($quote_design_id)
     {
-        if (is_null($quote_design_id)) {
-            throw new \InvalidArgumentException('non-nullable quote_design_id cannot be null');
-        }
+        
         $this->container['quote_design_id'] = $quote_design_id;
 
         return $this;
@@ -3086,9 +2956,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setInvoiceFooter($invoice_footer)
     {
-        if (is_null($invoice_footer)) {
-            throw new \InvalidArgumentException('non-nullable invoice_footer cannot be null');
-        }
+        
         $this->container['invoice_footer'] = $invoice_footer;
 
         return $this;
@@ -3113,9 +2981,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setInvoiceLabels($invoice_labels)
     {
-        if (is_null($invoice_labels)) {
-            throw new \InvalidArgumentException('non-nullable invoice_labels cannot be null');
-        }
+        
         $this->container['invoice_labels'] = $invoice_labels;
 
         return $this;
@@ -3140,9 +3006,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setTaxRate1($tax_rate1)
     {
-        if (is_null($tax_rate1)) {
-            throw new \InvalidArgumentException('non-nullable tax_rate1 cannot be null');
-        }
+        
         $this->container['tax_rate1'] = $tax_rate1;
 
         return $this;
@@ -3167,9 +3031,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setTaxName1($tax_name1)
     {
-        if (is_null($tax_name1)) {
-            throw new \InvalidArgumentException('non-nullable tax_name1 cannot be null');
-        }
+        
         $this->container['tax_name1'] = $tax_name1;
 
         return $this;
@@ -3194,9 +3056,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setTaxRate2($tax_rate2)
     {
-        if (is_null($tax_rate2)) {
-            throw new \InvalidArgumentException('non-nullable tax_rate2 cannot be null');
-        }
+        
         $this->container['tax_rate2'] = $tax_rate2;
 
         return $this;
@@ -3221,9 +3081,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setTaxName2($tax_name2)
     {
-        if (is_null($tax_name2)) {
-            throw new \InvalidArgumentException('non-nullable tax_name2 cannot be null');
-        }
+        
         $this->container['tax_name2'] = $tax_name2;
 
         return $this;
@@ -3248,9 +3106,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setTaxRate3($tax_rate3)
     {
-        if (is_null($tax_rate3)) {
-            throw new \InvalidArgumentException('non-nullable tax_rate3 cannot be null');
-        }
+        
         $this->container['tax_rate3'] = $tax_rate3;
 
         return $this;
@@ -3275,9 +3131,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setTaxName3($tax_name3)
     {
-        if (is_null($tax_name3)) {
-            throw new \InvalidArgumentException('non-nullable tax_name3 cannot be null');
-        }
+        
         $this->container['tax_name3'] = $tax_name3;
 
         return $this;
@@ -3302,9 +3156,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setPaymentTypeId($payment_type_id)
     {
-        if (is_null($payment_type_id)) {
-            throw new \InvalidArgumentException('non-nullable payment_type_id cannot be null');
-        }
+        
         $this->container['payment_type_id'] = $payment_type_id;
 
         return $this;
@@ -3329,9 +3181,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setCustomFields($custom_fields)
     {
-        if (is_null($custom_fields)) {
-            throw new \InvalidArgumentException('non-nullable custom_fields cannot be null');
-        }
+        
         $this->container['custom_fields'] = $custom_fields;
 
         return $this;
@@ -3356,9 +3206,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setEmailFooter($email_footer)
     {
-        if (is_null($email_footer)) {
-            throw new \InvalidArgumentException('non-nullable email_footer cannot be null');
-        }
+        
         $this->container['email_footer'] = $email_footer;
 
         return $this;
@@ -3383,9 +3231,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setEmailSendingMethod($email_sending_method)
     {
-        if (is_null($email_sending_method)) {
-            throw new \InvalidArgumentException('non-nullable email_sending_method cannot be null');
-        }
+        
         $this->container['email_sending_method'] = $email_sending_method;
 
         return $this;
@@ -3410,9 +3256,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setGmailSendingUserId($gmail_sending_user_id)
     {
-        if (is_null($gmail_sending_user_id)) {
-            throw new \InvalidArgumentException('non-nullable gmail_sending_user_id cannot be null');
-        }
+        
         $this->container['gmail_sending_user_id'] = $gmail_sending_user_id;
 
         return $this;
@@ -3437,9 +3281,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setEmailSubjectInvoice($email_subject_invoice)
     {
-        if (is_null($email_subject_invoice)) {
-            throw new \InvalidArgumentException('non-nullable email_subject_invoice cannot be null');
-        }
+        
         $this->container['email_subject_invoice'] = $email_subject_invoice;
 
         return $this;
@@ -3464,9 +3306,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setEmailSubjectQuote($email_subject_quote)
     {
-        if (is_null($email_subject_quote)) {
-            throw new \InvalidArgumentException('non-nullable email_subject_quote cannot be null');
-        }
+        
         $this->container['email_subject_quote'] = $email_subject_quote;
 
         return $this;
@@ -3491,9 +3331,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setEmailSubjectPayment($email_subject_payment)
     {
-        if (is_null($email_subject_payment)) {
-            throw new \InvalidArgumentException('non-nullable email_subject_payment cannot be null');
-        }
+        
         $this->container['email_subject_payment'] = $email_subject_payment;
 
         return $this;
@@ -3518,9 +3356,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setEmailTemplateInvoice($email_template_invoice)
     {
-        if (is_null($email_template_invoice)) {
-            throw new \InvalidArgumentException('non-nullable email_template_invoice cannot be null');
-        }
+        
         $this->container['email_template_invoice'] = $email_template_invoice;
 
         return $this;
@@ -3545,9 +3381,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setEmailTemplateQuote($email_template_quote)
     {
-        if (is_null($email_template_quote)) {
-            throw new \InvalidArgumentException('non-nullable email_template_quote cannot be null');
-        }
+        
         $this->container['email_template_quote'] = $email_template_quote;
 
         return $this;
@@ -3572,9 +3406,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setEmailTemplatePayment($email_template_payment)
     {
-        if (is_null($email_template_payment)) {
-            throw new \InvalidArgumentException('non-nullable email_template_payment cannot be null');
-        }
+        
         $this->container['email_template_payment'] = $email_template_payment;
 
         return $this;
@@ -3599,9 +3431,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setEmailSubjectReminder1($email_subject_reminder1)
     {
-        if (is_null($email_subject_reminder1)) {
-            throw new \InvalidArgumentException('non-nullable email_subject_reminder1 cannot be null');
-        }
+        
         $this->container['email_subject_reminder1'] = $email_subject_reminder1;
 
         return $this;
@@ -3626,9 +3456,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setEmailSubjectReminder2($email_subject_reminder2)
     {
-        if (is_null($email_subject_reminder2)) {
-            throw new \InvalidArgumentException('non-nullable email_subject_reminder2 cannot be null');
-        }
+        
         $this->container['email_subject_reminder2'] = $email_subject_reminder2;
 
         return $this;
@@ -3653,9 +3481,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setEmailSubjectReminder3($email_subject_reminder3)
     {
-        if (is_null($email_subject_reminder3)) {
-            throw new \InvalidArgumentException('non-nullable email_subject_reminder3 cannot be null');
-        }
+        
         $this->container['email_subject_reminder3'] = $email_subject_reminder3;
 
         return $this;
@@ -3680,9 +3506,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setEmailSubjectReminderEndless($email_subject_reminder_endless)
     {
-        if (is_null($email_subject_reminder_endless)) {
-            throw new \InvalidArgumentException('non-nullable email_subject_reminder_endless cannot be null');
-        }
+        
         $this->container['email_subject_reminder_endless'] = $email_subject_reminder_endless;
 
         return $this;
@@ -3707,9 +3531,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setEmailTemplateReminder1($email_template_reminder1)
     {
-        if (is_null($email_template_reminder1)) {
-            throw new \InvalidArgumentException('non-nullable email_template_reminder1 cannot be null');
-        }
+        
         $this->container['email_template_reminder1'] = $email_template_reminder1;
 
         return $this;
@@ -3734,9 +3556,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setEmailTemplateReminder2($email_template_reminder2)
     {
-        if (is_null($email_template_reminder2)) {
-            throw new \InvalidArgumentException('non-nullable email_template_reminder2 cannot be null');
-        }
+        
         $this->container['email_template_reminder2'] = $email_template_reminder2;
 
         return $this;
@@ -3761,9 +3581,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setEmailTemplateReminder3($email_template_reminder3)
     {
-        if (is_null($email_template_reminder3)) {
-            throw new \InvalidArgumentException('non-nullable email_template_reminder3 cannot be null');
-        }
+        
         $this->container['email_template_reminder3'] = $email_template_reminder3;
 
         return $this;
@@ -3788,9 +3606,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setEmailTemplateReminderEndless($email_template_reminder_endless)
     {
-        if (is_null($email_template_reminder_endless)) {
-            throw new \InvalidArgumentException('non-nullable email_template_reminder_endless cannot be null');
-        }
+        
         $this->container['email_template_reminder_endless'] = $email_template_reminder_endless;
 
         return $this;
@@ -3815,9 +3631,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setEnablePortalPassword($enable_portal_password)
     {
-        if (is_null($enable_portal_password)) {
-            throw new \InvalidArgumentException('non-nullable enable_portal_password cannot be null');
-        }
+        
         $this->container['enable_portal_password'] = $enable_portal_password;
 
         return $this;
@@ -3842,9 +3656,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setShowAcceptInvoiceTerms($show_accept_invoice_terms)
     {
-        if (is_null($show_accept_invoice_terms)) {
-            throw new \InvalidArgumentException('non-nullable show_accept_invoice_terms cannot be null');
-        }
+        
         $this->container['show_accept_invoice_terms'] = $show_accept_invoice_terms;
 
         return $this;
@@ -3869,9 +3681,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setShowAcceptQuoteTerms($show_accept_quote_terms)
     {
-        if (is_null($show_accept_quote_terms)) {
-            throw new \InvalidArgumentException('non-nullable show_accept_quote_terms cannot be null');
-        }
+        
         $this->container['show_accept_quote_terms'] = $show_accept_quote_terms;
 
         return $this;
@@ -3896,9 +3706,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setRequireInvoiceSignature($require_invoice_signature)
     {
-        if (is_null($require_invoice_signature)) {
-            throw new \InvalidArgumentException('non-nullable require_invoice_signature cannot be null');
-        }
+        
         $this->container['require_invoice_signature'] = $require_invoice_signature;
 
         return $this;
@@ -3923,9 +3731,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setRequireQuoteSignature($require_quote_signature)
     {
-        if (is_null($require_quote_signature)) {
-            throw new \InvalidArgumentException('non-nullable require_quote_signature cannot be null');
-        }
+        
         $this->container['require_quote_signature'] = $require_quote_signature;
 
         return $this;
@@ -3950,9 +3756,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setName($name)
     {
-        if (is_null($name)) {
-            throw new \InvalidArgumentException('non-nullable name cannot be null');
-        }
+        
         $this->container['name'] = $name;
 
         return $this;
@@ -3977,9 +3781,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setCompanyLogo($company_logo)
     {
-        if (is_null($company_logo)) {
-            throw new \InvalidArgumentException('non-nullable company_logo cannot be null');
-        }
+        
         $this->container['company_logo'] = $company_logo;
 
         return $this;
@@ -4004,9 +3806,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setWebsite($website)
     {
-        if (is_null($website)) {
-            throw new \InvalidArgumentException('non-nullable website cannot be null');
-        }
+        
         $this->container['website'] = $website;
 
         return $this;
@@ -4031,9 +3831,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setAddress1($address1)
     {
-        if (is_null($address1)) {
-            throw new \InvalidArgumentException('non-nullable address1 cannot be null');
-        }
+        
         $this->container['address1'] = $address1;
 
         return $this;
@@ -4058,9 +3856,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setAddress2($address2)
     {
-        if (is_null($address2)) {
-            throw new \InvalidArgumentException('non-nullable address2 cannot be null');
-        }
+        
         $this->container['address2'] = $address2;
 
         return $this;
@@ -4085,9 +3881,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setCity($city)
     {
-        if (is_null($city)) {
-            throw new \InvalidArgumentException('non-nullable city cannot be null');
-        }
+        
         $this->container['city'] = $city;
 
         return $this;
@@ -4112,9 +3906,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setState($state)
     {
-        if (is_null($state)) {
-            throw new \InvalidArgumentException('non-nullable state cannot be null');
-        }
+        
         $this->container['state'] = $state;
 
         return $this;
@@ -4139,9 +3931,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setPostalCode($postal_code)
     {
-        if (is_null($postal_code)) {
-            throw new \InvalidArgumentException('non-nullable postal_code cannot be null');
-        }
+        
         $this->container['postal_code'] = $postal_code;
 
         return $this;
@@ -4166,9 +3956,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setPhone($phone)
     {
-        if (is_null($phone)) {
-            throw new \InvalidArgumentException('non-nullable phone cannot be null');
-        }
+        
         $this->container['phone'] = $phone;
 
         return $this;
@@ -4193,9 +3981,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setEmail($email)
     {
-        if (is_null($email)) {
-            throw new \InvalidArgumentException('non-nullable email cannot be null');
-        }
+        
         $this->container['email'] = $email;
 
         return $this;
@@ -4220,9 +4006,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setCountryId($country_id)
     {
-        if (is_null($country_id)) {
-            throw new \InvalidArgumentException('non-nullable country_id cannot be null');
-        }
+        
         $this->container['country_id'] = $country_id;
 
         return $this;
@@ -4247,9 +4031,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setVatNumber($vat_number)
     {
-        if (is_null($vat_number)) {
-            throw new \InvalidArgumentException('non-nullable vat_number cannot be null');
-        }
+        
         $this->container['vat_number'] = $vat_number;
 
         return $this;
@@ -4274,9 +4056,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setPageSize($page_size)
     {
-        if (is_null($page_size)) {
-            throw new \InvalidArgumentException('non-nullable page_size cannot be null');
-        }
+        
         $this->container['page_size'] = $page_size;
 
         return $this;
@@ -4301,9 +4081,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setFontSize($font_size)
     {
-        if (is_null($font_size)) {
-            throw new \InvalidArgumentException('non-nullable font_size cannot be null');
-        }
+        
         $this->container['font_size'] = $font_size;
 
         return $this;
@@ -4328,9 +4106,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setPrimaryFont($primary_font)
     {
-        if (is_null($primary_font)) {
-            throw new \InvalidArgumentException('non-nullable primary_font cannot be null');
-        }
+        
         $this->container['primary_font'] = $primary_font;
 
         return $this;
@@ -4355,9 +4131,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setSecondaryFont($secondary_font)
     {
-        if (is_null($secondary_font)) {
-            throw new \InvalidArgumentException('non-nullable secondary_font cannot be null');
-        }
+        
         $this->container['secondary_font'] = $secondary_font;
 
         return $this;
@@ -4382,9 +4156,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setHidePaidToDate($hide_paid_to_date)
     {
-        if (is_null($hide_paid_to_date)) {
-            throw new \InvalidArgumentException('non-nullable hide_paid_to_date cannot be null');
-        }
+        
         $this->container['hide_paid_to_date'] = $hide_paid_to_date;
 
         return $this;
@@ -4409,9 +4181,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setEmbedDocuments($embed_documents)
     {
-        if (is_null($embed_documents)) {
-            throw new \InvalidArgumentException('non-nullable embed_documents cannot be null');
-        }
+        
         $this->container['embed_documents'] = $embed_documents;
 
         return $this;
@@ -4436,9 +4206,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setAllPagesHeader($all_pages_header)
     {
-        if (is_null($all_pages_header)) {
-            throw new \InvalidArgumentException('non-nullable all_pages_header cannot be null');
-        }
+        
         $this->container['all_pages_header'] = $all_pages_header;
 
         return $this;
@@ -4463,9 +4231,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setAllPagesFooter($all_pages_footer)
     {
-        if (is_null($all_pages_footer)) {
-            throw new \InvalidArgumentException('non-nullable all_pages_footer cannot be null');
-        }
+        
         $this->container['all_pages_footer'] = $all_pages_footer;
 
         return $this;
@@ -4490,9 +4256,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setDocumentEmailAttachment($document_email_attachment)
     {
-        if (is_null($document_email_attachment)) {
-            throw new \InvalidArgumentException('non-nullable document_email_attachment cannot be null');
-        }
+        
         $this->container['document_email_attachment'] = $document_email_attachment;
 
         return $this;
@@ -4517,9 +4281,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setEnableClientPortalPassword($enable_client_portal_password)
     {
-        if (is_null($enable_client_portal_password)) {
-            throw new \InvalidArgumentException('non-nullable enable_client_portal_password cannot be null');
-        }
+        
         $this->container['enable_client_portal_password'] = $enable_client_portal_password;
 
         return $this;
@@ -4544,9 +4306,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setEnableEmailMarkup($enable_email_markup)
     {
-        if (is_null($enable_email_markup)) {
-            throw new \InvalidArgumentException('non-nullable enable_email_markup cannot be null');
-        }
+        
         $this->container['enable_email_markup'] = $enable_email_markup;
 
         return $this;
@@ -4571,9 +4331,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setEnableClientPortalDashboard($enable_client_portal_dashboard)
     {
-        if (is_null($enable_client_portal_dashboard)) {
-            throw new \InvalidArgumentException('non-nullable enable_client_portal_dashboard cannot be null');
-        }
+        
         $this->container['enable_client_portal_dashboard'] = $enable_client_portal_dashboard;
 
         return $this;
@@ -4598,9 +4356,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setEnableClientPortal($enable_client_portal)
     {
-        if (is_null($enable_client_portal)) {
-            throw new \InvalidArgumentException('non-nullable enable_client_portal cannot be null');
-        }
+        
         $this->container['enable_client_portal'] = $enable_client_portal;
 
         return $this;
@@ -4625,9 +4381,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setEmailTemplateStatement($email_template_statement)
     {
-        if (is_null($email_template_statement)) {
-            throw new \InvalidArgumentException('non-nullable email_template_statement cannot be null');
-        }
+        
         $this->container['email_template_statement'] = $email_template_statement;
 
         return $this;
@@ -4652,9 +4406,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setEmailSubjectStatement($email_subject_statement)
     {
-        if (is_null($email_subject_statement)) {
-            throw new \InvalidArgumentException('non-nullable email_subject_statement cannot be null');
-        }
+        
         $this->container['email_subject_statement'] = $email_subject_statement;
 
         return $this;
@@ -4679,9 +4431,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setSignatureOnPdf($signature_on_pdf)
     {
-        if (is_null($signature_on_pdf)) {
-            throw new \InvalidArgumentException('non-nullable signature_on_pdf cannot be null');
-        }
+        
         $this->container['signature_on_pdf'] = $signature_on_pdf;
 
         return $this;
@@ -4706,9 +4456,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setQuoteFooter($quote_footer)
     {
-        if (is_null($quote_footer)) {
-            throw new \InvalidArgumentException('non-nullable quote_footer cannot be null');
-        }
+        
         $this->container['quote_footer'] = $quote_footer;
 
         return $this;
@@ -4733,9 +4481,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setEmailSubjectCustom1($email_subject_custom1)
     {
-        if (is_null($email_subject_custom1)) {
-            throw new \InvalidArgumentException('non-nullable email_subject_custom1 cannot be null');
-        }
+        
         $this->container['email_subject_custom1'] = $email_subject_custom1;
 
         return $this;
@@ -4760,9 +4506,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setEmailSubjectCustom2($email_subject_custom2)
     {
-        if (is_null($email_subject_custom2)) {
-            throw new \InvalidArgumentException('non-nullable email_subject_custom2 cannot be null');
-        }
+        
         $this->container['email_subject_custom2'] = $email_subject_custom2;
 
         return $this;
@@ -4787,9 +4531,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setEmailSubjectCustom3($email_subject_custom3)
     {
-        if (is_null($email_subject_custom3)) {
-            throw new \InvalidArgumentException('non-nullable email_subject_custom3 cannot be null');
-        }
+        
         $this->container['email_subject_custom3'] = $email_subject_custom3;
 
         return $this;
@@ -4814,9 +4556,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setEmailTemplateCustom1($email_template_custom1)
     {
-        if (is_null($email_template_custom1)) {
-            throw new \InvalidArgumentException('non-nullable email_template_custom1 cannot be null');
-        }
+        
         $this->container['email_template_custom1'] = $email_template_custom1;
 
         return $this;
@@ -4841,9 +4581,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setEmailTemplateCustom2($email_template_custom2)
     {
-        if (is_null($email_template_custom2)) {
-            throw new \InvalidArgumentException('non-nullable email_template_custom2 cannot be null');
-        }
+        
         $this->container['email_template_custom2'] = $email_template_custom2;
 
         return $this;
@@ -4868,9 +4606,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setEmailTemplateCustom3($email_template_custom3)
     {
-        if (is_null($email_template_custom3)) {
-            throw new \InvalidArgumentException('non-nullable email_template_custom3 cannot be null');
-        }
+        
         $this->container['email_template_custom3'] = $email_template_custom3;
 
         return $this;
@@ -4895,9 +4631,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setEnableReminder1($enable_reminder1)
     {
-        if (is_null($enable_reminder1)) {
-            throw new \InvalidArgumentException('non-nullable enable_reminder1 cannot be null');
-        }
+        
         $this->container['enable_reminder1'] = $enable_reminder1;
 
         return $this;
@@ -4922,9 +4656,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setEnableReminder2($enable_reminder2)
     {
-        if (is_null($enable_reminder2)) {
-            throw new \InvalidArgumentException('non-nullable enable_reminder2 cannot be null');
-        }
+        
         $this->container['enable_reminder2'] = $enable_reminder2;
 
         return $this;
@@ -4949,9 +4681,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setEnableReminder3($enable_reminder3)
     {
-        if (is_null($enable_reminder3)) {
-            throw new \InvalidArgumentException('non-nullable enable_reminder3 cannot be null');
-        }
+        
         $this->container['enable_reminder3'] = $enable_reminder3;
 
         return $this;
@@ -4976,9 +4706,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setNumDaysReminder1($num_days_reminder1)
     {
-        if (is_null($num_days_reminder1)) {
-            throw new \InvalidArgumentException('non-nullable num_days_reminder1 cannot be null');
-        }
+        
         $this->container['num_days_reminder1'] = $num_days_reminder1;
 
         return $this;
@@ -5003,9 +4731,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setNumDaysReminder2($num_days_reminder2)
     {
-        if (is_null($num_days_reminder2)) {
-            throw new \InvalidArgumentException('non-nullable num_days_reminder2 cannot be null');
-        }
+        
         $this->container['num_days_reminder2'] = $num_days_reminder2;
 
         return $this;
@@ -5030,9 +4756,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setNumDaysReminder3($num_days_reminder3)
     {
-        if (is_null($num_days_reminder3)) {
-            throw new \InvalidArgumentException('non-nullable num_days_reminder3 cannot be null');
-        }
+        
         $this->container['num_days_reminder3'] = $num_days_reminder3;
 
         return $this;
@@ -5057,9 +4781,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setScheduleReminder1($schedule_reminder1)
     {
-        if (is_null($schedule_reminder1)) {
-            throw new \InvalidArgumentException('non-nullable schedule_reminder1 cannot be null');
-        }
+        
         $this->container['schedule_reminder1'] = $schedule_reminder1;
 
         return $this;
@@ -5084,9 +4806,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setScheduleReminder2($schedule_reminder2)
     {
-        if (is_null($schedule_reminder2)) {
-            throw new \InvalidArgumentException('non-nullable schedule_reminder2 cannot be null');
-        }
+        
         $this->container['schedule_reminder2'] = $schedule_reminder2;
 
         return $this;
@@ -5111,9 +4831,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setScheduleReminder3($schedule_reminder3)
     {
-        if (is_null($schedule_reminder3)) {
-            throw new \InvalidArgumentException('non-nullable schedule_reminder3 cannot be null');
-        }
+        
         $this->container['schedule_reminder3'] = $schedule_reminder3;
 
         return $this;
@@ -5138,9 +4856,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setLateFeeAmount1($late_fee_amount1)
     {
-        if (is_null($late_fee_amount1)) {
-            throw new \InvalidArgumentException('non-nullable late_fee_amount1 cannot be null');
-        }
+        
         $this->container['late_fee_amount1'] = $late_fee_amount1;
 
         return $this;
@@ -5165,9 +4881,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setLateFeeAmount2($late_fee_amount2)
     {
-        if (is_null($late_fee_amount2)) {
-            throw new \InvalidArgumentException('non-nullable late_fee_amount2 cannot be null');
-        }
+        
         $this->container['late_fee_amount2'] = $late_fee_amount2;
 
         return $this;
@@ -5192,9 +4906,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setLateFeeAmount3($late_fee_amount3)
     {
-        if (is_null($late_fee_amount3)) {
-            throw new \InvalidArgumentException('non-nullable late_fee_amount3 cannot be null');
-        }
+        
         $this->container['late_fee_amount3'] = $late_fee_amount3;
 
         return $this;
@@ -5219,9 +4931,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setEndlessReminderFrequencyId($endless_reminder_frequency_id)
     {
-        if (is_null($endless_reminder_frequency_id)) {
-            throw new \InvalidArgumentException('non-nullable endless_reminder_frequency_id cannot be null');
-        }
+        
         $this->container['endless_reminder_frequency_id'] = $endless_reminder_frequency_id;
 
         return $this;
@@ -5246,9 +4956,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setClientOnlinePaymentNotification($client_online_payment_notification)
     {
-        if (is_null($client_online_payment_notification)) {
-            throw new \InvalidArgumentException('non-nullable client_online_payment_notification cannot be null');
-        }
+        
         $this->container['client_online_payment_notification'] = $client_online_payment_notification;
 
         return $this;
@@ -5273,9 +4981,7 @@ class CompanySettings implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setClientManualPaymentNotification($client_manual_payment_notification)
     {
-        if (is_null($client_manual_payment_notification)) {
-            throw new \InvalidArgumentException('non-nullable client_manual_payment_notification cannot be null');
-        }
+        
         $this->container['client_manual_payment_notification'] = $client_manual_payment_notification;
 
         return $this;

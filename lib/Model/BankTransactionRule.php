@@ -98,17 +98,17 @@ class BankTransactionRule implements ModelInterface, ArrayAccess, \JsonSerializa
       * @var boolean[]
       */
     protected static $openAPINullables = [
-        'id' => false,
-        'company_id' => false,
-        'user_id' => false,
-        'name' => false,
-        'rules' => false,
-        'auto_convert' => false,
-        'matches_on_all' => false,
-        'applies_to' => false,
-        'client_id' => false,
-        'vendor_id' => false,
-        'category_id' => false
+        'id' => true,
+        'company_id' => true,
+        'user_id' => true,
+        'name' => true,
+        'rules' => true,
+        'auto_convert' => true,
+        'matches_on_all' => true,
+        'applies_to' => true,
+        'client_id' => true,
+        'vendor_id' => true,
+        'category_id' => true
     ];
 
     /**
@@ -379,9 +379,7 @@ class BankTransactionRule implements ModelInterface, ArrayAccess, \JsonSerializa
      */
     public function setId($id)
     {
-        if (is_null($id)) {
-            throw new \InvalidArgumentException('non-nullable id cannot be null');
-        }
+        
         $this->container['id'] = $id;
 
         return $this;
@@ -406,9 +404,7 @@ class BankTransactionRule implements ModelInterface, ArrayAccess, \JsonSerializa
      */
     public function setCompanyId($company_id)
     {
-        if (is_null($company_id)) {
-            throw new \InvalidArgumentException('non-nullable company_id cannot be null');
-        }
+        
         $this->container['company_id'] = $company_id;
 
         return $this;
@@ -433,9 +429,7 @@ class BankTransactionRule implements ModelInterface, ArrayAccess, \JsonSerializa
      */
     public function setUserId($user_id)
     {
-        if (is_null($user_id)) {
-            throw new \InvalidArgumentException('non-nullable user_id cannot be null');
-        }
+        
         $this->container['user_id'] = $user_id;
 
         return $this;
@@ -460,9 +454,7 @@ class BankTransactionRule implements ModelInterface, ArrayAccess, \JsonSerializa
      */
     public function setName($name)
     {
-        if (is_null($name)) {
-            throw new \InvalidArgumentException('non-nullable name cannot be null');
-        }
+        
         $this->container['name'] = $name;
 
         return $this;
@@ -487,9 +479,7 @@ class BankTransactionRule implements ModelInterface, ArrayAccess, \JsonSerializa
      */
     public function setRules($rules)
     {
-        if (is_null($rules)) {
-            throw new \InvalidArgumentException('non-nullable rules cannot be null');
-        }
+        
         $this->container['rules'] = $rules;
 
         return $this;
@@ -514,9 +504,7 @@ class BankTransactionRule implements ModelInterface, ArrayAccess, \JsonSerializa
      */
     public function setAutoConvert($auto_convert)
     {
-        if (is_null($auto_convert)) {
-            throw new \InvalidArgumentException('non-nullable auto_convert cannot be null');
-        }
+        
         $this->container['auto_convert'] = $auto_convert;
 
         return $this;
@@ -541,9 +529,7 @@ class BankTransactionRule implements ModelInterface, ArrayAccess, \JsonSerializa
      */
     public function setMatchesOnAll($matches_on_all)
     {
-        if (is_null($matches_on_all)) {
-            throw new \InvalidArgumentException('non-nullable matches_on_all cannot be null');
-        }
+        
         $this->container['matches_on_all'] = $matches_on_all;
 
         return $this;
@@ -568,9 +554,7 @@ class BankTransactionRule implements ModelInterface, ArrayAccess, \JsonSerializa
      */
     public function setAppliesTo($applies_to)
     {
-        if (is_null($applies_to)) {
-            throw new \InvalidArgumentException('non-nullable applies_to cannot be null');
-        }
+        
         $this->container['applies_to'] = $applies_to;
 
         return $this;
@@ -595,9 +579,7 @@ class BankTransactionRule implements ModelInterface, ArrayAccess, \JsonSerializa
      */
     public function setClientId($client_id)
     {
-        if (is_null($client_id)) {
-            throw new \InvalidArgumentException('non-nullable client_id cannot be null');
-        }
+        
         $this->container['client_id'] = $client_id;
 
         return $this;
@@ -622,9 +604,7 @@ class BankTransactionRule implements ModelInterface, ArrayAccess, \JsonSerializa
      */
     public function setVendorId($vendor_id)
     {
-        if (is_null($vendor_id)) {
-            throw new \InvalidArgumentException('non-nullable vendor_id cannot be null');
-        }
+        
         $this->container['vendor_id'] = $vendor_id;
 
         return $this;
@@ -649,9 +629,7 @@ class BankTransactionRule implements ModelInterface, ArrayAccess, \JsonSerializa
      */
     public function setCategoryId($category_id)
     {
-        if (is_null($category_id)) {
-            throw new \InvalidArgumentException('non-nullable category_id cannot be null');
-        }
+        
         $this->container['category_id'] = $category_id;
 
         return $this;

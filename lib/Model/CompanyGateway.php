@@ -94,15 +94,15 @@ class CompanyGateway implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var boolean[]
       */
     protected static $openAPINullables = [
-        'id' => false,
-        'company_id' => false,
-        'gateway_key' => false,
-        'accepted_credit_cards' => false,
-        'require_billing_address' => false,
-        'require_shipping_address' => false,
-        'config' => false,
-        'update_details' => false,
-        'fees_and_limits' => false
+        'id' => true,
+        'company_id' => true,
+        'gateway_key' => true,
+        'accepted_credit_cards' => true,
+        'require_billing_address' => true,
+        'require_shipping_address' => true,
+        'config' => true,
+        'update_details' => true,
+        'fees_and_limits' => true
     ];
 
     /**
@@ -365,9 +365,7 @@ class CompanyGateway implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setId($id)
     {
-        if (is_null($id)) {
-            throw new \InvalidArgumentException('non-nullable id cannot be null');
-        }
+        
         $this->container['id'] = $id;
 
         return $this;
@@ -392,9 +390,7 @@ class CompanyGateway implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setCompanyId($company_id)
     {
-        if (is_null($company_id)) {
-            throw new \InvalidArgumentException('non-nullable company_id cannot be null');
-        }
+        
         $this->container['company_id'] = $company_id;
 
         return $this;
@@ -419,9 +415,7 @@ class CompanyGateway implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setGatewayKey($gateway_key)
     {
-        if (is_null($gateway_key)) {
-            throw new \InvalidArgumentException('non-nullable gateway_key cannot be null');
-        }
+        
         $this->container['gateway_key'] = $gateway_key;
 
         return $this;
@@ -446,9 +440,7 @@ class CompanyGateway implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setAcceptedCreditCards($accepted_credit_cards)
     {
-        if (is_null($accepted_credit_cards)) {
-            throw new \InvalidArgumentException('non-nullable accepted_credit_cards cannot be null');
-        }
+        
         $this->container['accepted_credit_cards'] = $accepted_credit_cards;
 
         return $this;
@@ -473,9 +465,7 @@ class CompanyGateway implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setRequireBillingAddress($require_billing_address)
     {
-        if (is_null($require_billing_address)) {
-            throw new \InvalidArgumentException('non-nullable require_billing_address cannot be null');
-        }
+        
         $this->container['require_billing_address'] = $require_billing_address;
 
         return $this;
@@ -500,9 +490,7 @@ class CompanyGateway implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setRequireShippingAddress($require_shipping_address)
     {
-        if (is_null($require_shipping_address)) {
-            throw new \InvalidArgumentException('non-nullable require_shipping_address cannot be null');
-        }
+        
         $this->container['require_shipping_address'] = $require_shipping_address;
 
         return $this;
@@ -527,9 +515,7 @@ class CompanyGateway implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setConfig($config)
     {
-        if (is_null($config)) {
-            throw new \InvalidArgumentException('non-nullable config cannot be null');
-        }
+        
         $this->container['config'] = $config;
 
         return $this;
@@ -554,9 +540,7 @@ class CompanyGateway implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setUpdateDetails($update_details)
     {
-        if (is_null($update_details)) {
-            throw new \InvalidArgumentException('non-nullable update_details cannot be null');
-        }
+        
         $this->container['update_details'] = $update_details;
 
         return $this;
@@ -581,9 +565,7 @@ class CompanyGateway implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setFeesAndLimits($fees_and_limits)
     {
-        if (is_null($fees_and_limits)) {
-            throw new \InvalidArgumentException('non-nullable fees_and_limits cannot be null');
-        }
+        
         $this->container['fees_and_limits'] = $fees_and_limits;
 
         return $this;

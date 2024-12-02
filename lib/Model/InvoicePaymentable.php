@@ -80,8 +80,8 @@ class InvoicePaymentable implements ModelInterface, ArrayAccess, \JsonSerializab
       * @var boolean[]
       */
     protected static $openAPINullables = [
-        'invoice_id' => false,
-        'amount' => false
+        'invoice_id' => true,
+        'amount' => true
     ];
 
     /**
@@ -316,9 +316,7 @@ class InvoicePaymentable implements ModelInterface, ArrayAccess, \JsonSerializab
      */
     public function setInvoiceId($invoice_id)
     {
-        if (is_null($invoice_id)) {
-            throw new \InvalidArgumentException('non-nullable invoice_id cannot be null');
-        }
+        
         $this->container['invoice_id'] = $invoice_id;
 
         return $this;
@@ -343,9 +341,7 @@ class InvoicePaymentable implements ModelInterface, ArrayAccess, \JsonSerializab
      */
     public function setAmount($amount)
     {
-        if (is_null($amount)) {
-            throw new \InvalidArgumentException('non-nullable amount cannot be null');
-        }
+        
         $this->container['amount'] = $amount;
 
         return $this;

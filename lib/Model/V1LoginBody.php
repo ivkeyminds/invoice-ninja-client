@@ -80,8 +80,8 @@ class V1LoginBody implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var boolean[]
       */
     protected static $openAPINullables = [
-        'email' => false,
-        'password' => false
+        'email' => true,
+        'password' => true
     ];
 
     /**
@@ -316,9 +316,7 @@ class V1LoginBody implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setEmail($email)
     {
-        if (is_null($email)) {
-            throw new \InvalidArgumentException('non-nullable email cannot be null');
-        }
+        
         $this->container['email'] = $email;
 
         return $this;
@@ -343,9 +341,7 @@ class V1LoginBody implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setPassword($password)
     {
-        if (is_null($password)) {
-            throw new \InvalidArgumentException('non-nullable password cannot be null');
-        }
+        
         $this->container['password'] = $password;
 
         return $this;

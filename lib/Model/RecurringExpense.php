@@ -154,45 +154,45 @@ class RecurringExpense implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var boolean[]
       */
     protected static $openAPINullables = [
-        'id' => false,
-        'user_id' => false,
-        'assigned_user_id' => false,
-        'company_id' => false,
-        'client_id' => false,
-        'invoice_id' => false,
-        'bank_id' => false,
-        'invoice_currency_id' => false,
-        'expense_currency_id' => false,
-        'invoice_category_id' => false,
-        'payment_type_id' => false,
-        'private_notes' => false,
-        'public_notes' => false,
-        'transaction_reference' => false,
-        'transcation_id' => false,
-        'custom_value1' => false,
-        'custom_value2' => false,
-        'custom_value3' => false,
-        'custom_value4' => false,
-        'tax_name1' => false,
-        'tax_name2' => false,
-        'tax_rate1' => false,
-        'tax_rate2' => false,
-        'tax_name3' => false,
-        'tax_rate3' => false,
-        'amount' => false,
-        'frequency_id' => false,
-        'remaining_cycles' => false,
-        'foreign_amount' => false,
-        'exchange_rate' => false,
-        'date' => false,
-        'payment_date' => false,
-        'should_be_invoiced' => false,
-        'is_deleted' => false,
-        'last_sent_date' => false,
-        'next_send_date' => false,
-        'invoice_documents' => false,
-        'updated_at' => false,
-        'archived_at' => false
+        'id' => true,
+        'user_id' => true,
+        'assigned_user_id' => true,
+        'company_id' => true,
+        'client_id' => true,
+        'invoice_id' => true,
+        'bank_id' => true,
+        'invoice_currency_id' => true,
+        'expense_currency_id' => true,
+        'invoice_category_id' => true,
+        'payment_type_id' => true,
+        'private_notes' => true,
+        'public_notes' => true,
+        'transaction_reference' => true,
+        'transcation_id' => true,
+        'custom_value1' => true,
+        'custom_value2' => true,
+        'custom_value3' => true,
+        'custom_value4' => true,
+        'tax_name1' => true,
+        'tax_name2' => true,
+        'tax_rate1' => true,
+        'tax_rate2' => true,
+        'tax_name3' => true,
+        'tax_rate3' => true,
+        'amount' => true,
+        'frequency_id' => true,
+        'remaining_cycles' => true,
+        'foreign_amount' => true,
+        'exchange_rate' => true,
+        'date' => true,
+        'payment_date' => true,
+        'should_be_invoiced' => true,
+        'is_deleted' => true,
+        'last_sent_date' => true,
+        'next_send_date' => true,
+        'invoice_documents' => true,
+        'updated_at' => true,
+        'archived_at' => true
     ];
 
     /**
@@ -575,9 +575,7 @@ class RecurringExpense implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setId($id)
     {
-        if (is_null($id)) {
-            throw new \InvalidArgumentException('non-nullable id cannot be null');
-        }
+        
         $this->container['id'] = $id;
 
         return $this;
@@ -602,9 +600,7 @@ class RecurringExpense implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setUserId($user_id)
     {
-        if (is_null($user_id)) {
-            throw new \InvalidArgumentException('non-nullable user_id cannot be null');
-        }
+        
         $this->container['user_id'] = $user_id;
 
         return $this;
@@ -629,9 +625,7 @@ class RecurringExpense implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setAssignedUserId($assigned_user_id)
     {
-        if (is_null($assigned_user_id)) {
-            throw new \InvalidArgumentException('non-nullable assigned_user_id cannot be null');
-        }
+        
         $this->container['assigned_user_id'] = $assigned_user_id;
 
         return $this;
@@ -656,9 +650,7 @@ class RecurringExpense implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setCompanyId($company_id)
     {
-        if (is_null($company_id)) {
-            throw new \InvalidArgumentException('non-nullable company_id cannot be null');
-        }
+        
         $this->container['company_id'] = $company_id;
 
         return $this;
@@ -683,9 +675,7 @@ class RecurringExpense implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setClientId($client_id)
     {
-        if (is_null($client_id)) {
-            throw new \InvalidArgumentException('non-nullable client_id cannot be null');
-        }
+        
         $this->container['client_id'] = $client_id;
 
         return $this;
@@ -710,9 +700,7 @@ class RecurringExpense implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setInvoiceId($invoice_id)
     {
-        if (is_null($invoice_id)) {
-            throw new \InvalidArgumentException('non-nullable invoice_id cannot be null');
-        }
+        
         $this->container['invoice_id'] = $invoice_id;
 
         return $this;
@@ -737,9 +725,7 @@ class RecurringExpense implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setBankId($bank_id)
     {
-        if (is_null($bank_id)) {
-            throw new \InvalidArgumentException('non-nullable bank_id cannot be null');
-        }
+        
         $this->container['bank_id'] = $bank_id;
 
         return $this;
@@ -764,9 +750,7 @@ class RecurringExpense implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setInvoiceCurrencyId($invoice_currency_id)
     {
-        if (is_null($invoice_currency_id)) {
-            throw new \InvalidArgumentException('non-nullable invoice_currency_id cannot be null');
-        }
+        
         $this->container['invoice_currency_id'] = $invoice_currency_id;
 
         return $this;
@@ -791,9 +775,7 @@ class RecurringExpense implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setExpenseCurrencyId($expense_currency_id)
     {
-        if (is_null($expense_currency_id)) {
-            throw new \InvalidArgumentException('non-nullable expense_currency_id cannot be null');
-        }
+        
         $this->container['expense_currency_id'] = $expense_currency_id;
 
         return $this;
@@ -818,9 +800,7 @@ class RecurringExpense implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setInvoiceCategoryId($invoice_category_id)
     {
-        if (is_null($invoice_category_id)) {
-            throw new \InvalidArgumentException('non-nullable invoice_category_id cannot be null');
-        }
+        
         $this->container['invoice_category_id'] = $invoice_category_id;
 
         return $this;
@@ -845,9 +825,7 @@ class RecurringExpense implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setPaymentTypeId($payment_type_id)
     {
-        if (is_null($payment_type_id)) {
-            throw new \InvalidArgumentException('non-nullable payment_type_id cannot be null');
-        }
+        
         $this->container['payment_type_id'] = $payment_type_id;
 
         return $this;
@@ -872,9 +850,7 @@ class RecurringExpense implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setPrivateNotes($private_notes)
     {
-        if (is_null($private_notes)) {
-            throw new \InvalidArgumentException('non-nullable private_notes cannot be null');
-        }
+        
         $this->container['private_notes'] = $private_notes;
 
         return $this;
@@ -899,9 +875,7 @@ class RecurringExpense implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setPublicNotes($public_notes)
     {
-        if (is_null($public_notes)) {
-            throw new \InvalidArgumentException('non-nullable public_notes cannot be null');
-        }
+        
         $this->container['public_notes'] = $public_notes;
 
         return $this;
@@ -926,9 +900,7 @@ class RecurringExpense implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setTransactionReference($transaction_reference)
     {
-        if (is_null($transaction_reference)) {
-            throw new \InvalidArgumentException('non-nullable transaction_reference cannot be null');
-        }
+        
         $this->container['transaction_reference'] = $transaction_reference;
 
         return $this;
@@ -953,9 +925,7 @@ class RecurringExpense implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setTranscationId($transcation_id)
     {
-        if (is_null($transcation_id)) {
-            throw new \InvalidArgumentException('non-nullable transcation_id cannot be null');
-        }
+        
         $this->container['transcation_id'] = $transcation_id;
 
         return $this;
@@ -980,9 +950,7 @@ class RecurringExpense implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setCustomValue1($custom_value1)
     {
-        if (is_null($custom_value1)) {
-            throw new \InvalidArgumentException('non-nullable custom_value1 cannot be null');
-        }
+        
         $this->container['custom_value1'] = $custom_value1;
 
         return $this;
@@ -1007,9 +975,7 @@ class RecurringExpense implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setCustomValue2($custom_value2)
     {
-        if (is_null($custom_value2)) {
-            throw new \InvalidArgumentException('non-nullable custom_value2 cannot be null');
-        }
+        
         $this->container['custom_value2'] = $custom_value2;
 
         return $this;
@@ -1034,9 +1000,7 @@ class RecurringExpense implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setCustomValue3($custom_value3)
     {
-        if (is_null($custom_value3)) {
-            throw new \InvalidArgumentException('non-nullable custom_value3 cannot be null');
-        }
+        
         $this->container['custom_value3'] = $custom_value3;
 
         return $this;
@@ -1061,9 +1025,7 @@ class RecurringExpense implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setCustomValue4($custom_value4)
     {
-        if (is_null($custom_value4)) {
-            throw new \InvalidArgumentException('non-nullable custom_value4 cannot be null');
-        }
+        
         $this->container['custom_value4'] = $custom_value4;
 
         return $this;
@@ -1088,9 +1050,7 @@ class RecurringExpense implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setTaxName1($tax_name1)
     {
-        if (is_null($tax_name1)) {
-            throw new \InvalidArgumentException('non-nullable tax_name1 cannot be null');
-        }
+        
         $this->container['tax_name1'] = $tax_name1;
 
         return $this;
@@ -1115,9 +1075,7 @@ class RecurringExpense implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setTaxName2($tax_name2)
     {
-        if (is_null($tax_name2)) {
-            throw new \InvalidArgumentException('non-nullable tax_name2 cannot be null');
-        }
+        
         $this->container['tax_name2'] = $tax_name2;
 
         return $this;
@@ -1142,9 +1100,7 @@ class RecurringExpense implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setTaxRate1($tax_rate1)
     {
-        if (is_null($tax_rate1)) {
-            throw new \InvalidArgumentException('non-nullable tax_rate1 cannot be null');
-        }
+        
         $this->container['tax_rate1'] = $tax_rate1;
 
         return $this;
@@ -1169,9 +1125,7 @@ class RecurringExpense implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setTaxRate2($tax_rate2)
     {
-        if (is_null($tax_rate2)) {
-            throw new \InvalidArgumentException('non-nullable tax_rate2 cannot be null');
-        }
+        
         $this->container['tax_rate2'] = $tax_rate2;
 
         return $this;
@@ -1196,9 +1150,7 @@ class RecurringExpense implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setTaxName3($tax_name3)
     {
-        if (is_null($tax_name3)) {
-            throw new \InvalidArgumentException('non-nullable tax_name3 cannot be null');
-        }
+        
         $this->container['tax_name3'] = $tax_name3;
 
         return $this;
@@ -1223,9 +1175,7 @@ class RecurringExpense implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setTaxRate3($tax_rate3)
     {
-        if (is_null($tax_rate3)) {
-            throw new \InvalidArgumentException('non-nullable tax_rate3 cannot be null');
-        }
+        
         $this->container['tax_rate3'] = $tax_rate3;
 
         return $this;
@@ -1250,9 +1200,7 @@ class RecurringExpense implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setAmount($amount)
     {
-        if (is_null($amount)) {
-            throw new \InvalidArgumentException('non-nullable amount cannot be null');
-        }
+        
         $this->container['amount'] = $amount;
 
         return $this;
@@ -1277,9 +1225,7 @@ class RecurringExpense implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setFrequencyId($frequency_id)
     {
-        if (is_null($frequency_id)) {
-            throw new \InvalidArgumentException('non-nullable frequency_id cannot be null');
-        }
+        
         $this->container['frequency_id'] = $frequency_id;
 
         return $this;
@@ -1304,9 +1250,7 @@ class RecurringExpense implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setRemainingCycles($remaining_cycles)
     {
-        if (is_null($remaining_cycles)) {
-            throw new \InvalidArgumentException('non-nullable remaining_cycles cannot be null');
-        }
+        
         $this->container['remaining_cycles'] = $remaining_cycles;
 
         return $this;
@@ -1331,9 +1275,7 @@ class RecurringExpense implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setForeignAmount($foreign_amount)
     {
-        if (is_null($foreign_amount)) {
-            throw new \InvalidArgumentException('non-nullable foreign_amount cannot be null');
-        }
+        
         $this->container['foreign_amount'] = $foreign_amount;
 
         return $this;
@@ -1358,9 +1300,7 @@ class RecurringExpense implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setExchangeRate($exchange_rate)
     {
-        if (is_null($exchange_rate)) {
-            throw new \InvalidArgumentException('non-nullable exchange_rate cannot be null');
-        }
+        
         $this->container['exchange_rate'] = $exchange_rate;
 
         return $this;
@@ -1385,9 +1325,7 @@ class RecurringExpense implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setDate($date)
     {
-        if (is_null($date)) {
-            throw new \InvalidArgumentException('non-nullable date cannot be null');
-        }
+        
         $this->container['date'] = $date;
 
         return $this;
@@ -1412,9 +1350,7 @@ class RecurringExpense implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setPaymentDate($payment_date)
     {
-        if (is_null($payment_date)) {
-            throw new \InvalidArgumentException('non-nullable payment_date cannot be null');
-        }
+        
         $this->container['payment_date'] = $payment_date;
 
         return $this;
@@ -1439,9 +1375,7 @@ class RecurringExpense implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setShouldBeInvoiced($should_be_invoiced)
     {
-        if (is_null($should_be_invoiced)) {
-            throw new \InvalidArgumentException('non-nullable should_be_invoiced cannot be null');
-        }
+        
         $this->container['should_be_invoiced'] = $should_be_invoiced;
 
         return $this;
@@ -1466,9 +1400,7 @@ class RecurringExpense implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setIsDeleted($is_deleted)
     {
-        if (is_null($is_deleted)) {
-            throw new \InvalidArgumentException('non-nullable is_deleted cannot be null');
-        }
+        
         $this->container['is_deleted'] = $is_deleted;
 
         return $this;
@@ -1493,9 +1425,7 @@ class RecurringExpense implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setLastSentDate($last_sent_date)
     {
-        if (is_null($last_sent_date)) {
-            throw new \InvalidArgumentException('non-nullable last_sent_date cannot be null');
-        }
+        
         $this->container['last_sent_date'] = $last_sent_date;
 
         return $this;
@@ -1520,9 +1450,7 @@ class RecurringExpense implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setNextSendDate($next_send_date)
     {
-        if (is_null($next_send_date)) {
-            throw new \InvalidArgumentException('non-nullable next_send_date cannot be null');
-        }
+        
         $this->container['next_send_date'] = $next_send_date;
 
         return $this;
@@ -1547,9 +1475,7 @@ class RecurringExpense implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setInvoiceDocuments($invoice_documents)
     {
-        if (is_null($invoice_documents)) {
-            throw new \InvalidArgumentException('non-nullable invoice_documents cannot be null');
-        }
+        
         $this->container['invoice_documents'] = $invoice_documents;
 
         return $this;
@@ -1574,9 +1500,7 @@ class RecurringExpense implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setUpdatedAt($updated_at)
     {
-        if (is_null($updated_at)) {
-            throw new \InvalidArgumentException('non-nullable updated_at cannot be null');
-        }
+        
         $this->container['updated_at'] = $updated_at;
 
         return $this;
@@ -1601,9 +1525,7 @@ class RecurringExpense implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setArchivedAt($archived_at)
     {
-        if (is_null($archived_at)) {
-            throw new \InvalidArgumentException('non-nullable archived_at cannot be null');
-        }
+        
         $this->container['archived_at'] = $archived_at;
 
         return $this;

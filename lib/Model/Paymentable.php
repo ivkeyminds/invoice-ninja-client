@@ -90,13 +90,13 @@ class Paymentable implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var boolean[]
       */
     protected static $openAPINullables = [
-        'id' => false,
-        'invoice_id' => false,
-        'credit_id' => false,
-        'refunded' => false,
-        'amount' => false,
-        'updated_at' => false,
-        'created_at' => false
+        'id' => true,
+        'invoice_id' => true,
+        'credit_id' => true,
+        'refunded' => true,
+        'amount' => true,
+        'updated_at' => true,
+        'created_at' => true
     ];
 
     /**
@@ -351,9 +351,7 @@ class Paymentable implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setId($id)
     {
-        if (is_null($id)) {
-            throw new \InvalidArgumentException('non-nullable id cannot be null');
-        }
+        
         $this->container['id'] = $id;
 
         return $this;
@@ -378,9 +376,7 @@ class Paymentable implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setInvoiceId($invoice_id)
     {
-        if (is_null($invoice_id)) {
-            throw new \InvalidArgumentException('non-nullable invoice_id cannot be null');
-        }
+        
         $this->container['invoice_id'] = $invoice_id;
 
         return $this;
@@ -405,9 +401,7 @@ class Paymentable implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setCreditId($credit_id)
     {
-        if (is_null($credit_id)) {
-            throw new \InvalidArgumentException('non-nullable credit_id cannot be null');
-        }
+        
         $this->container['credit_id'] = $credit_id;
 
         return $this;
@@ -432,9 +426,7 @@ class Paymentable implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setRefunded($refunded)
     {
-        if (is_null($refunded)) {
-            throw new \InvalidArgumentException('non-nullable refunded cannot be null');
-        }
+        
         $this->container['refunded'] = $refunded;
 
         return $this;
@@ -459,9 +451,7 @@ class Paymentable implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setAmount($amount)
     {
-        if (is_null($amount)) {
-            throw new \InvalidArgumentException('non-nullable amount cannot be null');
-        }
+        
         $this->container['amount'] = $amount;
 
         return $this;
@@ -486,9 +476,7 @@ class Paymentable implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setUpdatedAt($updated_at)
     {
-        if (is_null($updated_at)) {
-            throw new \InvalidArgumentException('non-nullable updated_at cannot be null');
-        }
+        
         $this->container['updated_at'] = $updated_at;
 
         return $this;
@@ -513,9 +501,7 @@ class Paymentable implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setCreatedAt($created_at)
     {
-        if (is_null($created_at)) {
-            throw new \InvalidArgumentException('non-nullable created_at cannot be null');
-        }
+        
         $this->container['created_at'] = $created_at;
 
         return $this;

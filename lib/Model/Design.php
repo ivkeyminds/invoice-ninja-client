@@ -94,15 +94,15 @@ class Design implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var boolean[]
       */
     protected static $openAPINullables = [
-        'id' => false,
-        'name' => false,
-        'design' => false,
-        'is_custom' => false,
-        'is_active' => false,
-        'is_deleted' => false,
-        'created_at' => false,
-        'updated_at' => false,
-        'deleted_at' => false
+        'id' => true,
+        'name' => true,
+        'design' => true,
+        'is_custom' => true,
+        'is_active' => true,
+        'is_deleted' => true,
+        'created_at' => true,
+        'updated_at' => true,
+        'deleted_at' => true
     ];
 
     /**
@@ -365,9 +365,7 @@ class Design implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setId($id)
     {
-        if (is_null($id)) {
-            throw new \InvalidArgumentException('non-nullable id cannot be null');
-        }
+        
         $this->container['id'] = $id;
 
         return $this;
@@ -392,9 +390,7 @@ class Design implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setName($name)
     {
-        if (is_null($name)) {
-            throw new \InvalidArgumentException('non-nullable name cannot be null');
-        }
+        
         $this->container['name'] = $name;
 
         return $this;
@@ -419,9 +415,7 @@ class Design implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setDesign($design)
     {
-        if (is_null($design)) {
-            throw new \InvalidArgumentException('non-nullable design cannot be null');
-        }
+        
         $this->container['design'] = $design;
 
         return $this;
@@ -446,9 +440,7 @@ class Design implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setIsCustom($is_custom)
     {
-        if (is_null($is_custom)) {
-            throw new \InvalidArgumentException('non-nullable is_custom cannot be null');
-        }
+        
         $this->container['is_custom'] = $is_custom;
 
         return $this;
@@ -473,9 +465,7 @@ class Design implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setIsActive($is_active)
     {
-        if (is_null($is_active)) {
-            throw new \InvalidArgumentException('non-nullable is_active cannot be null');
-        }
+        
         $this->container['is_active'] = $is_active;
 
         return $this;
@@ -500,9 +490,7 @@ class Design implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setIsDeleted($is_deleted)
     {
-        if (is_null($is_deleted)) {
-            throw new \InvalidArgumentException('non-nullable is_deleted cannot be null');
-        }
+        
         $this->container['is_deleted'] = $is_deleted;
 
         return $this;
@@ -527,9 +515,7 @@ class Design implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setCreatedAt($created_at)
     {
-        if (is_null($created_at)) {
-            throw new \InvalidArgumentException('non-nullable created_at cannot be null');
-        }
+        
         $this->container['created_at'] = $created_at;
 
         return $this;
@@ -554,9 +540,7 @@ class Design implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setUpdatedAt($updated_at)
     {
-        if (is_null($updated_at)) {
-            throw new \InvalidArgumentException('non-nullable updated_at cannot be null');
-        }
+        
         $this->container['updated_at'] = $updated_at;
 
         return $this;
@@ -581,9 +565,7 @@ class Design implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setDeletedAt($deleted_at)
     {
-        if (is_null($deleted_at)) {
-            throw new \InvalidArgumentException('non-nullable deleted_at cannot be null');
-        }
+        
         $this->container['deleted_at'] = $deleted_at;
 
         return $this;

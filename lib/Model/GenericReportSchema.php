@@ -86,11 +86,11 @@ class GenericReportSchema implements ModelInterface, ArrayAccess, \JsonSerializa
       * @var boolean[]
       */
     protected static $openAPINullables = [
-        'date_range' => false,
-        'date_key' => false,
-        'start_date' => false,
-        'end_date' => false,
-        'report_keys' => false
+        'date_range' => true,
+        'date_key' => true,
+        'start_date' => true,
+        'end_date' => true,
+        'report_keys' => true
     ];
 
     /**
@@ -337,9 +337,7 @@ class GenericReportSchema implements ModelInterface, ArrayAccess, \JsonSerializa
      */
     public function setDateRange($date_range)
     {
-        if (is_null($date_range)) {
-            throw new \InvalidArgumentException('non-nullable date_range cannot be null');
-        }
+        
         $this->container['date_range'] = $date_range;
 
         return $this;
@@ -364,9 +362,7 @@ class GenericReportSchema implements ModelInterface, ArrayAccess, \JsonSerializa
      */
     public function setDateKey($date_key)
     {
-        if (is_null($date_key)) {
-            throw new \InvalidArgumentException('non-nullable date_key cannot be null');
-        }
+        
         $this->container['date_key'] = $date_key;
 
         return $this;
@@ -391,9 +387,7 @@ class GenericReportSchema implements ModelInterface, ArrayAccess, \JsonSerializa
      */
     public function setStartDate($start_date)
     {
-        if (is_null($start_date)) {
-            throw new \InvalidArgumentException('non-nullable start_date cannot be null');
-        }
+        
         $this->container['start_date'] = $start_date;
 
         return $this;
@@ -418,9 +412,7 @@ class GenericReportSchema implements ModelInterface, ArrayAccess, \JsonSerializa
      */
     public function setEndDate($end_date)
     {
-        if (is_null($end_date)) {
-            throw new \InvalidArgumentException('non-nullable end_date cannot be null');
-        }
+        
         $this->container['end_date'] = $end_date;
 
         return $this;
@@ -445,9 +437,7 @@ class GenericReportSchema implements ModelInterface, ArrayAccess, \JsonSerializa
      */
     public function setReportKeys($report_keys)
     {
-        if (is_null($report_keys)) {
-            throw new \InvalidArgumentException('non-nullable report_keys cannot be null');
-        }
+        
         $this->container['report_keys'] = $report_keys;
 
         return $this;

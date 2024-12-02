@@ -96,16 +96,16 @@ class SystemLog implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var boolean[]
       */
     protected static $openAPINullables = [
-        'id' => false,
-        'company_id' => false,
-        'user_id' => false,
-        'client_id' => false,
-        'event_id' => false,
-        'category_id' => false,
-        'type_id' => false,
-        'log' => false,
-        'updated_at' => false,
-        'created_at' => false
+        'id' => true,
+        'company_id' => true,
+        'user_id' => true,
+        'client_id' => true,
+        'event_id' => true,
+        'category_id' => true,
+        'type_id' => true,
+        'log' => true,
+        'updated_at' => true,
+        'created_at' => true
     ];
 
     /**
@@ -372,9 +372,7 @@ class SystemLog implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setId($id)
     {
-        if (is_null($id)) {
-            throw new \InvalidArgumentException('non-nullable id cannot be null');
-        }
+        
         $this->container['id'] = $id;
 
         return $this;
@@ -399,9 +397,7 @@ class SystemLog implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setCompanyId($company_id)
     {
-        if (is_null($company_id)) {
-            throw new \InvalidArgumentException('non-nullable company_id cannot be null');
-        }
+        
         $this->container['company_id'] = $company_id;
 
         return $this;
@@ -426,9 +422,7 @@ class SystemLog implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setUserId($user_id)
     {
-        if (is_null($user_id)) {
-            throw new \InvalidArgumentException('non-nullable user_id cannot be null');
-        }
+        
         $this->container['user_id'] = $user_id;
 
         return $this;
@@ -453,9 +447,7 @@ class SystemLog implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setClientId($client_id)
     {
-        if (is_null($client_id)) {
-            throw new \InvalidArgumentException('non-nullable client_id cannot be null');
-        }
+        
         $this->container['client_id'] = $client_id;
 
         return $this;
@@ -480,9 +472,7 @@ class SystemLog implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setEventId($event_id)
     {
-        if (is_null($event_id)) {
-            throw new \InvalidArgumentException('non-nullable event_id cannot be null');
-        }
+        
         $this->container['event_id'] = $event_id;
 
         return $this;
@@ -507,9 +497,7 @@ class SystemLog implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setCategoryId($category_id)
     {
-        if (is_null($category_id)) {
-            throw new \InvalidArgumentException('non-nullable category_id cannot be null');
-        }
+        
         $this->container['category_id'] = $category_id;
 
         return $this;
@@ -534,9 +522,7 @@ class SystemLog implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setTypeId($type_id)
     {
-        if (is_null($type_id)) {
-            throw new \InvalidArgumentException('non-nullable type_id cannot be null');
-        }
+        
         $this->container['type_id'] = $type_id;
 
         return $this;
@@ -561,9 +547,7 @@ class SystemLog implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setLog($log)
     {
-        if (is_null($log)) {
-            throw new \InvalidArgumentException('non-nullable log cannot be null');
-        }
+        
         $this->container['log'] = $log;
 
         return $this;
@@ -588,9 +572,7 @@ class SystemLog implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setUpdatedAt($updated_at)
     {
-        if (is_null($updated_at)) {
-            throw new \InvalidArgumentException('non-nullable updated_at cannot be null');
-        }
+        
         $this->container['updated_at'] = $updated_at;
 
         return $this;
@@ -615,9 +597,7 @@ class SystemLog implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setCreatedAt($created_at)
     {
-        if (is_null($created_at)) {
-            throw new \InvalidArgumentException('non-nullable created_at cannot be null');
-        }
+        
         $this->container['created_at'] = $created_at;
 
         return $this;

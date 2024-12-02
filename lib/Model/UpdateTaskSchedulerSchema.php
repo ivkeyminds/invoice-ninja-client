@@ -92,14 +92,14 @@ class UpdateTaskSchedulerSchema implements ModelInterface, ArrayAccess, \JsonSer
       * @var boolean[]
       */
     protected static $openAPINullables = [
-        'paused' => false,
-        'repeat_every' => false,
-        'start_from' => false,
-        'job' => false,
-        'date_range' => false,
-        'date_key' => false,
-        'start_date' => false,
-        'end_date' => false
+        'paused' => true,
+        'repeat_every' => true,
+        'start_from' => true,
+        'job' => true,
+        'date_range' => true,
+        'date_key' => true,
+        'start_date' => true,
+        'end_date' => true
     ];
 
     /**
@@ -358,9 +358,7 @@ class UpdateTaskSchedulerSchema implements ModelInterface, ArrayAccess, \JsonSer
      */
     public function setPaused($paused)
     {
-        if (is_null($paused)) {
-            throw new \InvalidArgumentException('non-nullable paused cannot be null');
-        }
+        
         $this->container['paused'] = $paused;
 
         return $this;
@@ -385,9 +383,7 @@ class UpdateTaskSchedulerSchema implements ModelInterface, ArrayAccess, \JsonSer
      */
     public function setRepeatEvery($repeat_every)
     {
-        if (is_null($repeat_every)) {
-            throw new \InvalidArgumentException('non-nullable repeat_every cannot be null');
-        }
+        
         $this->container['repeat_every'] = $repeat_every;
 
         return $this;
@@ -412,9 +408,7 @@ class UpdateTaskSchedulerSchema implements ModelInterface, ArrayAccess, \JsonSer
      */
     public function setStartFrom($start_from)
     {
-        if (is_null($start_from)) {
-            throw new \InvalidArgumentException('non-nullable start_from cannot be null');
-        }
+        
         $this->container['start_from'] = $start_from;
 
         return $this;
@@ -439,9 +433,7 @@ class UpdateTaskSchedulerSchema implements ModelInterface, ArrayAccess, \JsonSer
      */
     public function setJob($job)
     {
-        if (is_null($job)) {
-            throw new \InvalidArgumentException('non-nullable job cannot be null');
-        }
+        
         $this->container['job'] = $job;
 
         return $this;
@@ -466,9 +458,7 @@ class UpdateTaskSchedulerSchema implements ModelInterface, ArrayAccess, \JsonSer
      */
     public function setDateRange($date_range)
     {
-        if (is_null($date_range)) {
-            throw new \InvalidArgumentException('non-nullable date_range cannot be null');
-        }
+        
         $this->container['date_range'] = $date_range;
 
         return $this;
@@ -493,9 +483,7 @@ class UpdateTaskSchedulerSchema implements ModelInterface, ArrayAccess, \JsonSer
      */
     public function setDateKey($date_key)
     {
-        if (is_null($date_key)) {
-            throw new \InvalidArgumentException('non-nullable date_key cannot be null');
-        }
+        
         $this->container['date_key'] = $date_key;
 
         return $this;
@@ -520,9 +508,7 @@ class UpdateTaskSchedulerSchema implements ModelInterface, ArrayAccess, \JsonSer
      */
     public function setStartDate($start_date)
     {
-        if (is_null($start_date)) {
-            throw new \InvalidArgumentException('non-nullable start_date cannot be null');
-        }
+        
         $this->container['start_date'] = $start_date;
 
         return $this;
@@ -547,9 +533,7 @@ class UpdateTaskSchedulerSchema implements ModelInterface, ArrayAccess, \JsonSer
      */
     public function setEndDate($end_date)
     {
-        if (is_null($end_date)) {
-            throw new \InvalidArgumentException('non-nullable end_date cannot be null');
-        }
+        
         $this->container['end_date'] = $end_date;
 
         return $this;

@@ -82,9 +82,9 @@ class BTRules implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var boolean[]
       */
     protected static $openAPINullables = [
-        'data_key' => false,
-        'operator' => false,
-        'value' => false
+        'data_key' => true,
+        'operator' => true,
+        'value' => true
     ];
 
     /**
@@ -323,9 +323,7 @@ class BTRules implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setDataKey($data_key)
     {
-        if (is_null($data_key)) {
-            throw new \InvalidArgumentException('non-nullable data_key cannot be null');
-        }
+        
         $this->container['data_key'] = $data_key;
 
         return $this;
@@ -350,9 +348,7 @@ class BTRules implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setOperator($operator)
     {
-        if (is_null($operator)) {
-            throw new \InvalidArgumentException('non-nullable operator cannot be null');
-        }
+        
         $this->container['operator'] = $operator;
 
         return $this;
@@ -377,9 +373,7 @@ class BTRules implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setValue($value)
     {
-        if (is_null($value)) {
-            throw new \InvalidArgumentException('non-nullable value cannot be null');
-        }
+        
         $this->container['value'] = $value;
 
         return $this;

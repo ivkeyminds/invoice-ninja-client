@@ -82,9 +82,9 @@ class CompanyToken implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var boolean[]
       */
     protected static $openAPINullables = [
-        'name' => false,
-        'token' => false,
-        'is_system' => false
+        'name' => true,
+        'token' => true,
+        'is_system' => true
     ];
 
     /**
@@ -323,9 +323,7 @@ class CompanyToken implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setName($name)
     {
-        if (is_null($name)) {
-            throw new \InvalidArgumentException('non-nullable name cannot be null');
-        }
+        
         $this->container['name'] = $name;
 
         return $this;
@@ -350,9 +348,7 @@ class CompanyToken implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setToken($token)
     {
-        if (is_null($token)) {
-            throw new \InvalidArgumentException('non-nullable token cannot be null');
-        }
+        
         $this->container['token'] = $token;
 
         return $this;
@@ -377,9 +373,7 @@ class CompanyToken implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setIsSystem($is_system)
     {
-        if (is_null($is_system)) {
-            throw new \InvalidArgumentException('non-nullable is_system cannot be null');
-        }
+        
         $this->container['is_system'] = $is_system;
 
         return $this;

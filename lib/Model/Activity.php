@@ -108,22 +108,22 @@ class Activity implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var boolean[]
       */
     protected static $openAPINullables = [
-        'id' => false,
-        'activity_type_id' => false,
-        'client_id' => false,
-        'company_id' => false,
-        'user_id' => false,
-        'invoice_id' => false,
-        'payment_id' => false,
-        'credit_id' => false,
-        'updated_at' => false,
-        'expense_id' => false,
-        'is_system' => false,
-        'contact_id' => false,
-        'task_id' => false,
-        'notes' => false,
-        'token_id' => false,
-        'ip' => false
+        'id' => true,
+        'activity_type_id' => true,
+        'client_id' => true,
+        'company_id' => true,
+        'user_id' => true,
+        'invoice_id' => true,
+        'payment_id' => true,
+        'credit_id' => true,
+        'updated_at' => true,
+        'expense_id' => true,
+        'is_system' => true,
+        'contact_id' => true,
+        'task_id' => true,
+        'notes' => true,
+        'token_id' => true,
+        'ip' => true
     ];
 
     /**
@@ -414,9 +414,7 @@ class Activity implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setId($id)
     {
-        if (is_null($id)) {
-            throw new \InvalidArgumentException('non-nullable id cannot be null');
-        }
+        
         $this->container['id'] = $id;
 
         return $this;
@@ -441,9 +439,7 @@ class Activity implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setActivityTypeId($activity_type_id)
     {
-        if (is_null($activity_type_id)) {
-            throw new \InvalidArgumentException('non-nullable activity_type_id cannot be null');
-        }
+        
         $this->container['activity_type_id'] = $activity_type_id;
 
         return $this;
@@ -468,9 +464,7 @@ class Activity implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setClientId($client_id)
     {
-        if (is_null($client_id)) {
-            throw new \InvalidArgumentException('non-nullable client_id cannot be null');
-        }
+        
         $this->container['client_id'] = $client_id;
 
         return $this;
@@ -495,9 +489,7 @@ class Activity implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setCompanyId($company_id)
     {
-        if (is_null($company_id)) {
-            throw new \InvalidArgumentException('non-nullable company_id cannot be null');
-        }
+        
         $this->container['company_id'] = $company_id;
 
         return $this;
@@ -522,9 +514,7 @@ class Activity implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setUserId($user_id)
     {
-        if (is_null($user_id)) {
-            throw new \InvalidArgumentException('non-nullable user_id cannot be null');
-        }
+        
         $this->container['user_id'] = $user_id;
 
         return $this;
@@ -549,9 +539,7 @@ class Activity implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setInvoiceId($invoice_id)
     {
-        if (is_null($invoice_id)) {
-            throw new \InvalidArgumentException('non-nullable invoice_id cannot be null');
-        }
+        
         $this->container['invoice_id'] = $invoice_id;
 
         return $this;
@@ -576,9 +564,7 @@ class Activity implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setPaymentId($payment_id)
     {
-        if (is_null($payment_id)) {
-            throw new \InvalidArgumentException('non-nullable payment_id cannot be null');
-        }
+        
         $this->container['payment_id'] = $payment_id;
 
         return $this;
@@ -603,9 +589,7 @@ class Activity implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setCreditId($credit_id)
     {
-        if (is_null($credit_id)) {
-            throw new \InvalidArgumentException('non-nullable credit_id cannot be null');
-        }
+        
         $this->container['credit_id'] = $credit_id;
 
         return $this;
@@ -630,9 +614,7 @@ class Activity implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setUpdatedAt($updated_at)
     {
-        if (is_null($updated_at)) {
-            throw new \InvalidArgumentException('non-nullable updated_at cannot be null');
-        }
+        
         $this->container['updated_at'] = $updated_at;
 
         return $this;
@@ -657,9 +639,7 @@ class Activity implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setExpenseId($expense_id)
     {
-        if (is_null($expense_id)) {
-            throw new \InvalidArgumentException('non-nullable expense_id cannot be null');
-        }
+        
         $this->container['expense_id'] = $expense_id;
 
         return $this;
@@ -684,9 +664,7 @@ class Activity implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setIsSystem($is_system)
     {
-        if (is_null($is_system)) {
-            throw new \InvalidArgumentException('non-nullable is_system cannot be null');
-        }
+        
         $this->container['is_system'] = $is_system;
 
         return $this;
@@ -711,9 +689,7 @@ class Activity implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setContactId($contact_id)
     {
-        if (is_null($contact_id)) {
-            throw new \InvalidArgumentException('non-nullable contact_id cannot be null');
-        }
+        
         $this->container['contact_id'] = $contact_id;
 
         return $this;
@@ -738,9 +714,7 @@ class Activity implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setTaskId($task_id)
     {
-        if (is_null($task_id)) {
-            throw new \InvalidArgumentException('non-nullable task_id cannot be null');
-        }
+        
         $this->container['task_id'] = $task_id;
 
         return $this;
@@ -765,9 +739,7 @@ class Activity implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setNotes($notes)
     {
-        if (is_null($notes)) {
-            throw new \InvalidArgumentException('non-nullable notes cannot be null');
-        }
+        
         $this->container['notes'] = $notes;
 
         return $this;
@@ -792,9 +764,7 @@ class Activity implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setTokenId($token_id)
     {
-        if (is_null($token_id)) {
-            throw new \InvalidArgumentException('non-nullable token_id cannot be null');
-        }
+        
         $this->container['token_id'] = $token_id;
 
         return $this;
@@ -819,9 +789,7 @@ class Activity implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setIp($ip)
     {
-        if (is_null($ip)) {
-            throw new \InvalidArgumentException('non-nullable ip cannot be null');
-        }
+        
         $this->container['ip'] = $ip;
 
         return $this;

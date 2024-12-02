@@ -88,12 +88,12 @@ class CompanyLedger implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var boolean[]
       */
     protected static $openAPINullables = [
-        'entity_id' => false,
-        'notes' => false,
-        'balance' => false,
-        'adjustment' => false,
-        'updated_at' => false,
-        'created_at' => false
+        'entity_id' => true,
+        'notes' => true,
+        'balance' => true,
+        'adjustment' => true,
+        'updated_at' => true,
+        'created_at' => true
     ];
 
     /**
@@ -344,9 +344,7 @@ class CompanyLedger implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setEntityId($entity_id)
     {
-        if (is_null($entity_id)) {
-            throw new \InvalidArgumentException('non-nullable entity_id cannot be null');
-        }
+        
         $this->container['entity_id'] = $entity_id;
 
         return $this;
@@ -371,9 +369,7 @@ class CompanyLedger implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setNotes($notes)
     {
-        if (is_null($notes)) {
-            throw new \InvalidArgumentException('non-nullable notes cannot be null');
-        }
+        
         $this->container['notes'] = $notes;
 
         return $this;
@@ -398,9 +394,7 @@ class CompanyLedger implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setBalance($balance)
     {
-        if (is_null($balance)) {
-            throw new \InvalidArgumentException('non-nullable balance cannot be null');
-        }
+        
         $this->container['balance'] = $balance;
 
         return $this;
@@ -425,9 +419,7 @@ class CompanyLedger implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setAdjustment($adjustment)
     {
-        if (is_null($adjustment)) {
-            throw new \InvalidArgumentException('non-nullable adjustment cannot be null');
-        }
+        
         $this->container['adjustment'] = $adjustment;
 
         return $this;
@@ -452,9 +444,7 @@ class CompanyLedger implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setUpdatedAt($updated_at)
     {
-        if (is_null($updated_at)) {
-            throw new \InvalidArgumentException('non-nullable updated_at cannot be null');
-        }
+        
         $this->container['updated_at'] = $updated_at;
 
         return $this;
@@ -479,9 +469,7 @@ class CompanyLedger implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setCreatedAt($created_at)
     {
-        if (is_null($created_at)) {
-            throw new \InvalidArgumentException('non-nullable created_at cannot be null');
-        }
+        
         $this->container['created_at'] = $created_at;
 
         return $this;

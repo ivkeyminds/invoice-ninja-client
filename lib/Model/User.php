@@ -96,16 +96,16 @@ class User implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var boolean[]
       */
     protected static $openAPINullables = [
-        'id' => false,
-        'first_name' => false,
-        'last_name' => false,
-        'email' => false,
-        'phone' => false,
-        'signature' => false,
-        'avatar' => false,
-        'accepted_terms_version' => false,
-        'oauth_user_id' => false,
-        'oauth_provider_id' => false
+        'id' => true,
+        'first_name' => true,
+        'last_name' => true,
+        'email' => true,
+        'phone' => true,
+        'signature' => true,
+        'avatar' => true,
+        'accepted_terms_version' => true,
+        'oauth_user_id' => true,
+        'oauth_provider_id' => true
     ];
 
     /**
@@ -372,9 +372,7 @@ class User implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setId($id)
     {
-        if (is_null($id)) {
-            throw new \InvalidArgumentException('non-nullable id cannot be null');
-        }
+        
         $this->container['id'] = $id;
 
         return $this;
@@ -399,9 +397,7 @@ class User implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setFirstName($first_name)
     {
-        if (is_null($first_name)) {
-            throw new \InvalidArgumentException('non-nullable first_name cannot be null');
-        }
+        
         $this->container['first_name'] = $first_name;
 
         return $this;
@@ -426,9 +422,7 @@ class User implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setLastName($last_name)
     {
-        if (is_null($last_name)) {
-            throw new \InvalidArgumentException('non-nullable last_name cannot be null');
-        }
+        
         $this->container['last_name'] = $last_name;
 
         return $this;
@@ -453,9 +447,7 @@ class User implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setEmail($email)
     {
-        if (is_null($email)) {
-            throw new \InvalidArgumentException('non-nullable email cannot be null');
-        }
+        
         $this->container['email'] = $email;
 
         return $this;
@@ -480,9 +472,7 @@ class User implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setPhone($phone)
     {
-        if (is_null($phone)) {
-            throw new \InvalidArgumentException('non-nullable phone cannot be null');
-        }
+        
         $this->container['phone'] = $phone;
 
         return $this;
@@ -507,9 +497,7 @@ class User implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setSignature($signature)
     {
-        if (is_null($signature)) {
-            throw new \InvalidArgumentException('non-nullable signature cannot be null');
-        }
+        
         $this->container['signature'] = $signature;
 
         return $this;
@@ -534,9 +522,7 @@ class User implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setAvatar($avatar)
     {
-        if (is_null($avatar)) {
-            throw new \InvalidArgumentException('non-nullable avatar cannot be null');
-        }
+        
         $this->container['avatar'] = $avatar;
 
         return $this;
@@ -561,9 +547,7 @@ class User implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setAcceptedTermsVersion($accepted_terms_version)
     {
-        if (is_null($accepted_terms_version)) {
-            throw new \InvalidArgumentException('non-nullable accepted_terms_version cannot be null');
-        }
+        
         $this->container['accepted_terms_version'] = $accepted_terms_version;
 
         return $this;
@@ -588,9 +572,7 @@ class User implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setOauthUserId($oauth_user_id)
     {
-        if (is_null($oauth_user_id)) {
-            throw new \InvalidArgumentException('non-nullable oauth_user_id cannot be null');
-        }
+        
         $this->container['oauth_user_id'] = $oauth_user_id;
 
         return $this;
@@ -615,9 +597,7 @@ class User implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setOauthProviderId($oauth_provider_id)
     {
-        if (is_null($oauth_provider_id)) {
-            throw new \InvalidArgumentException('non-nullable oauth_provider_id cannot be null');
-        }
+        
         $this->container['oauth_provider_id'] = $oauth_provider_id;
 
         return $this;

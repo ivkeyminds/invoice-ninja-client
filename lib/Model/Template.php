@@ -78,7 +78,7 @@ class Template implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var boolean[]
       */
     protected static $openAPINullables = [
-        'html' => false
+        'html' => true
     ];
 
     /**
@@ -309,9 +309,7 @@ class Template implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setHtml($html)
     {
-        if (is_null($html)) {
-            throw new \InvalidArgumentException('non-nullable html cannot be null');
-        }
+        
         $this->container['html'] = $html;
 
         return $this;

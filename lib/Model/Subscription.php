@@ -126,31 +126,31 @@ class Subscription implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var boolean[]
       */
     protected static $openAPINullables = [
-        'id' => false,
-        'user_id' => false,
-        'product_id' => false,
-        'company_id' => false,
-        'recurring_invoice_id' => false,
-        'is_recurring' => false,
-        'frequency_id' => false,
-        'auto_bill' => false,
-        'promo_code' => false,
-        'promo_discount' => false,
-        'is_amount_discount' => false,
-        'allow_cancellation' => false,
-        'per_seat_enabled' => false,
-        'currency_id' => false,
-        'max_seats_limit' => false,
-        'trial_enabled' => false,
-        'trial_duration' => false,
-        'allow_query_overrides' => false,
-        'allow_plan_changes' => false,
-        'refund_period' => false,
-        'webhook_configuration' => false,
-        'is_deleted' => false,
-        'archived_at' => false,
-        'created_at' => false,
-        'updated_at' => false
+        'id' => true,
+        'user_id' => true,
+        'product_id' => true,
+        'company_id' => true,
+        'recurring_invoice_id' => true,
+        'is_recurring' => true,
+        'frequency_id' => true,
+        'auto_bill' => true,
+        'promo_code' => true,
+        'promo_discount' => true,
+        'is_amount_discount' => true,
+        'allow_cancellation' => true,
+        'per_seat_enabled' => true,
+        'currency_id' => true,
+        'max_seats_limit' => true,
+        'trial_enabled' => true,
+        'trial_duration' => true,
+        'allow_query_overrides' => true,
+        'allow_plan_changes' => true,
+        'refund_period' => true,
+        'webhook_configuration' => true,
+        'is_deleted' => true,
+        'archived_at' => true,
+        'created_at' => true,
+        'updated_at' => true
     ];
 
     /**
@@ -477,9 +477,7 @@ class Subscription implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setId($id)
     {
-        if (is_null($id)) {
-            throw new \InvalidArgumentException('non-nullable id cannot be null');
-        }
+        
         $this->container['id'] = $id;
 
         return $this;
@@ -504,9 +502,7 @@ class Subscription implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setUserId($user_id)
     {
-        if (is_null($user_id)) {
-            throw new \InvalidArgumentException('non-nullable user_id cannot be null');
-        }
+        
         $this->container['user_id'] = $user_id;
 
         return $this;
@@ -531,9 +527,7 @@ class Subscription implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setProductId($product_id)
     {
-        if (is_null($product_id)) {
-            throw new \InvalidArgumentException('non-nullable product_id cannot be null');
-        }
+        
         $this->container['product_id'] = $product_id;
 
         return $this;
@@ -558,9 +552,7 @@ class Subscription implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setCompanyId($company_id)
     {
-        if (is_null($company_id)) {
-            throw new \InvalidArgumentException('non-nullable company_id cannot be null');
-        }
+        
         $this->container['company_id'] = $company_id;
 
         return $this;
@@ -585,9 +577,7 @@ class Subscription implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setRecurringInvoiceId($recurring_invoice_id)
     {
-        if (is_null($recurring_invoice_id)) {
-            throw new \InvalidArgumentException('non-nullable recurring_invoice_id cannot be null');
-        }
+        
         $this->container['recurring_invoice_id'] = $recurring_invoice_id;
 
         return $this;
@@ -612,9 +602,7 @@ class Subscription implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setIsRecurring($is_recurring)
     {
-        if (is_null($is_recurring)) {
-            throw new \InvalidArgumentException('non-nullable is_recurring cannot be null');
-        }
+        
         $this->container['is_recurring'] = $is_recurring;
 
         return $this;
@@ -639,9 +627,7 @@ class Subscription implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setFrequencyId($frequency_id)
     {
-        if (is_null($frequency_id)) {
-            throw new \InvalidArgumentException('non-nullable frequency_id cannot be null');
-        }
+        
         $this->container['frequency_id'] = $frequency_id;
 
         return $this;
@@ -666,9 +652,7 @@ class Subscription implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setAutoBill($auto_bill)
     {
-        if (is_null($auto_bill)) {
-            throw new \InvalidArgumentException('non-nullable auto_bill cannot be null');
-        }
+        
         $this->container['auto_bill'] = $auto_bill;
 
         return $this;
@@ -693,9 +677,7 @@ class Subscription implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setPromoCode($promo_code)
     {
-        if (is_null($promo_code)) {
-            throw new \InvalidArgumentException('non-nullable promo_code cannot be null');
-        }
+        
         $this->container['promo_code'] = $promo_code;
 
         return $this;
@@ -720,9 +702,7 @@ class Subscription implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setPromoDiscount($promo_discount)
     {
-        if (is_null($promo_discount)) {
-            throw new \InvalidArgumentException('non-nullable promo_discount cannot be null');
-        }
+        
         $this->container['promo_discount'] = $promo_discount;
 
         return $this;
@@ -747,9 +727,7 @@ class Subscription implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setIsAmountDiscount($is_amount_discount)
     {
-        if (is_null($is_amount_discount)) {
-            throw new \InvalidArgumentException('non-nullable is_amount_discount cannot be null');
-        }
+        
         $this->container['is_amount_discount'] = $is_amount_discount;
 
         return $this;
@@ -774,9 +752,7 @@ class Subscription implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setAllowCancellation($allow_cancellation)
     {
-        if (is_null($allow_cancellation)) {
-            throw new \InvalidArgumentException('non-nullable allow_cancellation cannot be null');
-        }
+        
         $this->container['allow_cancellation'] = $allow_cancellation;
 
         return $this;
@@ -801,9 +777,7 @@ class Subscription implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setPerSeatEnabled($per_seat_enabled)
     {
-        if (is_null($per_seat_enabled)) {
-            throw new \InvalidArgumentException('non-nullable per_seat_enabled cannot be null');
-        }
+        
         $this->container['per_seat_enabled'] = $per_seat_enabled;
 
         return $this;
@@ -828,9 +802,7 @@ class Subscription implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setCurrencyId($currency_id)
     {
-        if (is_null($currency_id)) {
-            throw new \InvalidArgumentException('non-nullable currency_id cannot be null');
-        }
+        
         $this->container['currency_id'] = $currency_id;
 
         return $this;
@@ -855,9 +827,7 @@ class Subscription implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setMaxSeatsLimit($max_seats_limit)
     {
-        if (is_null($max_seats_limit)) {
-            throw new \InvalidArgumentException('non-nullable max_seats_limit cannot be null');
-        }
+        
         $this->container['max_seats_limit'] = $max_seats_limit;
 
         return $this;
@@ -882,9 +852,7 @@ class Subscription implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setTrialEnabled($trial_enabled)
     {
-        if (is_null($trial_enabled)) {
-            throw new \InvalidArgumentException('non-nullable trial_enabled cannot be null');
-        }
+        
         $this->container['trial_enabled'] = $trial_enabled;
 
         return $this;
@@ -909,9 +877,7 @@ class Subscription implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setTrialDuration($trial_duration)
     {
-        if (is_null($trial_duration)) {
-            throw new \InvalidArgumentException('non-nullable trial_duration cannot be null');
-        }
+        
         $this->container['trial_duration'] = $trial_duration;
 
         return $this;
@@ -936,9 +902,7 @@ class Subscription implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setAllowQueryOverrides($allow_query_overrides)
     {
-        if (is_null($allow_query_overrides)) {
-            throw new \InvalidArgumentException('non-nullable allow_query_overrides cannot be null');
-        }
+        
         $this->container['allow_query_overrides'] = $allow_query_overrides;
 
         return $this;
@@ -963,9 +927,7 @@ class Subscription implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setAllowPlanChanges($allow_plan_changes)
     {
-        if (is_null($allow_plan_changes)) {
-            throw new \InvalidArgumentException('non-nullable allow_plan_changes cannot be null');
-        }
+        
         $this->container['allow_plan_changes'] = $allow_plan_changes;
 
         return $this;
@@ -990,9 +952,7 @@ class Subscription implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setRefundPeriod($refund_period)
     {
-        if (is_null($refund_period)) {
-            throw new \InvalidArgumentException('non-nullable refund_period cannot be null');
-        }
+        
         $this->container['refund_period'] = $refund_period;
 
         return $this;
@@ -1017,9 +977,7 @@ class Subscription implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setWebhookConfiguration($webhook_configuration)
     {
-        if (is_null($webhook_configuration)) {
-            throw new \InvalidArgumentException('non-nullable webhook_configuration cannot be null');
-        }
+        
         $this->container['webhook_configuration'] = $webhook_configuration;
 
         return $this;
@@ -1044,9 +1002,7 @@ class Subscription implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setIsDeleted($is_deleted)
     {
-        if (is_null($is_deleted)) {
-            throw new \InvalidArgumentException('non-nullable is_deleted cannot be null');
-        }
+        
         $this->container['is_deleted'] = $is_deleted;
 
         return $this;
@@ -1071,9 +1027,7 @@ class Subscription implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setArchivedAt($archived_at)
     {
-        if (is_null($archived_at)) {
-            throw new \InvalidArgumentException('non-nullable archived_at cannot be null');
-        }
+        
         $this->container['archived_at'] = $archived_at;
 
         return $this;
@@ -1098,9 +1052,7 @@ class Subscription implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setCreatedAt($created_at)
     {
-        if (is_null($created_at)) {
-            throw new \InvalidArgumentException('non-nullable created_at cannot be null');
-        }
+        
         $this->container['created_at'] = $created_at;
 
         return $this;
@@ -1125,9 +1077,7 @@ class Subscription implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setUpdatedAt($updated_at)
     {
-        if (is_null($updated_at)) {
-            throw new \InvalidArgumentException('non-nullable updated_at cannot be null');
-        }
+        
         $this->container['updated_at'] = $updated_at;
 
         return $this;

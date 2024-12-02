@@ -86,11 +86,11 @@ class V1EmailsBody implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var boolean[]
       */
     protected static $openAPINullables = [
-        'subject' => false,
-        'body' => false,
-        'entity' => false,
-        'entity_id' => false,
-        'template' => false
+        'subject' => true,
+        'body' => true,
+        'entity' => true,
+        'entity_id' => true,
+        'template' => true
     ];
 
     /**
@@ -337,9 +337,7 @@ class V1EmailsBody implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setSubject($subject)
     {
-        if (is_null($subject)) {
-            throw new \InvalidArgumentException('non-nullable subject cannot be null');
-        }
+        
         $this->container['subject'] = $subject;
 
         return $this;
@@ -364,9 +362,7 @@ class V1EmailsBody implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setBody($body)
     {
-        if (is_null($body)) {
-            throw new \InvalidArgumentException('non-nullable body cannot be null');
-        }
+        
         $this->container['body'] = $body;
 
         return $this;
@@ -391,9 +387,7 @@ class V1EmailsBody implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setEntity($entity)
     {
-        if (is_null($entity)) {
-            throw new \InvalidArgumentException('non-nullable entity cannot be null');
-        }
+        
         $this->container['entity'] = $entity;
 
         return $this;
@@ -418,9 +412,7 @@ class V1EmailsBody implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setEntityId($entity_id)
     {
-        if (is_null($entity_id)) {
-            throw new \InvalidArgumentException('non-nullable entity_id cannot be null');
-        }
+        
         $this->container['entity_id'] = $entity_id;
 
         return $this;
@@ -445,9 +437,7 @@ class V1EmailsBody implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setTemplate($template)
     {
-        if (is_null($template)) {
-            throw new \InvalidArgumentException('non-nullable template cannot be null');
-        }
+        
         $this->container['template'] = $template;
 
         return $this;

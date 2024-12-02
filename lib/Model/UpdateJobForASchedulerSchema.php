@@ -78,7 +78,7 @@ class UpdateJobForASchedulerSchema implements ModelInterface, ArrayAccess, \Json
       * @var boolean[]
       */
     protected static $openAPINullables = [
-        'job' => false
+        'job' => true
     ];
 
     /**
@@ -309,9 +309,7 @@ class UpdateJobForASchedulerSchema implements ModelInterface, ArrayAccess, \Json
      */
     public function setJob($job)
     {
-        if (is_null($job)) {
-            throw new \InvalidArgumentException('non-nullable job cannot be null');
-        }
+        
         $this->container['job'] = $job;
 
         return $this;

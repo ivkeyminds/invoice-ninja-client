@@ -80,8 +80,8 @@ class ValidationError implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var boolean[]
       */
     protected static $openAPINullables = [
-        'message' => false,
-        'errors' => false
+        'message' => true,
+        'errors' => true
     ];
 
     /**
@@ -316,9 +316,7 @@ class ValidationError implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setMessage($message)
     {
-        if (is_null($message)) {
-            throw new \InvalidArgumentException('non-nullable message cannot be null');
-        }
+        
         $this->container['message'] = $message;
 
         return $this;
@@ -343,9 +341,7 @@ class ValidationError implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setErrors($errors)
     {
-        if (is_null($errors)) {
-            throw new \InvalidArgumentException('non-nullable errors cannot be null');
-        }
+        
         $this->container['errors'] = $errors;
 
         return $this;

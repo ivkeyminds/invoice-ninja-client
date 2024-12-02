@@ -88,12 +88,12 @@ class V1SignupBody implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var boolean[]
       */
     protected static $openAPINullables = [
-        'email' => false,
-        'first_name' => false,
-        'last_name' => false,
-        'terms_of_service' => false,
-        'privacy_policy' => false,
-        'password' => false
+        'email' => true,
+        'first_name' => true,
+        'last_name' => true,
+        'terms_of_service' => true,
+        'privacy_policy' => true,
+        'password' => true
     ];
 
     /**
@@ -344,9 +344,7 @@ class V1SignupBody implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setEmail($email)
     {
-        if (is_null($email)) {
-            throw new \InvalidArgumentException('non-nullable email cannot be null');
-        }
+        
         $this->container['email'] = $email;
 
         return $this;
@@ -371,9 +369,7 @@ class V1SignupBody implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setFirstName($first_name)
     {
-        if (is_null($first_name)) {
-            throw new \InvalidArgumentException('non-nullable first_name cannot be null');
-        }
+        
         $this->container['first_name'] = $first_name;
 
         return $this;
@@ -398,9 +394,7 @@ class V1SignupBody implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setLastName($last_name)
     {
-        if (is_null($last_name)) {
-            throw new \InvalidArgumentException('non-nullable last_name cannot be null');
-        }
+        
         $this->container['last_name'] = $last_name;
 
         return $this;
@@ -425,9 +419,7 @@ class V1SignupBody implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setTermsOfService($terms_of_service)
     {
-        if (is_null($terms_of_service)) {
-            throw new \InvalidArgumentException('non-nullable terms_of_service cannot be null');
-        }
+        
         $this->container['terms_of_service'] = $terms_of_service;
 
         return $this;
@@ -452,9 +444,7 @@ class V1SignupBody implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setPrivacyPolicy($privacy_policy)
     {
-        if (is_null($privacy_policy)) {
-            throw new \InvalidArgumentException('non-nullable privacy_policy cannot be null');
-        }
+        
         $this->container['privacy_policy'] = $privacy_policy;
 
         return $this;
@@ -479,9 +469,7 @@ class V1SignupBody implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setPassword($password)
     {
-        if (is_null($password)) {
-            throw new \InvalidArgumentException('non-nullable password cannot be null');
-        }
+        
         $this->container['password'] = $password;
 
         return $this;

@@ -98,17 +98,17 @@ class BankIntegration implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var boolean[]
       */
     protected static $openAPINullables = [
-        'id' => false,
-        'company_id' => false,
-        'user_id' => false,
-        'provider_bank_name' => false,
-        'bank_account_id' => false,
-        'bank_account_name' => false,
-        'bank_account_number' => false,
-        'bank_account_status' => false,
-        'bank_account_type' => false,
-        'balance' => false,
-        'currency' => false
+        'id' => true,
+        'company_id' => true,
+        'user_id' => true,
+        'provider_bank_name' => true,
+        'bank_account_id' => true,
+        'bank_account_name' => true,
+        'bank_account_number' => true,
+        'bank_account_status' => true,
+        'bank_account_type' => true,
+        'balance' => true,
+        'currency' => true
     ];
 
     /**
@@ -379,9 +379,7 @@ class BankIntegration implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setId($id)
     {
-        if (is_null($id)) {
-            throw new \InvalidArgumentException('non-nullable id cannot be null');
-        }
+        
         $this->container['id'] = $id;
 
         return $this;
@@ -406,9 +404,7 @@ class BankIntegration implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setCompanyId($company_id)
     {
-        if (is_null($company_id)) {
-            throw new \InvalidArgumentException('non-nullable company_id cannot be null');
-        }
+        
         $this->container['company_id'] = $company_id;
 
         return $this;
@@ -433,9 +429,7 @@ class BankIntegration implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setUserId($user_id)
     {
-        if (is_null($user_id)) {
-            throw new \InvalidArgumentException('non-nullable user_id cannot be null');
-        }
+        
         $this->container['user_id'] = $user_id;
 
         return $this;
@@ -460,9 +454,7 @@ class BankIntegration implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setProviderBankName($provider_bank_name)
     {
-        if (is_null($provider_bank_name)) {
-            throw new \InvalidArgumentException('non-nullable provider_bank_name cannot be null');
-        }
+        
         $this->container['provider_bank_name'] = $provider_bank_name;
 
         return $this;
@@ -487,9 +479,7 @@ class BankIntegration implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setBankAccountId($bank_account_id)
     {
-        if (is_null($bank_account_id)) {
-            throw new \InvalidArgumentException('non-nullable bank_account_id cannot be null');
-        }
+        
         $this->container['bank_account_id'] = $bank_account_id;
 
         return $this;
@@ -514,9 +504,7 @@ class BankIntegration implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setBankAccountName($bank_account_name)
     {
-        if (is_null($bank_account_name)) {
-            throw new \InvalidArgumentException('non-nullable bank_account_name cannot be null');
-        }
+        
         $this->container['bank_account_name'] = $bank_account_name;
 
         return $this;
@@ -541,9 +529,7 @@ class BankIntegration implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setBankAccountNumber($bank_account_number)
     {
-        if (is_null($bank_account_number)) {
-            throw new \InvalidArgumentException('non-nullable bank_account_number cannot be null');
-        }
+        
         $this->container['bank_account_number'] = $bank_account_number;
 
         return $this;
@@ -568,9 +554,7 @@ class BankIntegration implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setBankAccountStatus($bank_account_status)
     {
-        if (is_null($bank_account_status)) {
-            throw new \InvalidArgumentException('non-nullable bank_account_status cannot be null');
-        }
+        
         $this->container['bank_account_status'] = $bank_account_status;
 
         return $this;
@@ -595,9 +579,7 @@ class BankIntegration implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setBankAccountType($bank_account_type)
     {
-        if (is_null($bank_account_type)) {
-            throw new \InvalidArgumentException('non-nullable bank_account_type cannot be null');
-        }
+        
         $this->container['bank_account_type'] = $bank_account_type;
 
         return $this;
@@ -622,9 +604,7 @@ class BankIntegration implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setBalance($balance)
     {
-        if (is_null($balance)) {
-            throw new \InvalidArgumentException('non-nullable balance cannot be null');
-        }
+        
         $this->container['balance'] = $balance;
 
         return $this;
@@ -649,9 +629,7 @@ class BankIntegration implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function setCurrency($currency)
     {
-        if (is_null($currency)) {
-            throw new \InvalidArgumentException('non-nullable currency cannot be null');
-        }
+        
         $this->container['currency'] = $currency;
 
         return $this;

@@ -90,13 +90,13 @@ class ClientGatewayToken implements ModelInterface, ArrayAccess, \JsonSerializab
       * @var boolean[]
       */
     protected static $openAPINullables = [
-        'id' => false,
-        'company_id' => false,
-        'client_id' => false,
-        'token' => false,
-        'routing_number' => false,
-        'company_gateway_id' => false,
-        'is_default' => false
+        'id' => true,
+        'company_id' => true,
+        'client_id' => true,
+        'token' => true,
+        'routing_number' => true,
+        'company_gateway_id' => true,
+        'is_default' => true
     ];
 
     /**
@@ -351,9 +351,7 @@ class ClientGatewayToken implements ModelInterface, ArrayAccess, \JsonSerializab
      */
     public function setId($id)
     {
-        if (is_null($id)) {
-            throw new \InvalidArgumentException('non-nullable id cannot be null');
-        }
+        
         $this->container['id'] = $id;
 
         return $this;
@@ -378,9 +376,7 @@ class ClientGatewayToken implements ModelInterface, ArrayAccess, \JsonSerializab
      */
     public function setCompanyId($company_id)
     {
-        if (is_null($company_id)) {
-            throw new \InvalidArgumentException('non-nullable company_id cannot be null');
-        }
+        
         $this->container['company_id'] = $company_id;
 
         return $this;
@@ -405,9 +401,7 @@ class ClientGatewayToken implements ModelInterface, ArrayAccess, \JsonSerializab
      */
     public function setClientId($client_id)
     {
-        if (is_null($client_id)) {
-            throw new \InvalidArgumentException('non-nullable client_id cannot be null');
-        }
+        
         $this->container['client_id'] = $client_id;
 
         return $this;
@@ -432,9 +426,7 @@ class ClientGatewayToken implements ModelInterface, ArrayAccess, \JsonSerializab
      */
     public function setToken($token)
     {
-        if (is_null($token)) {
-            throw new \InvalidArgumentException('non-nullable token cannot be null');
-        }
+        
         $this->container['token'] = $token;
 
         return $this;
@@ -459,9 +451,7 @@ class ClientGatewayToken implements ModelInterface, ArrayAccess, \JsonSerializab
      */
     public function setRoutingNumber($routing_number)
     {
-        if (is_null($routing_number)) {
-            throw new \InvalidArgumentException('non-nullable routing_number cannot be null');
-        }
+        
         $this->container['routing_number'] = $routing_number;
 
         return $this;
@@ -486,9 +476,7 @@ class ClientGatewayToken implements ModelInterface, ArrayAccess, \JsonSerializab
      */
     public function setCompanyGatewayId($company_gateway_id)
     {
-        if (is_null($company_gateway_id)) {
-            throw new \InvalidArgumentException('non-nullable company_gateway_id cannot be null');
-        }
+        
         $this->container['company_gateway_id'] = $company_gateway_id;
 
         return $this;
@@ -513,9 +501,7 @@ class ClientGatewayToken implements ModelInterface, ArrayAccess, \JsonSerializab
      */
     public function setIsDefault($is_default)
     {
-        if (is_null($is_default)) {
-            throw new \InvalidArgumentException('non-nullable is_default cannot be null');
-        }
+        
         $this->container['is_default'] = $is_default;
 
         return $this;
