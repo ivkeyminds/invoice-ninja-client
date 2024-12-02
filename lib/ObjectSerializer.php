@@ -414,6 +414,13 @@ class ObjectSerializer
         if (null === $data) {
             return null;
         }
+        
+        if(!empty($data->data) && is_array($data->data)) {
+            foreach ($data->data as $key => $value) {
+                $data->data[$key] = self::deserialize($value, $class, $httpHeaders);
+            }
+            return $data;
+        }
 
         if (strcasecmp(substr($class, -2), '[]') === 0) {
             $data = is_string($data) ? json_decode($data) : $data;

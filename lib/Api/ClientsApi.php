@@ -1794,16 +1794,6 @@ class ClientsApi
                             }
                         }
                     }
-                    if(!empty($content->data) && is_array($content->data)) {
-                        $content->data = array_map(function($data) {
-                            return ObjectSerializer::deserialize($data, '\IvkeyMinds\InvoiceNinjaClient\Model\Client', []);
-                        }, $content->data);
-                        return [
-                            $content,
-                            $response->getStatusCode(),
-                            $response->getHeaders()
-                        ];
-                    }
                     return [
                         ObjectSerializer::deserialize($content, '\IvkeyMinds\InvoiceNinjaClient\Model\Client', []),
                         $response->getStatusCode(),
