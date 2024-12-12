@@ -61,6 +61,8 @@ class ClientGatewayToken implements ModelInterface, ArrayAccess, \JsonSerializab
         'id' => 'string',
         'company_id' => 'string',
         'client_id' => 'string',
+        'contact_id' => 'string',
+        'building_id' => 'string',
         'token' => 'string',
         'routing_number' => 'string',
         'company_gateway_id' => 'string',
@@ -78,6 +80,8 @@ class ClientGatewayToken implements ModelInterface, ArrayAccess, \JsonSerializab
         'id' => null,
         'company_id' => null,
         'client_id' => null,
+        'contact_id' => null,
+        'building_id' => null,
         'token' => null,
         'routing_number' => null,
         'company_gateway_id' => null,
@@ -93,6 +97,8 @@ class ClientGatewayToken implements ModelInterface, ArrayAccess, \JsonSerializab
         'id' => true,
         'company_id' => true,
         'client_id' => true,
+        'contact_id' => true,
+        'building_id' => true,
         'token' => true,
         'routing_number' => true,
         'company_gateway_id' => true,
@@ -188,6 +194,8 @@ class ClientGatewayToken implements ModelInterface, ArrayAccess, \JsonSerializab
         'id' => 'id',
         'company_id' => 'company_id',
         'client_id' => 'client_id',
+        'contact_id' => 'contact_id',
+        'building_id' => 'building_id',
         'token' => 'token',
         'routing_number' => 'routing_number',
         'company_gateway_id' => 'company_gateway_id',
@@ -203,6 +211,8 @@ class ClientGatewayToken implements ModelInterface, ArrayAccess, \JsonSerializab
         'id' => 'setId',
         'company_id' => 'setCompanyId',
         'client_id' => 'setClientId',
+        'contact_id' => 'setContactId',
+        'building_id' => 'setBuildingId',
         'token' => 'setToken',
         'routing_number' => 'setRoutingNumber',
         'company_gateway_id' => 'setCompanyGatewayId',
@@ -218,6 +228,8 @@ class ClientGatewayToken implements ModelInterface, ArrayAccess, \JsonSerializab
         'id' => 'getId',
         'company_id' => 'getCompanyId',
         'client_id' => 'getClientId',
+        'contact_id' => 'getContactId',
+        'building_id' => 'getBuildingId',
         'token' => 'getToken',
         'routing_number' => 'getRoutingNumber',
         'company_gateway_id' => 'getCompanyGatewayId',
@@ -284,6 +296,8 @@ class ClientGatewayToken implements ModelInterface, ArrayAccess, \JsonSerializab
         $this->setIfExists('id', $data ?? [], null);
         $this->setIfExists('company_id', $data ?? [], null);
         $this->setIfExists('client_id', $data ?? [], null);
+        $this->setIfExists('contact_id', $data ?? [], null);
+        $this->setIfExists('building_id', $data ?? [], null);
         $this->setIfExists('token', $data ?? [], null);
         $this->setIfExists('routing_number', $data ?? [], null);
         $this->setIfExists('company_gateway_id', $data ?? [], null);
@@ -379,6 +393,54 @@ class ClientGatewayToken implements ModelInterface, ArrayAccess, \JsonSerializab
         
         $this->container['company_id'] = $company_id;
 
+        return $this;
+    }
+
+    /**
+     * Gets contact_id
+     *
+     * @return string|null
+     */
+    public function getContactId()
+    {
+        return $this->container['contact_id'];
+    }
+
+    /**
+     * Sets contact_id
+     *
+     * @param string|null $contact_id The hashed id of the contact
+     *
+     * @return self
+     */
+    public function setContactId($contact_id)
+    {
+        $this->container['contact_id'] = $contact_id;
+
+        return $this;
+    }
+    
+    /**
+     * Gets building_id
+     *
+     * @return string|null
+     */
+    public function getBuildingId()
+    {
+        return $this->container['building_id'];
+    }
+    
+    /**
+     * Sets building_id
+     *
+     * @param string|null $building_id The hashed id of the building
+     *
+     * @return self
+     */
+    public function setBuildingId($building_id)
+    {
+        $this->container['building_id'] = $building_id;
+        
         return $this;
     }
 
