@@ -108,7 +108,9 @@ class RecurringInvoice implements ModelInterface, ArrayAccess, \JsonSerializable
         'custom_surcharge_tax1' => 'bool',
         'custom_surcharge_tax2' => 'bool',
         'custom_surcharge_tax3' => 'bool',
-        'custom_surcharge_tax4' => 'bool'
+        'custom_surcharge_tax4' => 'bool',
+        'auto_bill_enabled' => 'bool',
+        'auto_bill' => 'string'
     ];
 
     /**
@@ -169,7 +171,9 @@ class RecurringInvoice implements ModelInterface, ArrayAccess, \JsonSerializable
         'custom_surcharge_tax1' => null,
         'custom_surcharge_tax2' => null,
         'custom_surcharge_tax3' => null,
-        'custom_surcharge_tax4' => null
+        'custom_surcharge_tax4' => null,
+        'auto_bill_enabled' => null,
+        'auto_bill' => null
     ];
 
     /**
@@ -228,7 +232,9 @@ class RecurringInvoice implements ModelInterface, ArrayAccess, \JsonSerializable
         'custom_surcharge_tax1' => true,
         'custom_surcharge_tax2' => true,
         'custom_surcharge_tax3' => true,
-        'custom_surcharge_tax4' => true
+        'custom_surcharge_tax4' => true,
+        'auto_bill_enabled' => true,
+        'auto_bill' => true
     ];
 
     /**
@@ -367,7 +373,9 @@ class RecurringInvoice implements ModelInterface, ArrayAccess, \JsonSerializable
         'custom_surcharge_tax1' => 'custom_surcharge_tax1',
         'custom_surcharge_tax2' => 'custom_surcharge_tax2',
         'custom_surcharge_tax3' => 'custom_surcharge_tax3',
-        'custom_surcharge_tax4' => 'custom_surcharge_tax4'
+        'custom_surcharge_tax4' => 'custom_surcharge_tax4',
+        'auto_bill_enabled' => 'auto_bill_enabled',
+        'auto_bill' => 'auto_bill'
     ];
 
     /**
@@ -426,7 +434,9 @@ class RecurringInvoice implements ModelInterface, ArrayAccess, \JsonSerializable
         'custom_surcharge_tax1' => 'setCustomSurchargeTax1',
         'custom_surcharge_tax2' => 'setCustomSurchargeTax2',
         'custom_surcharge_tax3' => 'setCustomSurchargeTax3',
-        'custom_surcharge_tax4' => 'setCustomSurchargeTax4'
+        'custom_surcharge_tax4' => 'setCustomSurchargeTax4',
+        'auto_bill_enabled' => 'setAutoBillEnabled',
+        'auto_bill' => 'setAutoBill'
     ];
 
     /**
@@ -485,7 +495,9 @@ class RecurringInvoice implements ModelInterface, ArrayAccess, \JsonSerializable
         'custom_surcharge_tax1' => 'getCustomSurchargeTax1',
         'custom_surcharge_tax2' => 'getCustomSurchargeTax2',
         'custom_surcharge_tax3' => 'getCustomSurchargeTax3',
-        'custom_surcharge_tax4' => 'getCustomSurchargeTax4'
+        'custom_surcharge_tax4' => 'getCustomSurchargeTax4',
+        'auto_bill_enabled' => 'getAutoBillEnabled',
+        'auto_bill' => 'getAutoBill'
     ];
 
     /**
@@ -596,6 +608,8 @@ class RecurringInvoice implements ModelInterface, ArrayAccess, \JsonSerializable
         $this->setIfExists('custom_surcharge_tax2', $data ?? [], null);
         $this->setIfExists('custom_surcharge_tax3', $data ?? [], null);
         $this->setIfExists('custom_surcharge_tax4', $data ?? [], null);
+        $this->setIfExists('auto_bill', $data ?? [], null);
+        $this->setIfExists('auto_bill_enabled', $data ?? [], null);
     }
 
     /**
@@ -1914,6 +1928,81 @@ class RecurringInvoice implements ModelInterface, ArrayAccess, \JsonSerializable
 
         return $this;
     }
+
+    /**
+     * Gets auto_bill
+     *
+     * @return string|null
+     */
+    public function getAutoBill()
+    {
+        return $this->container['auto_bill'];
+    }
+
+    /**
+     * Sets auto_bill
+     *
+     * @param string|null $auto_bill Controls the auto billing mode (Enabled, Disabled, Opt-In, Opt-Out).
+     *
+     * @return self
+     */
+    public function setAutoBill($auto_bill)
+    {
+        if (is_null($auto_bill)) {
+            array_push($this->openAPINullablesSetToNull, 'auto_bill');
+        } else {
+            $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
+            $index = array_search('auto_bill', $nullablesSetToNull);
+            if ($index !== FALSE) {
+                unset($nullablesSetToNull[$index]);
+                $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
+            }
+        }
+
+        $allowedValues = ['off', 'always', 'optin', 'optout'];
+        if (!is_null($auto_bill) && !in_array($auto_bill, $allowedValues)) {
+            throw new \InvalidArgumentException(sprintf("Invalid value for 'auto_bill', must be one of '%s'", implode("', '", $allowedValues)));
+        }
+        $this->container['auto_bill'] = $auto_bill;
+
+        return $this;
+    }
+
+    /**
+     * Gets auto_bill_enabled
+     *
+     * @return bool|null
+     */
+    public function getAutoBillEnabled()
+    {
+        return $this->container['auto_bill_enabled'];
+    }
+
+    /**
+     * Sets auto_bill_enabled
+     *
+     * @param bool|null $auto_bill_enabled Whether auto billing is currently enabled (likely read-only).
+     *
+     * @return self
+     */
+    public function setAutoBillEnabled($auto_bill_enabled)
+    {
+        if (is_null($auto_bill_enabled)) {
+            array_push($this->openAPINullablesSetToNull, 'auto_bill_enabled');
+        } else {
+            $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
+            $index = array_search('auto_bill_enabled', $nullablesSetToNull);
+            if ($index !== FALSE) {
+                unset($nullablesSetToNull[$index]);
+                $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
+            }
+        }
+        $this->container['auto_bill_enabled'] = $auto_bill_enabled;
+
+        return $this;
+    }
+
+
     /**
      * Returns true if offset exists. False otherwise.
      *
