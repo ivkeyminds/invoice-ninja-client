@@ -1925,10 +1925,19 @@ class TaxRatesApi
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    public function getTaxRatesRequest($index = null, string $contentType = self::contentTypes['getTaxRates'][0])
+    public function getTaxRatesRequest($x_api_token, $x_requested_with, $index = null, string $contentType = self::contentTypes['getTaxRates'][0])
     {
+        if ($x_api_token === null || (is_array($x_api_token) && count($x_api_token) === 0)) {
+            throw new \InvalidArgumentException(
+                'Missing the required parameter $x_api_token when calling getTaxRates'
+            );
+        }
 
-
+        if ($x_requested_with === null || (is_array($x_requested_with) && count($x_requested_with) === 0)) {
+            throw new \InvalidArgumentException(
+                'Missing the required parameter $x_requested_with when calling getTaxRates'
+            );
+        }
 
         $resourcePath = '/api/v1/tax_rates';
         $formParams = [];
@@ -1947,8 +1956,13 @@ class TaxRatesApi
             false // required
         ) ?? []);
 
+        if ($x_api_token !== null) {
+            $headerParams['X-Api-Token'] = ObjectSerializer::toHeaderValue($x_api_token);
+        }
 
-
+        if ($x_requested_with !== null) {
+            $headerParams['X-Requested-With'] = ObjectSerializer::toHeaderValue($x_requested_with);
+        }
 
         $headers = $this->headerSelector->selectHeaders(
             ['application/json', ],
