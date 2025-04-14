@@ -63,6 +63,7 @@ class RecurringInvoice implements ModelInterface, ArrayAccess, \JsonSerializable
         'assigned_user_id' => 'string',
         'company_id' => 'string',
         'client_id' => 'string',
+        'design_id' => 'string',
         'status_id' => 'string',
         'frequency_id' => 'float',
         'remaining_cycles' => 'float',
@@ -126,6 +127,7 @@ class RecurringInvoice implements ModelInterface, ArrayAccess, \JsonSerializable
         'assigned_user_id' => null,
         'company_id' => null,
         'client_id' => null,
+        'design_id' => null,
         'status_id' => null,
         'frequency_id' => null,
         'remaining_cycles' => null,
@@ -187,6 +189,7 @@ class RecurringInvoice implements ModelInterface, ArrayAccess, \JsonSerializable
         'assigned_user_id' => true,
         'company_id' => true,
         'client_id' => true,
+        'design_id' => true,
         'status_id' => true,
         'frequency_id' => true,
         'remaining_cycles' => true,
@@ -328,6 +331,7 @@ class RecurringInvoice implements ModelInterface, ArrayAccess, \JsonSerializable
         'assigned_user_id' => 'assigned_user_id',
         'company_id' => 'company_id',
         'client_id' => 'client_id',
+        'design_id' => 'design_id',
         'status_id' => 'status_id',
         'frequency_id' => 'frequency_id',
         'remaining_cycles' => 'remaining_cycles',
@@ -389,6 +393,7 @@ class RecurringInvoice implements ModelInterface, ArrayAccess, \JsonSerializable
         'assigned_user_id' => 'setAssignedUserId',
         'company_id' => 'setCompanyId',
         'client_id' => 'setClientId',
+        'design_id' => 'setDesignId',
         'status_id' => 'setStatusId',
         'frequency_id' => 'setFrequencyId',
         'remaining_cycles' => 'setRemainingCycles',
@@ -450,6 +455,7 @@ class RecurringInvoice implements ModelInterface, ArrayAccess, \JsonSerializable
         'assigned_user_id' => 'getAssignedUserId',
         'company_id' => 'getCompanyId',
         'client_id' => 'getClientId',
+        'design_id' => 'getDesignId',
         'status_id' => 'getStatusId',
         'frequency_id' => 'getFrequencyId',
         'remaining_cycles' => 'getRemainingCycles',
@@ -562,6 +568,7 @@ class RecurringInvoice implements ModelInterface, ArrayAccess, \JsonSerializable
         $this->setIfExists('assigned_user_id', $data ?? [], null);
         $this->setIfExists('company_id', $data ?? [], null);
         $this->setIfExists('client_id', $data ?? [], null);
+        $this->setIfExists('design_id', $data ?? [], null);
         $this->setIfExists('status_id', $data ?? [], null);
         $this->setIfExists('frequency_id', $data ?? [], null);
         $this->setIfExists('remaining_cycles', $data ?? [], null);
@@ -775,6 +782,31 @@ class RecurringInvoice implements ModelInterface, ArrayAccess, \JsonSerializable
     {
         
         $this->container['client_id'] = $client_id;
+
+        return $this;
+    }
+
+    /**
+     * Gets design_id
+     *
+     * @return string|null
+     */
+    public function getDesignId()
+    {
+        return $this->container['design_id'];
+    }
+
+    /**
+     * Sets design_id
+     *
+     * @param string|null $design_id The design hashed id
+     *
+     * @return self
+     */
+    public function setDesignId($design_id)
+    {
+        
+        $this->container['design_id'] = $design_id;
 
         return $this;
     }
