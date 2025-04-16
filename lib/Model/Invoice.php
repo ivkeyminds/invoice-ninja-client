@@ -106,7 +106,8 @@ class Invoice implements ModelInterface, ArrayAccess, \JsonSerializable
         'custom_surcharge_tax1' => 'bool',
         'custom_surcharge_tax2' => 'bool',
         'custom_surcharge_tax3' => 'bool',
-        'custom_surcharge_tax4' => 'bool'
+        'custom_surcharge_tax4' => 'bool',
+        'design_id' => 'string'
     ];
 
     /**
@@ -165,7 +166,8 @@ class Invoice implements ModelInterface, ArrayAccess, \JsonSerializable
         'custom_surcharge_tax1' => null,
         'custom_surcharge_tax2' => null,
         'custom_surcharge_tax3' => null,
-        'custom_surcharge_tax4' => null
+        'custom_surcharge_tax4' => null,
+        'design_id' => null
     ];
 
     /**
@@ -222,7 +224,8 @@ class Invoice implements ModelInterface, ArrayAccess, \JsonSerializable
         'custom_surcharge_tax1' => true,
         'custom_surcharge_tax2' => true,
         'custom_surcharge_tax3' => true,
-        'custom_surcharge_tax4' => true
+        'custom_surcharge_tax4' => true,
+        'design_id' => true
     ];
 
     /**
@@ -359,7 +362,8 @@ class Invoice implements ModelInterface, ArrayAccess, \JsonSerializable
         'custom_surcharge_tax1' => 'custom_surcharge_tax1',
         'custom_surcharge_tax2' => 'custom_surcharge_tax2',
         'custom_surcharge_tax3' => 'custom_surcharge_tax3',
-        'custom_surcharge_tax4' => 'custom_surcharge_tax4'
+        'custom_surcharge_tax4' => 'custom_surcharge_tax4',
+        'design_id' => 'design_id'
     ];
 
     /**
@@ -416,7 +420,8 @@ class Invoice implements ModelInterface, ArrayAccess, \JsonSerializable
         'custom_surcharge_tax1' => 'setCustomSurchargeTax1',
         'custom_surcharge_tax2' => 'setCustomSurchargeTax2',
         'custom_surcharge_tax3' => 'setCustomSurchargeTax3',
-        'custom_surcharge_tax4' => 'setCustomSurchargeTax4'
+        'custom_surcharge_tax4' => 'setCustomSurchargeTax4',
+        'design_id' => 'setDesignId'
     ];
 
     /**
@@ -473,7 +478,8 @@ class Invoice implements ModelInterface, ArrayAccess, \JsonSerializable
         'custom_surcharge_tax1' => 'getCustomSurchargeTax1',
         'custom_surcharge_tax2' => 'getCustomSurchargeTax2',
         'custom_surcharge_tax3' => 'getCustomSurchargeTax3',
-        'custom_surcharge_tax4' => 'getCustomSurchargeTax4'
+        'custom_surcharge_tax4' => 'getCustomSurchargeTax4',
+        'design_id' => 'getDesignId'
     ];
 
     /**
@@ -582,6 +588,7 @@ class Invoice implements ModelInterface, ArrayAccess, \JsonSerializable
         $this->setIfExists('custom_surcharge_tax2', $data ?? [], null);
         $this->setIfExists('custom_surcharge_tax3', $data ?? [], null);
         $this->setIfExists('custom_surcharge_tax4', $data ?? [], null);
+        $this->setIfExists('design_id', $data ?? [], null);
     }
 
     /**
@@ -1845,6 +1852,31 @@ class Invoice implements ModelInterface, ArrayAccess, \JsonSerializable
     {
         
         $this->container['custom_surcharge_tax4'] = $custom_surcharge_tax4;
+
+        return $this;
+    }
+
+    /**
+     * Gets design_id
+     *
+     * @return string|null
+     */
+    public function getDesignId()
+    {
+        return $this->container['design_id'];
+    }
+
+    /**
+     * Sets design_id
+     *
+     * @param string|null $design_id The design ID used for the invoice
+     *
+     * @return self
+     */
+    public function setDesignId($design_id)
+    {
+        
+        $this->container['design_id'] = $design_id;
 
         return $this;
     }
