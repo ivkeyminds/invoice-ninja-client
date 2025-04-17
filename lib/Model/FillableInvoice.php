@@ -60,6 +60,8 @@ class FillableInvoice implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $openAPITypes = [
         'assigned_user_id' => 'string',
         'client_id' => 'string',
+        'design_id' => 'string',
+        'status_id' => 'string',
         'number' => 'string',
         'po_number' => 'string',
         'terms' => 'string',
@@ -100,6 +102,8 @@ class FillableInvoice implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $openAPIFormats = [
         'assigned_user_id' => null,
         'client_id' => null,
+        'design_id' => null,
+        'status_id' => null,
         'number' => null,
         'po_number' => null,
         'terms' => null,
@@ -138,6 +142,8 @@ class FillableInvoice implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $openAPINullables = [
         'assigned_user_id' => true,
         'client_id' => true,
+        'design_id' => true,
+        'status_id' => true,
         'number' => true,
         'po_number' => true,
         'terms' => true,
@@ -256,6 +262,8 @@ class FillableInvoice implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $attributeMap = [
         'assigned_user_id' => 'assigned_user_id',
         'client_id' => 'client_id',
+        'design_id' => 'design_id',
+        'status_id' => 'status_id',
         'number' => 'number',
         'po_number' => 'po_number',
         'terms' => 'terms',
@@ -294,6 +302,8 @@ class FillableInvoice implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $setters = [
         'assigned_user_id' => 'setAssignedUserId',
         'client_id' => 'setClientId',
+        'design_id' => 'setDesignId',
+        'status_id' => 'setStatusId',
         'number' => 'setNumber',
         'po_number' => 'setPoNumber',
         'terms' => 'setTerms',
@@ -332,6 +342,8 @@ class FillableInvoice implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $getters = [
         'assigned_user_id' => 'getAssignedUserId',
         'client_id' => 'getClientId',
+        'design_id' => 'getDesignId',
+        'status_id' => 'getStatusId',
         'number' => 'getNumber',
         'po_number' => 'getPoNumber',
         'terms' => 'getTerms',
@@ -421,6 +433,8 @@ class FillableInvoice implements ModelInterface, ArrayAccess, \JsonSerializable
     {
         $this->setIfExists('assigned_user_id', $data ?? [], null);
         $this->setIfExists('client_id', $data ?? [], null);
+        $this->setIfExists('design_id', $data ?? [], null);
+        $this->setIfExists('status_id', $data ?? [], null);
         $this->setIfExists('number', $data ?? [], null);
         $this->setIfExists('po_number', $data ?? [], null);
         $this->setIfExists('terms', $data ?? [], null);
@@ -539,6 +553,54 @@ class FillableInvoice implements ModelInterface, ArrayAccess, \JsonSerializable
     {
         
         $this->container['client_id'] = $client_id;
+
+        return $this;
+    }
+
+    /**
+     * Gets design_id
+     *
+     * @return string|null
+     */
+    public function getDesignId()
+    {
+        return $this->container['design_id'];
+    }
+
+    /**
+     * Sets design_id
+     *
+     * @param string|null $design_id The design id of the invoice
+     *
+     * @return self
+     */
+    public function setDesignId($design_id)
+    {
+        $this->container['design_id'] = $design_id;
+
+        return $this;
+    }
+
+    /**
+     * Gets status_id
+     *
+     * @return string|null
+     */
+    public function getStatusId()
+    {
+        return $this->container['status_id'];
+    }
+
+    /**
+     * Sets status_id
+     *
+     * @param string|null $status_id The status id of the invoice
+     *
+     * @return self
+     */
+    public function setStatusId($status_id)
+    {
+        $this->container['status_id'] = $status_id;
 
         return $this;
     }
